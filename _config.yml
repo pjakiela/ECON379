@@ -1,4 +1,4 @@
-remote_theme: pmarsceill/just-the-docs
+theme: jekyll-theme-minimal
 title:  Program Evaluation
 github:
     is_project_page: false
