@@ -1,4 +1,5 @@
 theme: jekyll-theme-minimal
-title:  Program Evaluation
+title:  ECON 379: Program Evaluation for International Development
 github:
     is_project_page: false
+show_downloads: true
