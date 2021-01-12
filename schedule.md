@@ -34,15 +34,15 @@ April 13: Attrition
 
 April 15: Survey Design and Data Collection
 
-April 20: Pre-Analysis Plans
+April 20: Data Collection Horror Stories
 
 April 22: health days (no class)
 
-April 27: The Replication Crisis
+April 27: Pre-Analysis Plans
 
-April 29: Criticisms of RCTs
+April 29: The Replication Crisis
 
-May 4: 
+May 4: Criticisms of RCTs
 
 May 6: Meta-Analysis
 
