@@ -1,28 +1,54 @@
-## Course Schedule
+## Course Schedule (Tentative)
 
-February 17: Introduction  
-February 23: Why Evaluate?  
-February 25: False Counterfactuals   
-March 2: Difference-in-Differences I  
-March 4: Difference-in-Differences II (TWFE)
-March 9: Instrumental Variables I: (TOT)  
-March 11: Instrumental Variables II
-March 16: Regreression Discontinuity I  
-March 18: Regreression Discontinuity II  
-March 23: reading period (no class)  
+February 17: Introduction
+
+February 23: Why Evaluate?
+
+February 25: False Counterfactuals
+
+March 2: Difference-in-Differences (DD I)
+
+March 4: Two-Way Fixed Effects (DD II)
+
+March 9: Treatment-on-the-Treated (IV I)
+
+March 11: Instrumental Variables in the Wild (IV II)
+
+March 16: Regreression Discontinuity (RD I)
+
+March 18: RD as IV (RD II)
+
+March 23: reading period (no class)
+
 March 25: Exam 1
-March 30:  
-April 1:  
-April 6:  
-April 8:  
-April 13:  
-April 15:  
-April 20:  
-April 22: health days (no class)  
-April 27:  
-April 29:  
-May 4:  
-May 6:  
-May 11:  
-May 13:  
-May 18: Exam 2  
+
+March 30: Power Calculations
+
+April 1: Clustering 
+
+April 6: Random Assignment in Practice
+
+April 8: Take-up and Compliance
+
+April 13: Attrition 
+
+April 15: 
+
+April 20: 
+
+April 22: health days (no class)
+
+April 27:
+
+April 29:
+
+May 4: Transparency and Replicability
+
+May 6: Meta-Analysis
+
+May 11:  Exam 2
+
+May 13:  student presentations
+
+May 18: student presentations
+
