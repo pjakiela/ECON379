@@ -32,17 +32,17 @@ April 8: Take-up and Compliance
 
 April 13: Attrition 
 
-April 15: 
+April 15: Survey Design and Data Collection
 
-April 20: 
+April 20: Pre-Analysis Plans
 
 April 22: health days (no class)
 
-April 27:
+April 27: The Replication Crisis
 
-April 29:
+April 29: Criticisms of RCTs
 
-May 4: Transparency and Replicability
+May 4: 
 
 May 6: Meta-Analysis
 
