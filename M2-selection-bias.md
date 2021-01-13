@@ -10,6 +10,6 @@ Potential outcomes, selection bias, the experimental ideal.
   
 
 ### Stata Exercise
-Open the Stata do file `S1.do`.
+Open the Stata data set `S2data.dta`.  The data set contains 100 observations, indexed by the variable `id.`  For every observation, we observe a realization of a normally-dstributed random variable (recorded in the variable `z`).
 
 ### Additional Resources
