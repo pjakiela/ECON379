@@ -1,6 +1,7 @@
 ## Module 1: Why Evaluate?  
 
-## Also: Who? What? Where? When?
+### Overview  
+What is impact evaluation?  
 
 ### Readings
 _Impact Evaluation in Practice_: Chapters 1 and 2  
@@ -9,5 +10,6 @@ _Impact Evaluation in Practice_: Chapters 1 and 2
 [Esther Duflo:  Social Experiments to Fight Poverty](https://www.ted.com/talks/esther_duflo_social_experiments_to_fight_poverty?language=en) (TED talk)  
 
 ### Stata Exercise
+Let's open stata.
 
 ### Additional Resources
