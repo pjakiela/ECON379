@@ -5,4 +5,4 @@
 ## Course Information:  
 
 ### Instructor:  [Pamela Jakiela](https://pjakiela.github.io)  
-Course schedule
+[Course schedule](https://pjakiela.github.io/ECON379/schedule.html)
