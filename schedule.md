@@ -2,7 +2,7 @@
 
 February 17: Introduction
 
-[February 23: Why Evaluate?](L1-why-evaluate.html)
+[February 23: Why Evaluate?](M1-why-evaluate.html)
 
 [February 25: Selection Bias and the Experimental Ideal](L2-selection-bias.html)
 
