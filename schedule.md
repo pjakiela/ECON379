@@ -4,7 +4,7 @@ February 17: Introduction
 
 [February 23: Why Evaluate?](M1-why-evaluate.html)
 
-[February 25: Selection Bias and the Experimental Ideal](L2-selection-bias.html)
+[February 25: Selection Bias and the Experimental Ideal](M2-selection-bias.html)
 
 March 2: False Counterfactuals
 
