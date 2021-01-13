@@ -10,6 +10,6 @@ Potential outcomes, selection bias, the experimental ideal.
   
 
 ### Stata Exercise
-Do two groups have the same mean?
+Open the Stata do file `S1.do`.
 
 ### Additional Resources
