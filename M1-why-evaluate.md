@@ -12,8 +12,10 @@ _Impact Evaluation in Practice_: Chapters 1 and 2
 
 <details><summary>Review Questions</summary>
   <br>
-  1. What were the objectives of Mexico's Progresa program? <br>
-  2. How did Progresa impact poor families? <br>
+  <ol>
+    <li>1. What were the objectives of Mexico's Progresa program? </li>
+  <li>2. How did Progresa impact poor families? </li>
+  </ol>
   3. How is impact evaluation different from other monitoring and evaluation activities? <br> 
   4. What is the difference between cost-benefit analysis and cost-effectiveness analysis? <br> 
   5. What are prospective evaluations, and how do they differ from retrospective evaluations? <br>
