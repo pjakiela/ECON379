@@ -23,7 +23,7 @@ _Impact Evaluation in Practice_: Chapters 1 and 2
   <li>What were the inputs and outputs in the Piso Firme project in Mexico? </li>
   <li>What is a theory of change, and when should it be developed? </li>
   <li>What are the steps in a results chain?  </li>
-  <li>What does it mean for an outcome variable to be SMART? 
+  <li>What does it mean for an outcome variable to be SMART? </li>
   </ol>
 </details>
 
