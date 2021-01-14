@@ -1,8 +1,12 @@
 ## Course Schedule (Tentative)
 
+## Introduction
+
 February 17: Introduction
 
 [February 23: Why Evaluate?](M1-why-evaluate.html)
+
+#### Identification Strategies
 
 [February 25: Selection Bias and the Experimental Ideal](M2-selection-bias.html)
 
@@ -26,6 +30,8 @@ March 30: RD as IV (RD II)
 
 April 1: Exam 1
 
+#### From Theory to Practice
+
 April 6: Power Calculations
 
 April 8: Random Assignment in Practice 
@@ -37,6 +43,8 @@ April 15: Survey Design and Data Collection
 April 20: Data Collection Horror Stories
 
 April 22: health days (no class)
+
+#### Galaxy Brain
 
 April 27: Pre-Analysis Plans
 
