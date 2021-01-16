@@ -10,6 +10,13 @@ Potential outcomes, selection bias, the experimental ideal.
   
 
 ### Stata Exercise
-Open the Stata data set `S2data.dta`.  The data set contains 100 observations, indexed by the variable `id.`  For every observation, we observe a realization of a normally-dstributed random variable (recorded in the variable `z`).
+
+The Stata do file `S2.do` uses Stata's `rnormal()` command to generate draws from a normally-distributed random variable using the following code:
+
+```
+local myobs = 10
+set obs `myobs'
+gen y = rnormal()
+```
 
 ### Additional Resources
