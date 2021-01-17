@@ -13,4 +13,4 @@ and there are people who might hire you after graduation who only want to hire p
 will want to see evidence that you can learn new technologigal tools, so knowing both Stata and R is not going to hurt you.  Learn some of both, 
 and decide which one you prefer once you are the boss.
 
-
+In this class, we're using Stata because it is the most widely used software among people doing program evalaution in the development context.  Many of the techniques we'll learn are more straightforward and better documented in Stata, and the replication files for the papers we'll read come with Stata data sets.
