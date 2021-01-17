@@ -9,13 +9,15 @@ Potential outcomes, selection bias, the experimental ideal.
 <details><summary>Review Questions</summary>
   <br>
   <ol>
-  <li>How do Americans with health insurance differ from those without health insurance?  Are those differences likely to result from having health insurance?  Why o why not? </li>
-  <li>What are potential outcomes?  How do potential outcomes lead to a missing data problem?  </li>
+  <li>How do Americans with health insurance differ from those without health insurance?  Are those differences likely to result from having health insurance?  Why or why not? </li>
+  <li>What are potential outcomes?  How do potential outcomes lead to a missing data problem in causal inference?  </li>
   <li>What is selection bias, and what implications does it have for program evaluation?  </li>
   <li>What is the Law of Large Numbers, and why is it important in randomized experiments?  </li>
-  <li>Based on the evidence presented in the reading, what are the impacts of health insurance?  </li>
+  <li>Based on the evidence presented in the reading, what are the impacts of access to health insurance (in the United States)?  </li>
   </ol>
 </details>
+
+<br>
 
 ### Video Lectures  
   
