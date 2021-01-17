@@ -1,7 +1,11 @@
 ## Selection Bias and the Experimental Ideal
 
+<br>
+
 ### Overview  
 Potential outcomes, selection bias, the experimental ideal. 
+
+<br>
 
 ### Readings
 [_Mastering Metrics_: Chapter 1](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjE2pfw-JjuAhUBZc0KHQo1DnoQFjAAegQIBhAC&url=http%3A%2F%2Fassets.press.princeton.edu%2Fchapters%2Fs10363.pdf&usg=AOvVaw3IGywrUpw1_F9e5npteATA)
@@ -21,6 +25,7 @@ Potential outcomes, selection bias, the experimental ideal.
 
 ### Video Lectures  
   
+<br>
 
 ### Stata Exercise
 
@@ -37,6 +42,8 @@ gen y = rnormal()
 In the third line, we define a local, `myobs`, and in the next line, we use that local to set the number of observations in the data set.  Since we are starting with an empty data set, these observations are blank - we haven't defined any variables yet.  
 
 In the last line, we use `rnormal()` to create a variable that is normally distributed (with mean 0 and SD 1).  Each of the ten observations has a different value of `y`, but if you plot these values, you will see that they represent draws from a standard normal.
+
+<br>
 
 ### Additional Resources
 
