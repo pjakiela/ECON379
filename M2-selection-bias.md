@@ -6,6 +6,17 @@ Potential outcomes, selection bias, the experimental ideal.
 ### Readings
 [_Mastering Metrics_: Chapter 1](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjE2pfw-JjuAhUBZc0KHQo1DnoQFjAAegQIBhAC&url=http%3A%2F%2Fassets.press.princeton.edu%2Fchapters%2Fs10363.pdf&usg=AOvVaw3IGywrUpw1_F9e5npteATA)
 
+<details><summary>Review Questions</summary>
+  <br>
+  <ol>
+  <li>How do Americans with health insurance differ from those without health insurance?  Are those differences likely to result from having health insurance?  Why o why not? </li>
+  <li>What are potential outcomes?  How do potential outcomes lead to a missing data problem?  </li>
+  <li>What is selection bias, and what implications does it have for program evaluation?  </li>
+  <li>What is the Law of Large Numbers, and why is it important in randomized experiments?  </li>
+  <li>Based on the evidence presented in the reading, what are the impacts of health insurance?  </li>
+  </ol>
+</details>
+
 ### Video Lectures  
   
 
