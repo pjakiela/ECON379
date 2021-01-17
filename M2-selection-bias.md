@@ -39,3 +39,6 @@ In the third line, we define a local, `myobs`, and in the next line, we use that
 In the last line, we use `rnormal()` to create a variable that is normally distributed (with mean 0 and SD 1).  Each of the ten observations has a different value of `y`, but if you plot these values, you will see that they represent draws from a standard normal.
 
 ### Additional Resources
+
+#### More Recent Evidence on Health Insurance
+[Health Insurance and Mortality: Experimental Evidence from Taxpayer Outreach](https://academic.oup.com/qje/article/136/1/1/5911132?login=true)  
