@@ -3,7 +3,7 @@
 <br>
 
 ### Overview  
-This module introduces the concept of **impact evaluation** and discusses the ways that impact evaluation is different from other monitoring and evaluation activities.  
+This module introduces the concept of **impact evaluation** and discusses the ways that impact evaluation is different from other monitoring and evaluation activities. 
 
 <br>
 
