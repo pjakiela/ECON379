@@ -8,12 +8,16 @@ This module reviews the weaknesses of the two **false counterfactual** identific
 <br>
 
 ### Readings
-_Impact Evaluation in Practice_: Chapters 1 and 2  
+_Impact Evaluation in Practice_: Chapter 3  
 
 <details><summary>Review Questions</summary>
   <br>
   <ol>
-  <li>Insert review questions here. </li>
+  <li>How can we describe the causal impact of a program in terms of potential outcomes with and without treatment? </li>
+  <li>What is a counterfactual? </li>
+  <li>In what ways (three) must a valid comparison group be similar to the treatment group? </li>
+  <li>What is an intent-to-treat estimate of a program's impact, and how does it differ from a treatment-on-the-treated estimate? </li>
+  <li>What are the two false (or "counterfeit") counterfactuals, and what is the source of bias associated with each one? </li>
   </ol>
 </details>
 
