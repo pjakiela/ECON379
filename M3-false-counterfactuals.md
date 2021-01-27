@@ -23,6 +23,10 @@ _Impact Evaluation in Practice_: Chapter 3
 
 <br>
 
+[The effect of an integrated multisector model for achieving the Millennium Development Goals and improving child survival in rural sub-Saharan Africa: a non-randomised controlled assessment](http://wordpress.ei.columbia.edu/mdg-east/files/2013/02/Millennium-Villages-child-mortality-Lancet-2012.pdf)  
+
+Note:  the link _should_ take you to the original published version; the [version available on the Lancet website](https://www.sciencedirect.com/science/article/abs/pii/S0140673612602074) is corrected.  You'll know you are reading the original version if the last sentence of the abstract section titled **Findings** is: "The average annual rate of reduction of mortality in children younger than 5 years of age was three-times faster in Millennium Village sites than in the most recent 10-year national rural trends (7.8% vs 2.5%).  The original version is also posted on glow (Williams students only).
+
 ### Video Lectures  
 [Video Lecture](https://www.ted.com/talks/esther_duflo_social_experiments_to_fight_poverty?language=en) (TED talk)  
 
