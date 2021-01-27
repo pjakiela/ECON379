@@ -45,6 +45,10 @@ Let's open stata.
 
 <br>
 
+### Further Reading
+
+[The Poverty Lab](https://www.newyorker.com/magazine/2010/05/17/the-poverty-lab) (The _New Yorker_ on Esther Duflo)  
+
 ### Additional Resources
 [Georgetown University's EdX course on Impact Evaluation with Applications in Low and Middle Income Countries](https://www.edx.org/course/impact-evaluation-methods-with-applications-in-low-and-middle-income-countries)  
 [Professor Andrew Heiss' Program Evaluation for Public Service](https://evalsp20.classes.andrewheiss.com/)  
