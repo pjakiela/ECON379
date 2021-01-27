@@ -3,7 +3,7 @@
 <br>
 
 ### Overview  
-Potential outcomes, selection bias, the experimental ideal. 
+This module introduces the **potential outcomes** framework that we'll use throughout the course as well as the concept of **selection bias** before explaining how average treatment effects can be estimated when treatment status is randomly assigned. 
 
 <br>
 
@@ -24,10 +24,17 @@ Potential outcomes, selection bias, the experimental ideal.
 <br>
 
 ### Video Lectures  
+
+<details><summary>Review Questions</summary>
+  <br>
+  <ol>
+  <li>Insert review questions here.</li>
+  </ol>
+</details>
   
 <br>
 
-### Stata Exercise
+### Empirical Exercise
 
 The Stata do file `S2.do` uses Stata's `rnormal()` command to generate draws from a normally-distributed random variable using the following code:
 
