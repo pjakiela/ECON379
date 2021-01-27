@@ -40,7 +40,7 @@ _Impact Evaluation in Practice_: Chapters 1 and 2
 
 <br>
 
-### Stata Exercise
+### Empirical Exercise
 Let's open stata.
 
 <br>
