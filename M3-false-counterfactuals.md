@@ -23,7 +23,7 @@ This module reviews the weaknesses of the two **false counterfactual** identific
 
 <br>
 
-3.1 The Millennium Villages evaluation and subsequent commentary
+3.2 The Millennium Villages evaluation and subsequent commentary
 
 [The effect of an integrated multisector model for achieving the Millennium Development Goals and improving child survival in rural sub-Saharan Africa: a non-randomised controlled assessment](http://wordpress.ei.columbia.edu/mdg-east/files/2013/02/Millennium-Villages-child-mortality-Lancet-2012.pdf)  
 
@@ -32,6 +32,32 @@ Note:  the link _should_ take you to the original published version; the [versio
 [Concerns about the Millennium Villages project report](https://www.thelancet.com/action/showPdf?pii=S0140-6736%2812%2960848-4)  
 
 [Errors in a paper on the Millennium Villages project](https://www.thelancet.com/action/showPdf?pii=S0140-6736%2812%2960824-1)  
+
+<details><summary>Review Questions</summary>
+  <br>
+  <ol>
+  <li>How can we describe the causal impact of a program in terms of potential outcomes with and without treatment? </li>
+  <li>What is a counterfactual? </li>
+  <li>In what ways (three) must a valid comparison group be similar to the treatment group? </li>
+  <li>What is an intent-to-treat estimate of a program's impact, and how does it differ from a treatment-on-the-treated estimate? </li>
+  <li>What are the two false (or "counterfeit") counterfactuals, and what is the source of bias associated with each one? </li>
+  </ol>
+</details>
+
+<br>
+
+3.3 [When Does Rigorous Impact Evaluation Make a Difference? The Case of the Millennium Villages](https://www.cgdev.org/publication/when-does-rigorous-impact-evaluation-make-difference-case-millennium-villages-working)  
+
+<details><summary>Review Questions</summary>
+  <br>
+  <ol>
+  <li>How can we describe the causal impact of a program in terms of potential outcomes with and without treatment? </li>
+  <li>What is a counterfactual? </li>
+  <li>In what ways (three) must a valid comparison group be similar to the treatment group? </li>
+  <li>What is an intent-to-treat estimate of a program's impact, and how does it differ from a treatment-on-the-treated estimate? </li>
+  <li>What are the two false (or "counterfeit") counterfactuals, and what is the source of bias associated with each one? </li>
+  </ol>
+</details>
 
 <br>
 
