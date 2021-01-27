@@ -62,7 +62,7 @@ Note:  the link _should_ take you to the original published version; the [versio
 <br>
 
 ### Video Lectures  
-[Video Lecture](https://www.ted.com/talks/esther_duflo_social_experiments_to_fight_poverty?language=en) (TED talk)  
+[Video Lecture](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjvmLvRiL3uAhVTCc0KHWujCrMQtwIwBHoECAYQAg&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DX8nRpGHUzFc&usg=AOvVaw2cQQpYHbubf5bzPpmh1Rcq) (TED talk)  
 
 <details><summary>Review Questions</summary>
   <br>
