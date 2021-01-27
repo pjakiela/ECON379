@@ -48,7 +48,9 @@ Let's open stata.
 ### Further Reading
 
 [The Poverty Lab](https://www.newyorker.com/magazine/2010/05/17/the-poverty-lab) (The _New Yorker_ on Esther Duflo)  
+
 [Interview: MIT Economists Esther Duflo and Abhijit Banerjee](http://philanthropyaction.com/articles/interview_mit_economists_esther_duflo_and_abhijit_banerjee/)  
+
 [Experimental Conversations](https://www.econ-versations.com/)  
 
 ### Additional Resources
