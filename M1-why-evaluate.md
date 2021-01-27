@@ -55,4 +55,5 @@ Let's open stata.
 
 ### Additional Resources
 [Georgetown University's EdX course on Impact Evaluation with Applications in Low and Middle Income Countries](https://www.edx.org/course/impact-evaluation-methods-with-applications-in-low-and-middle-income-countries)  
+
 [Professor Andrew Heiss' Program Evaluation for Public Service](https://evalsp20.classes.andrewheiss.com/)  
