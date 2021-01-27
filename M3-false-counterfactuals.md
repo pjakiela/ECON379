@@ -23,7 +23,7 @@ This module reviews the weaknesses of the two **false counterfactual** identific
 
 <br>
 
-3.2 The Millennium Villages evaluation and subsequent commentary
+3.2 The Millennium Villages evaluation and subsequent commentary  
 
 [The effect of an integrated multisector model for achieving the Millennium Development Goals and improving child survival in rural sub-Saharan Africa: a non-randomised controlled assessment](http://wordpress.ei.columbia.edu/mdg-east/files/2013/02/Millennium-Villages-child-mortality-Lancet-2012.pdf)  
 
@@ -36,11 +36,12 @@ Note:  the link _should_ take you to the original published version; the [versio
 <details><summary>Review Questions</summary>
   <br>
   <ol>
-  <li>How can we describe the causal impact of a program in terms of potential outcomes with and without treatment? </li>
-  <li>What is a counterfactual? </li>
-  <li>In what ways (three) must a valid comparison group be similar to the treatment group? </li>
-  <li>What is an intent-to-treat estimate of a program's impact, and how does it differ from a treatment-on-the-treated estimate? </li>
-  <li>What are the two false (or "counterfeit") counterfactuals, and what is the source of bias associated with each one? </li>
+  <li>What is the Millennium Villages project?  When and where was it implemented?  What were the anticipated impacts? </li>
+  <li>What is the primary outcome used in the study? </li>
+  <li>What strategies do the authors use to characterize counterfactual outcomes in the absence of the project? </li>
+  <li>What are the main "impacts" of the Millennium Villages project reported in the study? </li>
+  <li>Describe the three critiques discussed in the letter to the editor by Jesse Bump, Michael Clemens, Gabriel Demombynes, and Lawrence Haddad. </li>
+  <li>How do the authors of the original piece respond to these criticisms of their analysis? </li>
   </ol>
 </details>
 
@@ -51,11 +52,9 @@ Note:  the link _should_ take you to the original published version; the [versio
 <details><summary>Review Questions</summary>
   <br>
   <ol>
-  <li>How can we describe the causal impact of a program in terms of potential outcomes with and without treatment? </li>
-  <li>What is a counterfactual? </li>
-  <li>In what ways (three) must a valid comparison group be similar to the treatment group? </li>
-  <li>What is an intent-to-treat estimate of a program's impact, and how does it differ from a treatment-on-the-treated estimate? </li>
-  <li>What are the two false (or "counterfeit") counterfactuals, and what is the source of bias associated with each one? </li>
+  <li>How would you characterize the effects of previous model village interventions (prior to the Millennium Villages project)? </li>
+  <li>The authors compare trends (in outcomes of interest) in Millennium Villages to trends in what types of comparison areas? </li>
+  <li>How do trends (in outcomes of interest) in Millennium Villages compare with trends in comparable rural areas? </li>
   </ol>
 </details>
 
