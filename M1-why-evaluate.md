@@ -53,6 +53,8 @@ Let's open stata.
 
 [Experimental Conversations](https://www.econ-versations.com/)  
 
+<br>
+
 ### Additional Resources
 [Georgetown University's EdX course on Impact Evaluation with Applications in Low and Middle Income Countries](https://www.edx.org/course/impact-evaluation-methods-with-applications-in-low-and-middle-income-countries)  
 
