@@ -45,7 +45,7 @@ In the last line, we use `rnormal()` to create a variable that is normally distr
 
 <br>
 
-### Additional Resources
+### Further Reading
 
 #### More Recent Evidence on Health Insurance
 [Health Insurance and Mortality: Experimental Evidence from Taxpayer Outreach](https://academic.oup.com/qje/article/136/1/1/5911132?login=true)  
