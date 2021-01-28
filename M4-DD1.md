@@ -19,7 +19,7 @@ _Impact Evaluation in Practice_: Chapters 1 and 2
 <br>
 
 ### Video Lectures  
-[Video Lecture](https://www.ted.com/talks/esther_duflo_social_experiments_to_fight_poverty?language=en) (TED talk)  
+[OK this is Iggy Pop and not a video lecture.](https://www.youtube.com/watch?v=-fWw7FE9tTo)   
 
 <details><summary>Review Questions</summary>
   <br>
@@ -40,4 +40,5 @@ Let's open stata.
 
 <br>
 
-### Additional Resources
+### Acknowledgments
+Special thanks to Patrick Blanchenay, Garret Christensen, Liz Cascio, Jess Goldberg, Guy Grossman, Kirabo Jackson, Michael Kevane, Scott Imberman, Manisha Shah, and Mike Urbancic for their diff-in-diff suggestions.
