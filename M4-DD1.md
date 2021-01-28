@@ -3,7 +3,8 @@
 <br>
 
 ### Overview  
-This module introduces the **difference-in-differences** identification strategy.
+This module introduces the **difference-in-differences** identification strategy.  
+
 <br>
 
 ### Readings
