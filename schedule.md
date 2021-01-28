@@ -10,7 +10,7 @@ February 17: Introduction
 
 [February 25: Selection Bias and the Experimental Ideal](M2-selection-bias.html)
 
-March 2: False Counterfactuals
+[March 2: False Counterfactuals](M3-false-counterfactuals.html)
 
 March 4: Difference-in-Differences (DD I)
 
