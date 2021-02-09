@@ -34,7 +34,8 @@ _Impact Evaluation in Practice_: Chapters 1 and 2
 <details><summary>Review Questions</summary>
   <br>
   <ol>
-  <li>Insert review questions here. </li>
+  <li>Why can't we know whether aid given to Africa has reduced poverty? </li>
+  <li>How did Professor Duflo and her collaborators attempt to increase vaccination rates in India?  What two policies did they implement, and why did they choose these policies?  What did they find? </li>
   </ol>
 </details>
 
