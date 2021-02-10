@@ -36,6 +36,8 @@ _Impact Evaluation in Practice_: Chapters 1 and 2
   <ol>
   <li>Why can't we know whether aid given to Africa has reduced poverty? </li>
   <li>How did Professor Duflo and her collaborators attempt to increase vaccination rates in India?  What two policies did they implement, and why did they choose these policies?  What did they find? </li>
+  <li>How did the demand for anti-malarial bednets change as a function of price in Kenya?  Were people who paid more for bednets more likely to use them? </li>
+  <li>Which policies had the largest impact on educational attainment per dollar spent? Why do you think these policies had such a large impact?</li>
   </ol>
 </details>
 
