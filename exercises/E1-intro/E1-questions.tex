@@ -1,0 +1,85 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[table]{xcolor}
+
+\addtolength{\oddsidemargin}{-.5in}
+\addtolength{\evensidemargin}{-.5in}
+\addtolength{\textwidth}{1.0in}
+
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+\def\urltilda{\kern -.15em\lower .7ex\hbox{\~{}}\kern .04em}
+
+\begin{document}
+
+\begin{center}
+
+\textbf{\large{ECON 379:  Program Evaluation for International Development}} \\
+
+\bigskip
+
+\textbf{\large{Empirical Exercise \#1}} \\ 
+Due 2/25 by 11:30 AM 
+
+\end{center}
+
+\bigskip
+
+\bigskip
+
+This exercise makes use of the data set \texttt{E1-CohenEtAl-data.dta}, 
+a subset of the data used in the paper ``Price Subsidies, 
+Diagnostic Tests, and Targeting of Malaria Treatment: Evidence from a 
+Randomized Controlled Trial'' by Jessica Cohen, Pascaline Dupas, and Simone 
+Schaner, published in the \emph{American Economic Review} in 2015. 
+The authors examine behavioral responses to various discounts (``subsidies'') 
+for malaria treatment, called ``artemisinin combination therapy'' 
+or ``ACT.''  
+
+\bigskip
+
+The aim of this empirical exercise is to review key Stata commands.
+The data set used in this exercise is available at:  
+\url{https://pjakiela.github.io/ECON379/exercises/E1-intro}.  You can 
+also load the data into Stata directly using the \texttt{webuse} command:
+
+\begin{verbatim}
+webuse set https://pjakiela.github.io/ECON379/exercises/E1-intro/
+webuse E1-CohenEtAl-data.dta
+\end{verbatim}
+
+\noindent
+Download the data set, open it in Stata, and answer the following questions:
+
+\begin{enumerate}
+	
+\item How many observations are in the data set?
+
+\item The variable \texttt{act\_any} is a dummy for assignment to any treatment (positive subsidy) What is the mean of the variable \texttt{act\_any} (to three decimal places)?
+
+\item How many people received a positive subsidy?
+
+\item The variable \texttt{c\_act} is a dummy for using ACT treatment during a malaria episode.  
+What is the standard deviation of the variable \texttt{c\_act}?
+
+\item How many respondents report using ACT treatment for malaria?
+
+\item Regress \texttt{c\_act} on \texttt{act\_any}.  What is the R-squared?
+
+\item What is the coefficient associated with the \texttt{act\_any} variable?
+
+\item What is the associated standard error?
+
+\item What do you get when you divide the coefficient by the standard error?
+
+\item What is the t-statistic associated with the \texttt{act\_any} variable?
+
+\end{enumerate}
+
+
+\end{document}
