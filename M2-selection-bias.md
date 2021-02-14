@@ -3,7 +3,9 @@
 <br>
 
 ### Overview  
-This module introduces the **potential outcomes** framework that we'll use throughout the course as well as the concept of **selection bias** before explaining how average treatment effects can be estimated when treatment status is randomly assigned. 
+This module introduces the **potential outcomes** framework that we'll use throughout the course as well as the concept of **selection bias** before explaining how average treatment effects can be estimated when treatment status is randomly assigned.  
+
+_This module includes one reading, XX video lectures, and an empirical exercise._
 
 <br>
 
@@ -36,19 +38,16 @@ This module introduces the **potential outcomes** framework that we'll use throu
 
 ### Empirical Exercise
 
-The Stata do file `S2.do` uses Stata's `rnormal()` command to generate draws from a normally-distributed random variable using the following code:
+In this exercise, we'll use Stata's `rnormal()` command to generate draws from a normally-distributed random variable.  This approach - simulating data 
+according to a known data-generating process - is an incredibly useful tool in empirical microeconomics (both for checking your econometric intuitions and 
+your anlayis code).    
 
-```
-clear
-set seed 1234
-local myobs = 10
-set obs `myobs'
-gen y = rnormal()
-```
+We'll use "locals" (also know as "local macros") to easily change the number of observations and other parameters of our data set.  This will allow us to 
+explore the way the properties of randomly-assigned treatment groups in larger and smaller samples.  
 
-In the third line, we define a local, `myobs`, and in the next line, we use that local to set the number of observations in the data set.  Since we are starting with an empty data set, these observations are blank - we haven't defined any variables yet.  
+This exercise introduces a range of practical coding tools:  `rnormal()`, locals, and the `return list` and `display` commands.  By varying the sample size, we'll build a better understanding of the role that the Law of large Numbers plays in randomized evaluations.  
 
-In the last line, we use `rnormal()` to create a variable that is normally distributed (with mean 0 and SD 1).  Each of the ten observations has a different value of `y`, but if you plot these values, you will see that they represent draws from a standard normal.
+You can download the activity as a [do](https://pjakiela.github.io/ECON379/exercises/E2-selection-bias/E2-questions.do) file or a [pdf](https://pjakiela.github.io/ECON379/exercises/E2-selection-bias/E2-questions.pdf).
 
 <br>
 
