@@ -1,0 +1,117 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[table]{xcolor}
+
+\addtolength{\oddsidemargin}{-.5in}
+\addtolength{\evensidemargin}{-.5in}
+\addtolength{\textwidth}{1.0in}
+
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+\def\urltilda{\kern -.15em\lower .7ex\hbox{\~{}}\kern .04em}
+
+\begin{document}
+
+\begin{center}
+
+\textbf{\large{ECON 379:  Program Evaluation for International Development}} \\
+
+\bigskip
+
+\textbf{\large{Empirical Exercise \#2}} \\ 
+Due 3/2 by 11:30 AM 
+
+\end{center}
+
+\bigskip
+
+\bigskip
+
+In this exercise, we’ll use Stata’s \texttt{rnormal()} command to generate draws from a normally-distributed random variable. This approach -- simulating data according to a known data-generating process -- is an incredibly useful tool in empirical microeconomics (both for checking your econometric intuitions and your anlayis code).
+
+\bigskip
+
+We’ll use ``locals'' (also know as ``local macros'') to easily change the number of observations and other parameters of our data set. This will allow us to explore the way the properties of randomly-assigned treatment groups in larger and smaller samples.
+
+\bigskip
+
+This exercise introduces a range of practical coding tools: \texttt{rnormal()}, locals, and the \texttt{return list} and \texttt{display} commands. By varying the sample size, we’ll build a better understanding of the role that the Law of large Numbers plays in randomized evaluations.
+
+\bigskip
+
+Create a do file containing the code below, and then use/modify it to answer the questions on the next page:
+
+\begin{verbatim}
+// PRELIMINARIES
+
+** start with a clean workspace
+clear all
+set more off // setting more off prevents your code from stopping halfway through
+set seed 12345 // setting the seed makes pseudo-random draws replicable
+set scheme s1mono // the scheme is only relevant when making graphs/figures
+version 16.1 // make sure you use a specific version of Stata (for replicability)
+
+** change working directory as appropriate to where you want to save
+cd "C:\Users\pj\Dropbox\econ379-2021\exercises\E2-selection-bias"
+
+** save your do file to a local directory no (do this by hand, not in code)
+
+
+// GENERATE A DATA SET
+
+** define a local that we'll use to indicate the number of observations
+local myobs = 10
+
+** use the localto create an empty data set with N=myobs rows
+set obs `myobs'
+
+** define some variables
+gen y = rnormal()
+gen z = 5*rnormal() + 10
+
+** assign half the variables (observations 1 through N/2) to treatment
+count
+return list // this shows you all the local macros saved by your last command
+local cutoff = (r(N)/1)/2
+gen treatment = 1 in 1/`cutoff'
+replace treatment = 0 if treatment==.
+\end{verbatim}
+
+\bigskip
+
+\noindent
+Use the code above to help you answer the following questions:
+
+
+\begin{enumerate}
+	
+\item How many observations are in the data set?
+
+\item The variable \texttt{act\_any} is a dummy for assignment to any treatment (positive subsidy) What is the mean of the variable \texttt{act\_any} (to three decimal places)?
+
+\item How many people received a positive subsidy?
+
+\item The variable \texttt{c\_act} is a dummy for using ACT treatment during a malaria episode.  
+What is the standard deviation of the variable \texttt{c\_act}?
+
+\item How many respondents report using ACT treatment for malaria?
+
+\item Regress \texttt{c\_act} on \texttt{act\_any}.  What is the R-squared?
+
+\item What is the coefficient associated with the \texttt{act\_any} variable?
+
+\item What is the associated standard error?
+
+\item What do you get when you divide the coefficient by the standard error?
+
+\item What is the t-statistic associated with the \texttt{act\_any} variable?
+
+\end{enumerate}
+
+
+\end{document}
