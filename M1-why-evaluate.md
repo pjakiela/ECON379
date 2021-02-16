@@ -5,7 +5,7 @@
 ### Overview  
 This module introduces the concept of **impact evaluation** and discusses the ways that impact evaluation is different from other monitoring and evaluation activities.  The video lecture provides an introduction to the use of randomized trials in the evaluation of anti-poverty interventions.  The empirical exercise is a gentle Stata warm-up.  
 
-_This module contains one reading, a video (guest) lecture (approximately 15 minutes), slides for in-class discussion, and an empirical exercise.
+_This module contains one reading, a video (guest) lecture (approximately 15 minutes), slides for in-class discussion, and an empirical exercise._  
 
 <br>
 
