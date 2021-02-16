@@ -66,7 +66,7 @@ Lecture 2.3 [A Short History of Randomized Experiments](https://vimeo.com/512975
 
 <br>
 
-Lecture 2.4 [Analysis of Randomized Experiments in Stata (Part 1 of Infinity)](https://vimeo.com/512992481) (8:32)  
+Lecture 2.4 [Analysis of Randomized Experiments](https://vimeo.com/512992481) (8:32)  
 
 <details><summary>Review Questions</summary>
   <br>
