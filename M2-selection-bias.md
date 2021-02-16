@@ -86,7 +86,7 @@ Lecture 2.4 Analysis of Randomized Experiments in Stata (8:32)
 
 [Do Conditional Cash Transfers Improve Child Health? Evidence from PROGRESA's Control Randomized Experiment](https://www.aeaweb.org/articles?id=10.1257/0002828041302109) by Paul Gertler
 
-[Worms:  Identifying Impacts on Education and Health in the Presence of Treatment Externalities](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1468-0262.2004.00481.x) byt Edward Miguel and Michael Kremer
+[Worms:  Identifying Impacts on Education and Health in the Presence of Treatment Externalities](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1468-0262.2004.00481.x) by Edward Miguel and Michael Kremer
 
 <br>
 
