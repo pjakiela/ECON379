@@ -3,7 +3,9 @@
 <br>
 
 ### Overview  
-This module introduces the concept of **impact evaluation** and discusses the ways that impact evaluation is different from other monitoring and evaluation activities.  The video lecture provides an introduction to the use of randomized trials in the evaluation of anti-poverty interventions.  The empirical exercise is a gentle Stata warm-up.
+This module introduces the concept of **impact evaluation** and discusses the ways that impact evaluation is different from other monitoring and evaluation activities.  The video lecture provides an introduction to the use of randomized trials in the evaluation of anti-poverty interventions.  The empirical exercise is a gentle Stata warm-up.  
+
+_This module contains one reading, a video (guest) lecture (approximately 15 minutes), slides for in-class discussion, and an empirical exercise.
 
 <br>
 
@@ -53,6 +55,8 @@ The aim of this empirical exercise is to review key Stata commands.  You can dow
 ### Further Reading
 
 [The Poverty Lab](https://www.newyorker.com/magazine/2010/05/17/the-poverty-lab) (A _New Yorker_ profile of Esther Duflo, from 2010)  
+
+[A Nobel Prize for the Randomistas](https://www.cgdev.org/blog/nobel-prize-randomistas) (a Center for Global Development blog post by me)
 
 [Interview: MIT Economists Esther Duflo and Abhijit Banerjee](http://philanthropyaction.com/articles/interview_mit_economists_esther_duflo_and_abhijit_banerjee/)  
 
