@@ -45,6 +45,10 @@ _Impact Evaluation in Practice_: Chapters 1 and 2
 
 <br>
 
+### Slides for Class Discussion
+
+[Will be posted here whenever I finish them](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=video&cd=&cad=rja&uact=8&ved=2ahUKEwit78e13e7uAhXPG80KHdZbA6IQtwIwAHoECAUQAg&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D3MDYTkdVT8M&usg=AOvVaw0aWKndN4fLjq6pECeBoCg8)
+
 ### Empirical Exercise
 This exercise makes use of the data set [E1-CohenEtAl-data.dta](https://pjakiela.github.io/ECON379/exercises/E1-intro/E1-CohenEtAl-data.dta), a subset of the data used in the paper [Price Subsidies, Diagnostic Tests, and Targeting of Malaria Treatment: Evidence from a Randomized Controlled Trial](https://www.aeaweb.org/articles?id=10.1257/aer.20130267) by Jessica Cohen, Pascaline Dupas, and Simone Schaner, published in the _American Economic Review_ in 2015.  The authors examine behavioral responses to various discounts ("subsidies") for malaria treatment, called "artemisinin combination therapy" or "ACT."
 
@@ -56,11 +60,11 @@ The aim of this empirical exercise is to review key Stata commands.  You can dow
 
 [The Poverty Lab](https://www.newyorker.com/magazine/2010/05/17/the-poverty-lab) (A _New Yorker_ profile of Esther Duflo, from 2010)  
 
-[A Nobel Prize for the Randomistas](https://www.cgdev.org/blog/nobel-prize-randomistas) (a Center for Global Development blog post by me)
+[A Nobel Prize for the Randomistas](https://www.cgdev.org/blog/nobel-prize-randomistas) (a Center for Global Development blog post by me)  
 
 [Interview: MIT Economists Esther Duflo and Abhijit Banerjee](http://philanthropyaction.com/articles/interview_mit_economists_esther_duflo_and_abhijit_banerjee/)  
 
-[Experimental Conversations](https://www.econ-versations.com/)  
+[Experimental Conversations](https://www.econ-versations.com/) by Timothy Ogden  
 
 <br>
 
