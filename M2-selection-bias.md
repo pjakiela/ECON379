@@ -38,6 +38,17 @@ _This module includes one reading, XX video lectures, and an empirical exercise.
   
 <br>
 
+Lecture 2.2  
+
+Lecture 2.3  
+
+#### Referenced in the Lectures
+
+[_The Design of Experiments_, Chapter 2](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjzkKfKr-7uAhWkB50JHTs7BfoQFjADegQIAhAC&url=https%3A%2F%2Fmimno.infosci.cornell.edu%2Finfo3350%2Freadings%2Ffisher.pdf&usg=AOvVaw3PD-Tt-WKw8_2oE_GqJOZl)  
+
+[The Entry of Randomized Assignment into the Social Sciences](https://www.degruyter.com/document/doi/10.1515/jci-2017-0025/html) by Julian Jamison  
+
+
 ### Empirical Exercise
 
 In this exercise, we'll use Stata's `rnormal()` command to generate draws from a normally-distributed random variable.  This approach - simulating data 
