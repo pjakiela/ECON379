@@ -5,7 +5,7 @@
 ### Overview  
 This module introduces the **potential outcomes** framework that we'll use throughout the course as well as the concept of **selection bias** before explaining how average treatment effects can be estimated when treatment status is randomly assigned.  
 
-_This module includes one reading, four video lectures (approximately 70 minutes total), and an empirical exercise._
+_This module includes one reading, four video lectures (approximately 75 minutes total), and an empirical exercise._
 
 <br>
 
@@ -109,3 +109,11 @@ You can download the activity as a [do](https://pjakiela.github.io/ECON379/exerc
 
 #### More Recent Evidence on Health Insurance
 [Health Insurance and Mortality: Experimental Evidence from Taxpayer Outreach](https://academic.oup.com/qje/article/136/1/1/5911132?login=true)  
+
+#### On the "Credibility" Revolution in Empirical Microeconomics
+
+[The Credibility Revolution in Empirical Economics: How Better Research Design Is Taking the Con out of Econometrics](https://www.aeaweb.org/articles?id=10.1257/jep.24.2.3) by Joshua D. Angrist and Jörn-Steffen Pischke
+
+[Better LATE Than Nothing: Some Comments on Deaton (2009) and Heckman and Urzua (2009)](https://www.aeaweb.org/articles?id=10.1257/jel.48.2.399) by Guido Imbens
+
+
