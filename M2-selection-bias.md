@@ -27,7 +27,7 @@ _This module includes one reading, four video lectures (approximately 75 minutes
 
 ### Video Lectures  
 
-[Lecture 2.1 The Potential Outcomes Framework](https://vimeo.com/512774637) (26:44)
+[Lecture 2.1 The Potential Outcomes Framework](https://vimeo.com/512774637) (26:44)  
 
 <details><summary>Review Questions</summary>
   <br>
@@ -40,7 +40,7 @@ _This module includes one reading, four video lectures (approximately 75 minutes
   
 <br>
 
-Lecture 2.2 The Experimental Ideal (13:16)
+Lecture 2.2 [The Experimental Ideal](https://vimeo.com/512966906) (13:17)  
 
 <details><summary>Review Questions</summary>
   <br>
@@ -53,7 +53,7 @@ Lecture 2.2 The Experimental Ideal (13:16)
 
 <br>
 
-Lecture 2.3 A Short History of Randomized Experiments (27:35)
+Lecture 2.3 [A Short History of Randomized Experiments](https://vimeo.com/512975354) (27:35)  
 
 <details><summary>Review Questions</summary>
   <br>
@@ -66,7 +66,7 @@ Lecture 2.3 A Short History of Randomized Experiments (27:35)
 
 <br>
 
-Lecture 2.4 Analysis of Randomized Experiments in Stata (8:32)  
+Lecture 2.4 [Analysis of Randomized Experiments in Stata (Part 1 of Infinity)](https://vimeo.com/512992481) (8:32)  
 
 <details><summary>Review Questions</summary>
   <br>
