@@ -5,7 +5,7 @@
 ### Overview  
 This module introduces the **potential outcomes** framework that we'll use throughout the course as well as the concept of **selection bias** before explaining how average treatment effects can be estimated when treatment status is randomly assigned.  
 
-_This module includes one reading, XX video lectures, and an empirical exercise._
+_This module includes one reading, four video lectures (approximately 70 minutes total), and an empirical exercise._
 
 <br>
 
@@ -27,22 +27,38 @@ _This module includes one reading, XX video lectures, and an empirical exercise.
 
 ### Video Lectures  
 
-[Lecture 2.1 The Potential Outcomes Framework](https://vimeo.com/512774637)
+[Lecture 2.1 The Potential Outcomes Framework](https://vimeo.com/512774637) (26:44)
 
 <details><summary>Review Questions</summary>
   <br>
   <ol>
   <li>What is the fundamental problem of causal inference?</li>
+  <li>What are potential outcomes, and how do they create a missing data problem in program evaluation?</li>
+  <li>What is selection bias?  When and why is it likely to bias estimates of program impacts?</li>
   </ol>
 </details>
   
 <br>
 
-Lecture 2.2  
+Lecture 2.2 The Experimental Ideal (14:44)
+
+<details><summary>Review Questions</summary>
+  <br>
+  <ol>
+  <li>How can random assignment eliminate selection bias?</li>
+  <li>What is the Law of Large Numbers, and why is it important in randomized experiments?</li>
+  <li>What is selection bias?  When and why is it likely to bias estimates of program impacts?</li>
+  <li>How can we estimate the impacts of a program when treatment assignments are randomized?</li>
+  </ol>
+</details>
 
 <br>
 
-Lecture 2.3  
+Lecture 2.3 A Short History of Randomized Experiments (27:35)
+
+<br>
+
+Lecture 2.4 Regression Analysis of Randomized Experiments
 
 <br>
 
