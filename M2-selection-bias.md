@@ -47,8 +47,7 @@ Lecture 2.2 The Experimental Ideal (14:44)
   <ol>
   <li>How can random assignment eliminate selection bias?</li>
   <li>What is the Law of Large Numbers, and why is it important in randomized experiments?</li>
-  <li>What is selection bias?  When and why is it likely to bias estimates of program impacts?</li>
-  <li>How can we estimate the impacts of a program when treatment assignments are randomized?</li>
+  <li>How can we estimate the causal impacts of a program when treatment assignments are randomized?</li>
   </ol>
 </details>
 
@@ -56,17 +55,38 @@ Lecture 2.2 The Experimental Ideal (14:44)
 
 Lecture 2.3 A Short History of Randomized Experiments (27:35)
 
+<details><summary>Review Questions</summary>
+  <br>
+  <ol>
+  <li>Who was Ronald Fisher, and how did he contribute to the development of randomized experiments?</li>
+  <li>When were randomized trials first used in medicine?  When were they first used in the social sciences?</li>
+  <li>What were the first randomized evaluations used in the international development context?</li>
+  </ol>
+</details>
+
 <br>
 
-Lecture 2.4 Regression Analysis of Randomized Experiments
+Lecture 2.4 Analysis of Randomized Experiments in Stata (8:32)  
 
+<details><summary>Review Questions</summary>
+  <br>
+  <ol>
+  <li>When treatment is randomly assigned, how can we test the null hypothesis thta the average treatment effect is equal to zero?</li>
+  <li>How can linear regression be used to analyze data from randomized experiments?</li>
+  </ol>
+</details>
+ 
 <br>
 
 #### Referenced in the Lectures
 
 [_The Design of Experiments_, Chapter 2](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjzkKfKr-7uAhWkB50JHTs7BfoQFjADegQIAhAC&url=https%3A%2F%2Fmimno.infosci.cornell.edu%2Finfo3350%2Freadings%2Ffisher.pdf&usg=AOvVaw3PD-Tt-WKw8_2oE_GqJOZl)  
 
-[The Entry of Randomized Assignment into the Social Sciences](https://www.degruyter.com/document/doi/10.1515/jci-2017-0025/html) by Julian Jamison  
+[The Entry of Randomized Assignment into the Social Sciences](https://www.degruyter.com/document/doi/10.1515/jci-2017-0025/html) by Julian Jamison 
+
+[Do Conditional Cash Transfers Improve Child Health? Evidence from PROGRESA's Control Randomized Experiment](https://www.aeaweb.org/articles?id=10.1257/0002828041302109) by Paul Gertler
+
+[Worms:  Identifying Impacts on Education and Health in the Presence of Treatment Externalities](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1468-0262.2004.00481.x) byt Edward Miguel and Michael Kremer
 
 <br>
 
