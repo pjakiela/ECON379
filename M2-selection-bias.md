@@ -40,7 +40,11 @@ _This module includes one reading, XX video lectures, and an empirical exercise.
 
 Lecture 2.2  
 
+<br>
+
 Lecture 2.3  
+
+<br>
 
 #### Referenced in the Lectures
 
@@ -48,6 +52,7 @@ Lecture 2.3
 
 [The Entry of Randomized Assignment into the Social Sciences](https://www.degruyter.com/document/doi/10.1515/jci-2017-0025/html) by Julian Jamison  
 
+<br>
 
 ### Empirical Exercise
 
