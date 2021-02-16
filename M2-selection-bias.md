@@ -27,10 +27,12 @@ _This module includes one reading, XX video lectures, and an empirical exercise.
 
 ### Video Lectures  
 
+[Lecture 2.1 The Potential Outcomes Framework](https://vimeo.com/512774637)
+
 <details><summary>Review Questions</summary>
   <br>
   <ol>
-  <li>Insert review questions here.</li>
+  <li>What is the fundamental problem of causal inference?</li>
   </ol>
 </details>
   
