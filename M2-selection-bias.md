@@ -40,7 +40,7 @@ _This module includes one reading, four video lectures (approximately 75 minutes
   
 <br>
 
-Lecture 2.2 The Experimental Ideal (14:44)
+Lecture 2.2 The Experimental Ideal (13:16)
 
 <details><summary>Review Questions</summary>
   <br>
