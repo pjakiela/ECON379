@@ -10,7 +10,9 @@ Module 1:  Why Evaluate?
 #### Identification Strategies  
 
 Module 2:  Selection Bias and the Experimental Ideal  
-[pdf](https://pjakiela.github.io/ECON379/lectures/L2-selection-bias/ECON379-L2-Selection-Bias-PUBLIC.pdf) [tex etc](https://pjakiela.github.io/ECON379/lectures/L2-selection-bias/)  
+[pdf](https://pjakiela.github.io/ECON379/lectures/L2-selection-bias/ECON379-L2-Selection-Bias-PUBLIC.pdf) 
+[tex](https://pjakiela.github.io/ECON379/lectures/L2-selection-bias/ECON379-L2-Selection-Bias-PUBLIC.tex) 
+[materials](https://pjakiela.github.io/ECON379/lectures/L2-selection-bias/)  
 
 Module 3:  False Counterfactuals  
 
