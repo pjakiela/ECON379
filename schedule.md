@@ -1,4 +1,4 @@
-## Course Schedule (Tentative)
+## Course Schedule 
 
 ### Introduction
 
@@ -14,7 +14,7 @@ February 17: Introduction
 
 March 4: Difference-in-Differences (DD I)
 
-March 9: Testing Common Trends (DD II)
+March 9: Diff-in-Diff in a Regression Framework (DD II)
 
 March 11: Two-Way Fixed Effects (DD III)
 
@@ -38,9 +38,9 @@ April 8: Random Assignment in Practice
 
 April 13: Compliance and Attrition 
 
-April 15: Survey Design and Data Collection
+April 15: Survey Design
 
-April 20: Data Collection Horror Stories
+April 20: Adventures in Data Collection
 
 April 22: health days (no class)
 
