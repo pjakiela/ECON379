@@ -2,8 +2,7 @@
 
 <br>
 
-_These are the assigned readings for Professor Pamela Jakiela's undergraduate course **Program Evaluation for International Development**.  This site is a work-in-progress:  I will be making 
-new readings over the course of the semester._  
+_These are the assigned readings for Professor Pamela Jakiela's undergraduate course **Program Evaluation for International Development**.  This site is a work-in-progress:  I will be posting new lectures over the course of the semester._  
 
 <br>
 
