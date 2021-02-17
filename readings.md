@@ -25,17 +25,19 @@ _Available for free on JSTOR (to those with JSTOR access)_
 
 ### Part 0. Introduction  
 
-##### Module 1:  Why Evaluate?  
+#### Module 1:  Why Evaluate?  
 
 _Impact Evaluation in Practice_: Chapters 1 and 2  
 
+<br>
+
 ### Part I. Identification Strategies  
 
-##### Module 2:  Selection Bias and the Experimental Ideal  
+#### Module 2:  Selection Bias and the Experimental Ideal  
 
 [_Mastering Metrics: Chapter 1_](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjE2pfw-JjuAhUBZc0KHQo1DnoQFjAAegQIBhAC&url=http%3A%2F%2Fassets.press.princeton.edu%2Fchapters%2Fs10363.pdf&usg=AOvVaw3IGywrUpw1_F9e5npteATA)
 
-##### Module 3:  False Counterfactuals  
+#### Module 3:  False Counterfactuals  
 
 _Impact Evaluation in Practice_: Chapter 3  
 
@@ -49,11 +51,11 @@ assessment](http://wordpress.ei.columbia.edu/mdg-east/files/2013/02/Millennium-V
 
 [When Does Rigorous Impact Evaluation Make a Difference? The Case of the Millennium Villages](https://www.cgdev.org/publication/when-does-rigorous-impact-evaluation-make-difference-case-millennium-villages-working)  
 
-##### Module 4: Difference-in-Differences (DD I)  
+#### Module 4: Difference-in-Differences (DD I)  
 
 _Impact Evaluation in Practice_: Chapter 6  
 
-##### Module 5: Diff-in-Diff in a Regression Framework (DD II)   
+#### Module 5: Diff-in-Diff in a Regression Framework (DD II)   
 [Does a ban on informal health providers save lives? Evidence from Malawi](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4677333/)  
 
 Module 6: Two-Way Fixed Effects (DD III)  
@@ -66,7 +68,9 @@ Module 9: Regreression Discontinuity (RD I)
 
 Module 10: RD as IV (RD II)  
 
-#### Program Evaluation in Practice  
+<br>
+
+### Part II. Program Evaluation in Practice  
 
 Module 11: Power Calculations  
 
@@ -78,7 +82,9 @@ Module 14: Survey Design
 
 Module 15: Adventures in Data Collection  
 
-#### Galaxy Brain Topics  
+<br>
+
+### Part III. Galaxy Brain Topics  
 
 Module 16: Pre-Analysis Plans  
 
