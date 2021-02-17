@@ -1,7 +1,13 @@
-## Readings
+# Readings
 
-_These are the assigned readings for Professor Pamela Jakiela's undergraduate course *Program Evaluation for International Development*.  This site is a work-in-progress:  I will be making 
+<br>
+
+_These are the assigned readings for Professor Pamela Jakiela's undergraduate course **Program Evaluation for International Development**.  This site is a work-in-progress:  I will be making 
 new readings over the course of the semester._  
+
+<br>
+
+### Textbooks  
 
 There are three textbooks for the course:  
 
@@ -15,19 +21,21 @@ _Available for free on JSTOR (to those with JSTOR access)_
 
 [_Mastering Metrics_](https://www.masteringmetrics.com/) (optional)
 
-#### Introduction  
+<br>
 
-*Module 1:  Why Evaluate?*  
+### Part 0. Introduction  
 
-_Impact Evaluation in Practice_: Chapters 1 and 2
+##### Module 1:  Why Evaluate?  
 
-#### Identification Strategies  
+_Impact Evaluation in Practice_: Chapters 1 and 2  
 
-*Module 2:  Selection Bias and the Experimental Ideal* 
+### Part I. Identification Strategies  
+
+##### Module 2:  Selection Bias and the Experimental Ideal  
 
 [_Mastering Metrics: Chapter 1_](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjE2pfw-JjuAhUBZc0KHQo1DnoQFjAAegQIBhAC&url=http%3A%2F%2Fassets.press.princeton.edu%2Fchapters%2Fs10363.pdf&usg=AOvVaw3IGywrUpw1_F9e5npteATA)
 
-*Module 3:  False Counterfactuals*  
+##### Module 3:  False Counterfactuals  
 
 _Impact Evaluation in Practice_: Chapter 3  
 
@@ -41,11 +49,11 @@ assessment](http://wordpress.ei.columbia.edu/mdg-east/files/2013/02/Millennium-V
 
 [When Does Rigorous Impact Evaluation Make a Difference? The Case of the Millennium Villages](https://www.cgdev.org/publication/when-does-rigorous-impact-evaluation-make-difference-case-millennium-villages-working)  
 
-*Module 4: Difference-in-Differences (DD I)*  
+##### Module 4: Difference-in-Differences (DD I)  
 
 _Impact Evaluation in Practice_: Chapter 6  
 
-*Module 5: Diff-in-Diff in a Regression Framework (DD II)*  
+##### Module 5: Diff-in-Diff in a Regression Framework (DD II)   
 [Does a ban on informal health providers save lives? Evidence from Malawi](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4677333/)  
 
 Module 6: Two-Way Fixed Effects (DD III)  
