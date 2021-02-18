@@ -31,7 +31,7 @@ Module 7: Treatment-on-the-Treated (IV I)
 
 Module 8: Instrumental Variables in the Wild (IV II)  
 
-Module 9: Regreression Discontinuity (RD I)  
+Module 9: Regression Discontinuity (RD I)  
 
 Module 10: RD as IV (RD II)  
 
