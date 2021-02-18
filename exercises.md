@@ -18,7 +18,7 @@ Module 1:  Why Evaluate?
 
 ### Part I. Identification Strategies  
 
-#### Module 2:  Selection Bias and the Experimental Ideal 
+Module 2:  Selection Bias and the Experimental Ideal &nbsp; 
 [do](https://pjakiela.github.io/ECON379/exercises/E2-selection-bias/E1-questions.do) &nbsp; 
 [pdf](https://pjakiela.github.io/ECON379/exercises/E2-selection-bias/E1-questions.pdf) &nbsp; 
 [all](https://github.com/pjakiela/ECON379/tree/gh-pages/exercises/E2-selection-bias/)  
