@@ -24,7 +24,7 @@ March 18: Instrumental Variables in the Wild (IV II)
 
 March 23: reading period (no class)
 
-March 25: Regreression Discontinuity (RD I)
+March 25: Regression Discontinuity (RD I)
 
 March 30: RD as IV (RD II)
 
