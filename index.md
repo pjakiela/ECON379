@@ -12,7 +12,7 @@ _This is the website for Professor Pamela Jakiela's ECON 379/523 at Williams Col
 
 <br>
 
-## Course Materials
+## Course Materials:
 
 [Schedule of course modules](https://pjakiela.github.io/ECON379/schedule.html)  
 
