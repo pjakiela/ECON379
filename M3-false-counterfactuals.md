@@ -5,7 +5,7 @@
 ### Overview  
 This module reviews the weaknesses of the two **false counterfactual** identification strategies:  pre vs. post designs and participant vs. non-participant comparisons.  We review these issues through a case study of the Millennium Villages Project.
 
-_This module contains XX minutes of video lecture and three reading assignments (one of which includes a paper and two subsequent comments)._  
+_This module contains 29 minutes of video lecture and three reading assignments (one of which includes a paper and two subsequent comments)._  
 
 <br>
 
@@ -77,12 +77,11 @@ Note:  the link _should_ take you to the original published version; the [versio
 <br>
 
 ### Empirical Exercise
-Let's open stata.
+_Coming soon!_
 
 <br>
 
 ### Further Reading
-
 
 <br>
 
