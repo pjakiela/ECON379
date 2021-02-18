@@ -82,7 +82,7 @@ Lecture 2.4 [Analysis of Randomized Experiments](https://vimeo.com/512992481) (8
 
 [A handout version of the lecture slides is available here.](https://pjakiela.github.io/ECON379/lectures/L2-selection-bias/ECON379-L2-Selection-Bias-PUBLIC.pdf)  
 
-If you wish to use these slides for teaching, the underlying beamer files and supporting materials are [here](https://pjakiela.github.io/ECON379/lectures/L2-selection-bias/).
+If you wish to use these slides for teaching, the underlying beamer files and supporting materials are [here](https://github.com/pjakiela/ECON379/tree/gh-pages/lectures/L2-selection-bias/).
 
 <br>
 
