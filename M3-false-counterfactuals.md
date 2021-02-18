@@ -63,12 +63,14 @@ Note:  the link _should_ take you to the original published version; the [versio
 <br>
 
 ### Video Lectures  
-[Video Lecture](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjvmLvRiL3uAhVTCc0KHWujCrMQtwIwBHoECAYQAg&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DX8nRpGHUzFc&usg=AOvVaw2cQQpYHbubf5bzPpmh1Rcq) 
+[Video Lecture 3 False Counterfactuals (plus some extra math for fun)](https://vimeo.com/514022439) 
 
 <details><summary>Review Questions</summary>
   <br>
   <ol>
-  <li>Insert review questions here. </li>
+  <li>What are the two false counterfactuals?  What is the likely source of bias in each one? </li>
+  <li>What are the two ways that you can use Stata to test whether the mean of a single variable differs between two groups? </li>
+  <li>When you regress an outcome variable on (nothing but) a single dummy variable and a constant, how do the estimated regression coefficients relate to the means of the groups defined by the dummy variable? </li>
   </ol>
 </details>
 
