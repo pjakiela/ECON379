@@ -9,8 +9,7 @@ site is a work-in-progress:  I will be adding new exercises over the course of t
 
 ### Part 0. Introduction  
 
-#### Module 1:  Why Evaluate?  
-
+#### Module 1:  Why Evaluate? 
 [do](https://pjakiela.github.io/ECON379/exercises/E1-intro/E1-questions.do) &nbsp; 
 [pdf](https://pjakiela.github.io/ECON379/exercises/E1-intro/E1-questions.pdf) &nbsp; 
 [all](https://github.com/pjakiela/ECON379/tree/gh-pages/exercises/E1-intro/)  
@@ -20,7 +19,6 @@ site is a work-in-progress:  I will be adding new exercises over the course of t
 ### Part I. Identification Strategies  
 
 #### Module 2:  Selection Bias and the Experimental Ideal 
-
 [do](https://pjakiela.github.io/ECON379/exercises/E2-selection-bias/E1-questions.do) &nbsp; 
 [pdf](https://pjakiela.github.io/ECON379/exercises/E2-selection-bias/E1-questions.pdf) &nbsp; 
 [all](https://github.com/pjakiela/ECON379/tree/gh-pages/exercises/E2-selection-bias/)  
