@@ -47,7 +47,7 @@ _Impact Evaluation in Practice_: Chapters 1 and 2
 
 ### Slides for Class Discussion
 
-[Will be posted here whenever I finish them](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=video&cd=&cad=rja&uact=8&ved=2ahUKEwit78e13e7uAhXPG80KHdZbA6IQtwIwAHoECAUQAg&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D3MDYTkdVT8M&usg=AOvVaw0aWKndN4fLjq6pECeBoCg8)
+_Coming soon, I hope_
 
 <br>
 
