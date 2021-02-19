@@ -63,7 +63,7 @@ Note:  the link _should_ take you to the original published version; the [versio
 <br>
 
 ### Video Lectures  
-[Video Lecture 3 False Counterfactuals (plus some extra math for fun)](https://vimeo.com/514022439) (28:58)  
+[Lecture 3 False Counterfactuals (plus some extra math for fun)](https://vimeo.com/514022439) (28:58)  
 
 <details><summary>Review Questions</summary>
   <br>
