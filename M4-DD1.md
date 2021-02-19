@@ -31,6 +31,15 @@ _Impact Evaluation in Practice_: Chapters 1 and 2
 
 <br>
 
+
+#### Lecture Slides
+
+[A handout version of the lecture slides is available here.](https://pjakiela.github.io/ECON379/lectures/L4-DD1/ECON379-L4-DD1-PUBLIC.pdf)  
+
+If you wish to use these slides for teaching, the underlying beamer files and supporting materials are [here](https://github.com/pjakiela/ECON379/tree/gh-pages/lectures/L4-DD1/).
+
+<br>
+
 ### Empirical Exercise
 Let's open stata.
 
