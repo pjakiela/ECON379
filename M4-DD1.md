@@ -3,7 +3,7 @@
 <br>
 
 ### Overview  
-This module introduces the **difference-in-differences** identification strategy.  
+This module introduces the **difference-in-differences** identification strategy.  We review the basic setup and assumptions necessary for the diff-in-diff estimator to provide a valid estimate of causal impacts.  We also survey some of the seminal early applications of diff-in-diff estimation to social policy.   
 
 _This module includes one reading, four video lectures (approximately 62 minutes total), and an empirical exercise._
 
