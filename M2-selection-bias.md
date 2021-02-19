@@ -40,7 +40,7 @@ _This module includes one reading, four video lectures (approximately 75 minutes
   
 <br>
 
-Lecture 2.2 [The Experimental Ideal](https://vimeo.com/512966906) (13:17)  
+[Lecture 2.2 The Experimental Ideal](https://vimeo.com/512966906) (13:17)  
 
 <details><summary>Review Questions</summary>
   <br>
@@ -53,7 +53,7 @@ Lecture 2.2 [The Experimental Ideal](https://vimeo.com/512966906) (13:17)
 
 <br>
 
-Lecture 2.3 [A Short History of Randomized Experiments](https://vimeo.com/512975354) (27:35)  
+[Lecture 2.3 A Short History of Randomized Experiments](https://vimeo.com/512975354) (27:35)  
 
 <details><summary>Review Questions</summary>
   <br>
@@ -66,7 +66,7 @@ Lecture 2.3 [A Short History of Randomized Experiments](https://vimeo.com/512975
 
 <br>
 
-Lecture 2.4 [Analysis of Randomized Experiments](https://vimeo.com/512992481) (8:32)  
+[Lecture 2.4 Analysis of Randomized Experiments](https://vimeo.com/512992481) (8:32)  
 
 <details><summary>Review Questions</summary>
   <br>
