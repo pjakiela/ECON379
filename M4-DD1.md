@@ -1,9 +1,11 @@
-## Module 4: Difference-in-Differences Estimation
+# Module 4: Difference-in-Differences Estimation
 
 <br>
 
 ### Overview  
 This module introduces the **difference-in-differences** identification strategy.  
+
+_This module includes one reading, four video lectures (approximately 60 minutes total), and an empirical exercise._
 
 <br>
 
