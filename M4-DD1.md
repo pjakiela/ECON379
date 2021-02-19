@@ -38,8 +38,3 @@ Let's open stata.
 
 ### Further Reading
 
-
-<br>
-
-### Acknowledgments
-Special thanks to Patrick Blanchenay, Garret Christensen, Liz Cascio, Jess Goldberg, Guy Grossman, Kirabo Jackson, Michael Kevane, Scott Imberman, Manisha Shah, and Mike Urbancic for their diff-in-diff suggestions.
