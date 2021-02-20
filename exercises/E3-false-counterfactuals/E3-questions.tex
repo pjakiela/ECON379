@@ -1,0 +1,152 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[table]{xcolor}
+
+\addtolength{\oddsidemargin}{-.5in}
+\addtolength{\evensidemargin}{-.5in}
+\addtolength{\textwidth}{1.0in}
+
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+\def\urltilda{\kern -.15em\lower .7ex\hbox{\~{}}\kern .04em}
+
+\begin{document}
+
+\begin{center}
+
+\textbf{\large{ECON 379:  Program Evaluation for International Development}} \\
+
+\bigskip
+
+\textbf{\large{Empirical Exercise \#3}} \\ 
+Due 3/4 by 11:30 AM 
+
+\end{center}
+
+\bigskip
+
+\bigskip
+
+In this exercise, we will use the same data set as in Exercise 1, 
+\texttt{E1-CohenEtAl-data.dta}, which is a subset of the data used in the paper 
+``Price Subsidies, Diagnostic Tests, and Targeting of Malaria Treatment: 
+Evidence from a Randomized Controlled Trial'' by Jessica Cohen, Pascaline 
+Dupas, and Simone Schaner, published in the \emph{American Economic Review} in 2015. 
+
+\bigskip 
+
+In this exercise, we'll look at the way beliefs about how malaria is 
+transmitted differ across households.  We'll review Stata's \texttt{generate} and \texttt{egen} commands, 
+and we'll also practice applying the concepts covered in lecture and the 
+readings, testing the equality of means across two groups using several 
+different methods.
+
+\bigskip
+
+Create a do file containing the code below, and then use/modify it to answer the questions beginning at the bottom of the page:
+
+\begin{verbatim}
+// LOAD DATA
+
+clear all 
+set scheme s1mono 
+set more off
+set seed 314159
+version 16.1
+
+** change working directory as appropriate to where you want to save
+cd "C:\Users\pj\Dropbox\econ379-2021\exercises\E3-false-counterfactuals"
+
+** load the data from the course website
+webuse set https://pjakiela.github.io/ECON379/exercises/E1-intro/
+webuse E1-CohenEtAl-data.dta
+
+** save the data locally (and then stop and save the do file as well)
+save E3-CohenEtAl-raw-data, replace
+\end{verbatim}
+
+\bigskip
+
+\noindent
+Use the code above to help you answer the following questions:
+
+
+\begin{enumerate}
+	
+\item Summarize the \texttt{b\_h\_edu} variable using the sum command.  What is the median 
+	level of education among household heads in the sample?
+
+
+\item Generate a dummy variable \texttt{med\_edu}  for having at least the median level of
+	 education in the sample.  What is the mean of this dummy variable?
+
+
+\item The variable \texttt{b\_knowledge\_correct} is a dummy variable equal to one for 
+	if the respondent knows that malaria is transmitted by mosquitos.  
+	What proportion of respondents know how malaria is transmitted?
+
+
+\item What is the mean value of \texttt{b\_knowledge\_correct} among respondents who have 
+	at least 6 years of education (ie at least the median level of education)?
+
+
+\item The sum (or summarize) command tells you the standard deviation of the 
+	mean of the \texttt{b\_knowledge\_correct} variable in the set of observations 
+	with \texttt{med\_edu==1}, and it also tells you the number of observations with 
+	\texttt{med\_edu==1}.  Use (only) these two pieces of information to calculate 
+	the standard error (not the standard deviation) of the mean of the 
+	\texttt{b\_knowledge\_correct} variable in the set of observations with \texttt{med\_edu==1}.
+	What is this standard error?
+
+
+\item Now use the ttest command to test whether the mean of \texttt{b\_knowledge\_correct} 
+	is equal in the group with \texttt{med\_edu==1} and \texttt{med\_edu==0}.  Confirm that the 
+	standard error that you calculated in Question 5 is correct.  Does the 
+	mean value of \texttt{b\_knowledge\_correct} differ for respondents with above 
+	versus below median eduction?  What is the t-statistic associated with 
+	this hypothesis test?
+
+
+\item What is the standard error associated with the difference in means (of 
+	the \texttt{b\_knowledge\_correct} variable) between the \texttt{med\_edu==1} group and the 
+	\texttt{med\_edu==0} group?  Calculate this by hand and convince yourself that you 
+	could derive the same answer (up to rounding error) as the ttest command.
+
+
+\item Regress \texttt{b\_knowledge\_correct} on the continuous \texttt{b\_h\_edu} variable.  What is 
+	the OLS coefficient on \texttt{b\_h\_edu}?
+
+
+\item Generate a variable equal to the mean of \texttt{b\_h\_edu}.  What is this mean?
+
+
+\item Generate a variable equal to the difference between \texttt{b\_h\_edu} and its mean 
+	(so, the value of this variable will be different for difference 
+	observations). Call this variable \texttt{ed\_diff}. What is the mean of \texttt{ed\_diff}?
+
+
+\item Generate a variable \texttt{y\_times\_ed\_diff} equal to \texttt{b\_knowledge\_correct} time 
+	\texttt{ed\_diff}.  What is the mean of this variable?
+
+
+\item Generate another variable \texttt{ed\_diff\_square} equal to \texttt{ed\_diff*ed\_diff}.  What 
+	is the mean of this variable?
+
+
+\item What is the ratio of the mean of \texttt{y\_times\_ed\_diff} to the mean of 
+	\texttt{ed\_diff\_square}?  (Note that this is the same as the ratio of the *sum* 
+	of all the values of \texttt{y\_times\_ed\_diff} to the *sum* of all the values of 
+	\texttt{ed\_diff\_square}).
+
+
+\item This number was the answer to one of the first 13 questions -- which one?
+
+\end{enumerate}
+
+
+\end{document}
