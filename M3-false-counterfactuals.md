@@ -5,7 +5,7 @@
 ### Overview  
 This module reviews the weaknesses of the two **false counterfactual** identification strategies:  pre vs. post designs and participant vs. non-participant comparisons.  We review these issues through a case study of the Millennium Villages Project.
 
-_This module contains 29 minutes of video lecture and three reading assignments (one of which includes a paper and two subsequent comments)._  
+_This module contains three reading assignments (one of which includes a paper and two subsequent comments), 29 minutes of video lecture, and an empirical exercise._  
 
 <br>
 
@@ -77,7 +77,11 @@ Note:  the link _should_ take you to the original published version; the [versio
 <br>
 
 ### Empirical Exercise
-_Coming soon!_
+In this exercise, we will use the same data set as in Exercise 1, [E1-CohenEtAl-data.dta](https://pjakiela.github.io/ECON379/exercises/E1-intro/E1-CohenEtAl-data.dta), a subset of the data used in the paper [Price Subsidies, Diagnostic Tests, and Targeting of Malaria Treatment: Evidence from a Randomized Controlled Trial](https://www.aeaweb.org/articles?id=10.1257/aer.20130267) by Jessica Cohen, Pascaline Dupas, and Simone Schaner, published in the _American Economic Review_ in 2015.  
+
+In this exercise, we'll look at the way beliefs about how malaria is transmitted differ across households.  We'll review Stata's `generate` and `egen` commands, and we'll also practice applying the concepts covered in lecture and the readings, testing the equality of means across two groups using several different methods.  
+
+You can download the activity as a [do](https://pjakiela.github.io/ECON379/exercises/E3-false-counterfactuals/E3-questions.do) file or a [pdf](https://pjakiela.github.io/ECON379/exercises/E3-false-counterfactuals/E3-questions.pdf).
 
 <br>
 
