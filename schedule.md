@@ -1,4 +1,4 @@
-## Course Schedule 
+# Course Schedule 
 
 ### Introduction
 
