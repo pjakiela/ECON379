@@ -1,4 +1,4 @@
-# Module 4: Difference-in-Differences Estimation
+## Module 4: Difference-in-Differences Estimation
 
 <br>
 
