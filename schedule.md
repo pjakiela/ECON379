@@ -12,7 +12,7 @@ February 17: Introduction
 
 [March 2: False Counterfactuals](M3-false-counterfactuals.html)
 
-March 4: Difference-in-Differences (DD I)
+[March 4: Difference-in-Differences (DD I)](M4-DD1.html)
 
 March 9: Diff-in-Diff in a Regression Framework (DD II)
 
