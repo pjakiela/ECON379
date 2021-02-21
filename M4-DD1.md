@@ -25,7 +25,7 @@ _Impact Evaluation in Practice_: Chapter 7
 <br>
 
 ### Video Lectures  
-[Lectre 4.1 Intro to Difference-in-Differences Estimation](https://vimeo.com/514391221) (6:56)  
+[Lecture 4.1 Intro to Difference-in-Differences Estimation](https://vimeo.com/514391221) (6:56)  
 
 <details><summary>Review Questions</summary>
   <br>
@@ -39,7 +39,7 @@ _Impact Evaluation in Practice_: Chapter 7
 
 <br>
 
-[Lectre 4.2 Diff-in-Diff Pioneers](https://vimeo.com/514413880) (21:19)  
+[Lecture 4.2 Diff-in-Diff Pioneers](https://vimeo.com/514413880) (21:19)  
 
 <details><summary>Review Questions</summary>
   <br>
@@ -55,7 +55,7 @@ _Impact Evaluation in Practice_: Chapter 7
 
 <br>
 
-[Lectre 4.3 Identifying Assumptions for Diff-in-Diff Estimation](https://vimeo.com/514395275) (13:10)  
+[Lecture 4.3 Identifying Assumptions for Diff-in-Diff Estimation](https://vimeo.com/514395275) (13:10)  
 
 <details><summary>Review Questions</summary>
   <br>
@@ -69,7 +69,7 @@ _Impact Evaluation in Practice_: Chapter 7
 
 <br>
 
-[Lectre 4.4 Diff-in-Diff Examples](https://vimeo.com/514402706) (20:42)  
+[Lecture 4.4 Diff-in-Diff Examples](https://vimeo.com/514402706) (20:42)  
 
 <details><summary>Review Questions</summary>
   <br>
