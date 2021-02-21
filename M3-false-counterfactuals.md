@@ -1,4 +1,4 @@
-## Module 3: False Counterfactuals
+# Module 3: False Counterfactuals
 
 <br>
 
