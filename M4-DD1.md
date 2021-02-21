@@ -15,7 +15,10 @@ _Impact Evaluation in Practice_: Chapter 7
 <details><summary>Review Questions</summary>
   <br>
   <ol>
-  <li>Insert review questions here. </li>
+  <li>What is the difference-in-differences estimate of the treatment effect?  How is it constructed, and what must be measured in order to construct it?  </li>
+  <li>What counterfactual is used in diff-in-diff estimation, and what is used to estimate that counterfactual?  </li>
+  <li>What is the "equal trends" (or "common trends") assumption, and how might one test it? </li>
+  <li>How did Professor Esther Duflo test the equal trends assumption in her study of school construction in Indonesia? </li>
   </ol>
 </details>
 
@@ -30,7 +33,7 @@ _Impact Evaluation in Practice_: Chapter 7
   <li>What type of data is required for difference-in-differences estimation? </li>
   <li>How can difference-in-differences estimation overcome the problems (i.e. biases) inherent in each of the false counterfactuals? </li>
   <li>What are the four cell-level means required to calculate the difference-in-differences estimator? </li>
-  <li>Which of those four cells represents individuals/observations that have received treatment? </li>
+  <li> Which of those four cells represents individuals/observations that have received treatment? </li>
   </ol>
 </details>
 
