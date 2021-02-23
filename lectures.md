@@ -10,23 +10,29 @@ _These are the assigned readings for Professor Pamela Jakiela's undergraduate co
 
 #### Module 1:  Why Evaluate?  
 
-_No video lecture for this module.  Slides coming soon._
+_There is no video lecture for Module 1.  I use the slides below for class discussion._  
+  
+[pdf](https://pjakiela.github.io/ECON379/lectures/L1-why-evaluate/ECON379-L1-Why-Evaluate-PUBLIC.pdf) &nbsp; 
+[tex](https://pjakiela.github.io/ECON379/lectures/L1-why-evaluate/ECON379-L1-Why-Evaluate-PUBLIC.tex) &nbsp; 
+[materials](https://github.com/pjakiela/ECON379/tree/gh-pages/lectures/L1-why-evaluate/)  
 
 <br>
 
 ### Part I. Identification Strategies  
 
 #### Module 2:  Selection Bias and the Experimental Ideal  
-[Lecture 2.1 The Potential Outcomes Framework](https://vimeo.com/512774637) (26:44)  
-[Lecture 2.2 The Experimental Ideal](https://vimeo.com/512966906) (13:17)  
-[Lecture 2.3 A Short History of Randomized Experiments](https://vimeo.com/512975354) (27:35)  
-[Lecture 2.4 Analysis of Randomized Experiments](https://vimeo.com/512992481) (8:32)  
+[Video Lecture 2.1 The Potential Outcomes Framework](https://vimeo.com/512774637) (26:44)  
+[Video Lecture 2.2 The Experimental Ideal](https://vimeo.com/512966906) (13:17)  
+[Video Lecture 2.3 A Short History of Randomized Experiments](https://vimeo.com/512975354) (27:35)  
+[Video Lecture 2.4 Analysis of Randomized Experiments](https://vimeo.com/512992481) (8:32)  
+  
 [pdf](https://pjakiela.github.io/ECON379/lectures/L2-selection-bias/ECON379-L2-Selection-Bias-PUBLIC.pdf) &nbsp; 
 [tex](https://pjakiela.github.io/ECON379/lectures/L2-selection-bias/ECON379-L2-Selection-Bias-PUBLIC.tex) &nbsp; 
 [materials](https://github.com/pjakiela/ECON379/tree/gh-pages/lectures/L2-selection-bias/)  
 
 #### Module 3:  False Counterfactuals  
-[Lecture 3 False Counterfactuals (plus some extra math for fun)](https://vimeo.com/514022439) (28:58)  
+
+[Video Lecture 3.1 False Counterfactuals (plus some extra math for fun)](https://vimeo.com/514022439) (28:58)  
 
 Module 4: Difference-in-Differences (DD I)  
 
