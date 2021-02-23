@@ -92,6 +92,14 @@ If you wish to use these slides for teaching, the underlying beamer files and su
 
 <br>
 
+#### Papers Mentioned in the Lectures
+
+[Minimum Wages and Employment:  A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiB_IW32_7uAhXIWc0KHZzjA8kQFjAGegQIAxAD&url=https%3A%2F%2Fdavidcard.berkeley.edu%2Fpapers%2Fnjmin-aer.pdf&usg=AOvVaw1acYK7q-jX99ekVQ_vYrk8) by David Card and Alan Krueger  
+
+[Schooling and Labor Market Consequences of School Construction in Indonesia:  Evidence from an Unusual Policy Experiment](https://www.jstor.org/stable/2677813?seq=1) by Esther Duflo  
+
+<br>
+
 ### Empirical Exercise
 Let's open stata.
 
