@@ -46,13 +46,16 @@ _Impact Evaluation in Practice_: Chapters 1 and 2
 <br>
 
 ### Slides for Class Discussion
-
-_Coming soon, I hope_
+_There is no video lecture for Module 1.  I use the slides below for class discussion._  
+  
+[pdf](https://pjakiela.github.io/ECON379/lectures/L1-why-evaluate/ECON379-L1-Why-Evaluate-PUBLIC.pdf) &nbsp; 
+[tex](https://pjakiela.github.io/ECON379/lectures/L1-why-evaluate/ECON379-L1-Why-Evaluate-PUBLIC.tex) &nbsp; 
+[materials](https://github.com/pjakiela/ECON379/tree/gh-pages/lectures/L1-why-evaluate/)  
 
 <br>
 
 ### Empirical Exercise
-This exercise makes use of the data set [E1-CohenEtAl-data.dta](https://pjakiela.github.io/ECON379/exercises/E1-intro/E1-CohenEtAl-data.dta), a subset of the data used in the paper [Price Subsidies, Diagnostic Tests, and Targeting of Malaria Treatment: Evidence from a Randomized Controlled Trial](https://www.aeaweb.org/articles?id=10.1257/aer.20130267) by Jessica Cohen, Pascaline Dupas, and Simone Schaner, published in the _American Economic Review_ in 2015.  The authors examine behavioral responses to various discounts ("subsidies") for malaria treatment, called "artemisinin combination therapy" or "ACT."
+This exercise makes use of the data set [E1-CohenEtAl-data.dta](https://pjakiela.github.io/ECON379/exercises/E1-intro/E1-CohenEtAl-data.dta), a subset of the data used in the paper [Price Subsidies, Diagnostic Tests, and Targeting of Malaria Treatment: Evidence from a Randomized Controlled Trial](https://www.aeaweb.org/articles?id=10.1257/aer.20130267) by Jessica Cohen, Pascaline Dupas, and Simone Schaner, published in the _American Economic Review_ in 2015.  The authors examine behavioral responses to various discounts ("subsidies") for malaria treatment, called "artemisinin combination therapy" or "ACT."  The J-PAL summary of the experiment and the findings is [here](https://www.povertyactionlab.org/publication/balancing-act).
 
 The aim of this empirical exercise is to review key Stata commands.  You can download the activity as a [do file](https://pjakiela.github.io/ECON379/exercises/E1-intro/E1-questions.do) or a [pdf](https://pjakiela.github.io/ECON379/exercises/E1-intro/E1-questions.pdf).  There is a web page for the exercise [here](https://pjakiela.github.io/ECON379/exercises/E1-intro).
 
