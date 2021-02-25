@@ -90,26 +90,26 @@ Use the code above to help you answer the following questions:
 
 \begin{enumerate}
 	
-\item How many observations are in the data set?
+\item What is the mean of \texttt{y}?
 
-\item The variable \texttt{act\_any} is a dummy for assignment to any treatment (positive subsidy) What is the mean of the variable \texttt{act\_any} (to three decimal places)?
+\item What is the *variance* (not the standard deviation) of \texttt{y}?
 
-\item How many people received a positive subsidy?
+\item What is the mean of \texttt{z}?
 
-\item The variable \texttt{c\_act} is a dummy for using ACT treatment during a malaria episode.  
-What is the standard deviation of the variable \texttt{c\_act}?
+\item What is the variance of \texttt{z}?
 
-\item How many respondents report using ACT treatment for malaria?
+\item Use the \texttt{ttest} command to test the hypothesis that the mean of \texttt{z} is 10.  What is the p-value?
 
-\item Regress \texttt{c\_act} on \texttt{act\_any}.  What is the R-squared?
+\item Summarize the \texttt{treatment} variable:  what proportion of the data is assigned to treatment (between 0 and 1)?
 
-\item What is the coefficient associated with the \texttt{act\_any} variable?
+\item Change the do file so that half the observations are assigned to treatment. Use \texttt{ttest} to test whether the mean of \texttt{z} differs between the treatment and control (ie untreated) groups.  What is the estimated difference in means?
 
-\item What is the associated standard error?
+\item What is the p-value associated with this difference?
 
-\item What do you get when you divide the coefficient by the standard error?
+\item Now change the number of observations to 1000 and rerun the do file.  What is the estimated difference in means?
 
-\item What is the t-statistic associated with the \texttt{act\_any} variable?
+\item What is the p-value associated with this difference?
+
 
 \end{enumerate}
 
