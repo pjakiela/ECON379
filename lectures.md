@@ -44,13 +44,13 @@ _There is no video lecture for Module 1.  I use the slides below for class discu
 [tex](https://pjakiela.github.io/ECON379/lectures/L4-DD1/ECON379-L4-DD1-PUBLIC.tex) &nbsp; 
 [materials](https://github.com/pjakiela/ECON379/tree/gh-pages/lectures/L4-DD1/) 
 
-Module 5: Testing Common Trends (DD II)  
+Module 5: Diff-in-Diff in a Regression Framework (DD II)  
 
-Module 6: Two-Way Fixed Effects (DD III)  
+Module 6: Diff-in-Diff in Panel Data (DD III)  
 
-Module 7: Treatment-on-the-Treated (IV I)  
+Module 7: Two-Way Fixed Effects (DD IV)  
 
-Module 8: Instrumental Variables in the Wild (IV II)  
+Module 8: Diff-in-Diff in
 
 Module 9: Regression Discontinuity (RD I)  
 
