@@ -16,19 +16,19 @@ February 17: Introduction
 
 March 9: Diff-in-Diff in a Regression Framework (DD II)
 
-March 11: Two-Way Fixed Effects (DD III)
+March 11: Diff-in-Diff in Panel Data (DD III)  
 
-March 16: Treatment-on-the-Treated (IV I)
+March 16: Two-Way Fixed Effects (DD IV)  
 
-March 18: Instrumental Variables in the Wild (IV II)
+March 18: Treatment-on-the-Treated (IV I)  
 
-March 23: reading period (no class)
+March 23: reading period (no class)  
 
-March 25: Regression Discontinuity (RD I)
+March 25: Regression Discontinuity (RD I)  
 
-March 30: RD as IV (RD II)
+March 30: RD as IV (RD II)  
 
-April 1: Exam 1
+April 1: Exam 1  
 
 ### Program Evaluation in Practice
 
