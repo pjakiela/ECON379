@@ -57,11 +57,11 @@ _Impact Evaluation in Practice_: Chapter 6
 #### Module 5: Diff-in-Diff in a Regression Framework (DD II)   
 [Does a ban on informal health providers save lives? Evidence from Malawi](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4677333/)  
 
-Module 6: Two-Way Fixed Effects (DD III)  
+Module 6: Diff-in-Diff in Panel Data (DD III)  
 
-Module 7: Treatment-on-the-Treated (IV I)  
+Module 7: Two-Way Fixed Effects (DD IV)  
 
-Module 8: Instrumental Variables in the Wild (IV II)  
+Module 8: Treatment-on-the-Treated (IV I)  
 
 Module 9: Regression Discontinuity (RD I)  
 
