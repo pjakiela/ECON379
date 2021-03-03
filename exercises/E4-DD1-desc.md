@@ -124,7 +124,7 @@ also save your graph as a `pdf`.  Your graph should look like this:
 
 ### Homework Activity 
 
-The empirical exercise is also available as a do file.
+The empirical exercise is also available as a [do file](https://pjakiela.github.io/ECON379/exercises/E4-DD1/E4-questions.do).
 
 Now we're going to look at the data from the main maternity hospitals in Vienna 
 (treatment) and Dublin (control).  We've already examined Ignaz Semmelweis' 
@@ -218,4 +218,16 @@ Now that you've merged your data, use the combined data set to answer the follow
 questions about the impact of Vienna's anatomical training program on postpartum 
 mortality in its teaching hospital. 
 
+1. Use the command `list Year V_Note` to list the comments about what was happening at the Vienna Hospital in every year.  In what year did the "pathological anatomy" program (ie the use of cadavers in anatomy class) begin?
+2. Since we want to look at the _impact_ of the pathological anatomy program, we want to drop observations from 1847 on (after Semmelweis' handwashing intervention was implemented in Vienna).  What is the mean rate of postpartum mortality at the **Dublin** hospital after dropping those observations?
+3. Adapt your code from the in-class activity to make a figure showing the evolution of postpartum mortality rates in Vienna and Dublin.  You'll want to change the names of the dependent variables being plotted, the starting and ending years, and the labels on the two lines being graphed.  You are also welcome to make additional changes to the code to further modify your graph.
+4. Generate a variable `post` that is equal to one for years when the pathological anatomy program was active in Vienna.  What is the mean of this variable?
+5. What is the mean rate of postpartum mortality in Vienna before the introduction of the pathological anatomy program?
+6. What is the mean rate of postpartum mortality in Vienna after the introduction of the pathological anatomy program?
+7. What is the mean rate of postpartum mortality in Dublin before the introduction of the pathological anatomy program?
+8. What is the mean rate of postpartum mortality in Dublin before the introduction of the pathological anatomy program?
+9. Use these four means to calculate the difference-in-differences estimate of the impact of Vienna's pathological anatomy training on postpartum mortality.  What is the estimated treatment effect?
+10. We can also calculate the difference-in-differences estimate of the impact of the pathological anatomy training by first calculating the difference in the mortality rate between the Vienna Hospital and the Dublin  Hospital and then testing whether this difference declines after the start of the anatomy training curriculum.  Do this, and estimate the treatment effect using a univariate linear regression.  What is the estimated regression coefficient associated with the `post` variable?
+11. What is the standard error associated with the `post` variable in the regression above?  
+12. Did the introduction of an anatomy training program have a statistically significant impact on postpartum mortality in Vienna?  What is the t-statistic associated with the `post` variable in your difference-in-differences specification?
 
