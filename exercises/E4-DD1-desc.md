@@ -136,12 +136,14 @@ Create a do file that starts with all the usual preliminaries and then uses the 
 below to read in data on mortality at the maternity hospitals in Vienna and Dublin.  
 
 ```
-import excel using E4-Semmelweis1861-data.xlsx, sheet("ViennaTotals") first
+import excel using E4-Semmelweis1861-data.xlsx, ///
+	sheet("ViennaTotals") first
 sort Year
 save ViennaData.dta, replace
 
 clear
-import excel using E4-Semmelweis1861-data.xlsx, sheet("DublinTotals") first
+import excel using E4-Semmelweis1861-data.xlsx, ///
+	sheet("DublinTotals") first
 sort Year
 save DublinData.dta, replace
 ```
@@ -158,8 +160,8 @@ contains all the other variables in either of the original data sets.
 
 Here is an example.  Suppose I had two data sets.  Suppose the first one looked like this:
 
-year | days
----- | -----
+year  | days   
+----- | -----
 2010 | 365
 2011 | 365
 2012 | 366 
@@ -168,8 +170,8 @@ year | days
 
 And the second one looked like this:
 
-year | months
----- | ------
+year   | months
+------ | ------
 2010 | 12
 2011 | 12
 2012 | 12 
@@ -179,9 +181,27 @@ year | months
 After merging these data sets _by year_ we'd have a combined data set that looked like this:
 
 year | days | months
----- | ---- | ------
+------ | ------ | ------
 2010 | 365 | 12
 2011 | 365 | 12
 2012 | 366 | 12
 2013 | 365 | 12
 2014 | 365 | 12 
+
+To merge our postpartum mortality data sets in Stata, we use the following code: 
+
+```
+clear
+use ViennaData.dta
+merge 1:1 Year using DublinData.dta
+```
+
+After running the merge command, we'll see the following output:  
+
+```
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             0
+    matched                                66  (_merge==3)
+    -----------------------------------------
+```
