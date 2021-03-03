@@ -1,4 +1,4 @@
-# Empirical Exercise 4  
+## Empirical Exercise 4  
 
 This is the empirical exercise associated with our [first module on difference-in-differences estimation](https://pjakiela.github.io/ECON379/M4-DD1.html). 
 In this exercise, we're going to analyze data from [Ignaz Semmelweis](Ignaz_Semmelweis)' handwashing 
