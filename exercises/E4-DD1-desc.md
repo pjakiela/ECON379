@@ -32,7 +32,7 @@ elegant data visualizations.
 
 ### Warm-Up Activity  
 
-The warm-up activity available as a do file.
+The warm-up activity also available as a [do file](https://pjakiela.github.io/ECON379/exercises/E4-DD1/E4-in-class.do).
 
 In this activity, we'll look at data from Vienna's two clinics:  the Doctor's Wing 
 which was staffed by doctors and trainee doctors (who handled cadavers as part of their training) 
@@ -159,7 +159,7 @@ contains all the other variables in either of the original data sets.
 Here is an example.  Suppose I had two data sets.  Suppose the first one looked like this:
 
 year | days
------------- | -------------
+---- | -----
 2010 | 365
 2011 | 365
 2012 | 366 
@@ -169,9 +169,19 @@ year | days
 And the second one looked like this:
 
 year | months
------------- | -------------
+---- | ------
 2010 | 12
 2011 | 12
 2012 | 12 
 2013 | 12
 2014 | 12
+
+After merging these data sets _by year_ we'd have a combined data set that looked like this:
+
+year | days | months
+---- | ---- | ------
+2010 | 365 | 12
+2011 | 365 | 12
+2012 | 366 | 12
+2013 | 365 | 12
+2014 | 365 | 12 
