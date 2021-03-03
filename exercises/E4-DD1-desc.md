@@ -59,5 +59,8 @@ We start with the usual preliminaries (setting the seed, etc.),
 the we use the `import excel` command to read in the data.  Notice 
 that we use the `sheet()` option to specify which sheet we want to use 
 and the `first` option to tell Stata that the first row in our data set 
-is variable names rather than data values.
+is variable names rather than data values.  The last thing we do is 
+use the `label var` command to assign each variable a descriptive label 
+(that would appear, for example, if we listed the variables and their 
+descriptions using the `desc` command).  
 
