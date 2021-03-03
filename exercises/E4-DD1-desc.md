@@ -51,12 +51,12 @@ cd "C:\Users\pj\Dropbox\econ379-2021\exercises\E4-DD1"
 import excel using E4-Semmelweis1861-data.xlsx, sheet("ViennaBothClinics") first
 
 ** label the variables
-label var Births1 "Births in Division 1 (Treatment Group)"
-label var Deaths1 "Deaths in Division 1 (Treatment Group)"
-label var Rate1 "Mortality Rate in Division 1 (Treatment Group)"
-label var Births2 "Births in Division 2 (Comparison Group)"
-label var Deaths2 "Deaths in Division 2 (Comparison Group)"
-label var Rate2 "Mortality Rate in Division 2 (Comparison Group)"
+label var Births1 "Births in Doctors Wing"
+label var Deaths1 "Deaths in Doctors Wing"
+label var Rate1 "Mortality Doctors Wing"
+label var Births2 "Births in Midwives Wing"
+label var Deaths2 "Deaths in Midwives Wing"
+label var Rate2 "Mortality in  Midwives Wing"
 ```
 
 We start with the usual preliminaries (setting the seed, etc.), 
