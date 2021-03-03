@@ -32,7 +32,7 @@ elegant data visualizations.
 
 ### Warm-Up Activity  
 
-The warm-up activity also available as a [do file](https://pjakiela.github.io/ECON379/exercises/E4-DD1/E4-in-class.do).
+The warm-up activity is also available as a [do file](https://pjakiela.github.io/ECON379/exercises/E4-DD1/E4-in-class.do).
 
 In this activity, we'll look at data from Vienna's two clinics:  the Doctor's Wing 
 which was staffed by doctors and trainee doctors (who handled cadavers as part of their training) 
