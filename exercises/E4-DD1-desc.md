@@ -101,7 +101,7 @@ in this way, we _usually_ use the same `x` variable in both plots - but not alwa
 Finally, we use the `graph export` command to save our graph as a `.png` file.  You can 
 also save your graph as a `pdf`.  Your graph should look like this:  
 
-![vienna-graph](https://pjakiela.github.io/ECON379/exercises/E4-DD1/vienna-by-wing-fi1.png)  
+![vienna-graph](https://pjakiela.github.io/ECON379/exercises/E4-DD1/vienna-by-wing-fig1.png)  
 
 #### Warm-Up Activity Questions
 
