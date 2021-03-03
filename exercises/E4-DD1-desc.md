@@ -1,9 +1,9 @@
 # Empirical Exercise 4  
 
 This is the empirical exercise associated with our [first module on difference-in-differences estimation](https://pjakiela.github.io/ECON379/M4-DD1.html). 
-In this exercise, we're going to analyze data from Ignaz Semmelweis' handwashing 
+In this exercise, we're going to analyze data from [Ignaz Semmelweis](Ignaz_Semmelweis)' handwashing 
 intervention in the maternity hospital in Vienna.  The data come from 
-Semmelweis' (1861) book, and some helpful person put them on Wikipedia.  
+Semmelweis' (1861) book, and [some helpful person put them on Wikipedia](https://en.wikipedia.org/wiki/Historical_mortality_rates_of_puerperal_fever#Monthly_mortality_rates_for_birthgiving_women_1841%E2%80%931849).  
 
 <br>
 
@@ -100,6 +100,14 @@ twoway (type1 y1 x1, options) (type2 y2 x2, options)
 where `type1` is the type of twoway graph (eg a scatter plot), `y1` is your first 
 dependent variable, `x1` is your first independent variable, etc.  When we overlay plots 
 in this way, we _usually_ use the same `x` variable in both plots - but not always.  
+
+Note that we put a comma after our last plot, before we start listing options (like the plot title) 
+that pertain to the entire graph.  The `ylabel` option allows us to specify the start and endpoints 
+for the y-axis, and the distance between tick marks and labels.  The `ytitle` option  
+allows us to specify a title (or label) for the entire y-axis.  The `legend` option 
+allows us to list which of the different twoway plots should be listed in the legen, and also 
+how many columns the legend should contain and where it should be positioned on our graph. 
+More information about using the `twoway` command is available if you type `help twoway`.
 
 Finally, we use the `graph export` command to save our graph as a `.png` file.  You can 
 also save your graph as a `pdf`.  Your graph should look like this:  
@@ -211,6 +219,8 @@ In other words, every year in the `DublinData.dta` data set also appears in the
 `ViennaData.dta` data set.  The variable `_merge` indicates whether a variable 
 appears in both data sets, or just in the data set that you started with 
 (the master data) or the data set that you merged in (the using data).
+
+<br>
 
 #### Homework Activity Questions 
 
