@@ -199,9 +199,23 @@ merge 1:1 Year using DublinData.dta
 After running the merge command, we'll see the following output:  
 
 ```
-    Result                           # of obs.
-    -----------------------------------------
-    not matched                             0
-    matched                                66  (_merge==3)
-    -----------------------------------------
+ Result                           # of obs.
+ -----------------------------------------
+ not matched                             0
+ matched                                66  (_merge==3)
+ -----------------------------------------
 ```
+
+You can see that all the observations (ie years) in the data set merged successfully. 
+In other words, every year in the `DublinData.dta` data set also appears in the 
+`ViennaData.dta` data set.  The variable `_merge` indicates whether a variable 
+appears in both data sets, or just in the data set that you started with 
+(the master data) or the data set that you merged in (the using data).
+
+#### Homework Activity Questions 
+
+Now that you've merged your data, use the combined data set to answer the following 
+questions about the impact of Vienna's anatomical training program on postpartum 
+mortality in its teaching hospital. 
+
+
