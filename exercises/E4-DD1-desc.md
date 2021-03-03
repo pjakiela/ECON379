@@ -5,6 +5,8 @@ In this exercise, we're going to analyze data from Ignaz Semmelweis' handwashing
 intervention in the maternity hospital in Vienna.  The data come from 
 Semmelweis' (1861) book, and some helpful person put them on Wikipedia.  
 
+<br>
+
 ### Getting Started  
 
 To get started, create a directory for this exercise, and then save 
@@ -24,7 +26,9 @@ You should see a window that looks like this (minus the red arrow):
 Click the first link (where the arrow is pointing) and follow the instructions to install the 
 `blindschemes` package. This will allow you to access the colors of the 
 [Okabe-Ito colorblind-friendly palette](https://jfly.uni-koeln.de/color/) to make 
-elegant data visualizations.  
+elegant data visualizations. 
+
+<br>
 
 ### Warm-Up Activity  
 
@@ -64,3 +68,32 @@ use the `label var` command to assign each variable a descriptive label
 (that would appear, for example, if we listed the variables and their 
 descriptions using the `desc` command).  
 
+Make sure you understand every line in the code above before proceeding to 
+the next part of the activity.  
+
+Now use the code below to plot the maternal mortality rate in the two wings 
+of Vienna's maternity hospital between 1833 and 1858.  We're using Stata's 
+`twoway` command, which allows you to visualize the relationship between two 
+variables in a number of different ways (eg as a bar graph, a scatter plot, etc).  
+
+
+```
+twoway (connected Rate1 Year, color(vermillion) msymbol(o) msize(small) lw(thin)) /// 
+	(connected Rate2 Year, color(sea) msymbol(t) msize(small) lw(thin)), ///
+	ylabel(0(5)20) ytitle("Maternal Mortality (Percent)" " ") ///
+	xlabel(1830(5)1860) xtitle(" ") ///
+	legend(label(1 "Doctors' Wing") label(2 "Midwives' Wing") col(1) ring(0) pos(2))
+graph export vienna-by-wing-fig1.png, replace
+```
+
+There are several things to notice about this code.  First, we are breaking a long command 
+into multiple lines using `///` at the end of each line.  Second, we're graphing 
+two different dependent variables:  the maternal mortality rate in the doctors' wing and 
+the maternal mortality rate in the midwives' wing.  
+The `twoway` command allows you to overlay multiple plots on a single graph using the syntax 
+``` 
+twoway (graphtype1 y1 x1, options) (graphtype2 y2 x2, options)
+```
+where `graphtype1` is the type of twoway graph (eg a scatter plot), `y1` is your first 
+dependent variable, `x1` is your first independent variable, etc.  When we overlay plots 
+in this way, we _usually_ use the same `x` variable in both plots - but not always.
