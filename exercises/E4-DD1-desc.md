@@ -107,18 +107,7 @@ also save your graph as a `pdf`.  Your graph should look like this:
 
 1. Use the `list` command to list the the notes contained in the data set by year: ```list Year Note```.  In what year did the Vienna Hospital move to the system where only midwives worked in the second clinic? Drop the observations (years) before this happened using the `drop` command.
 2. Now make a new version of your graph that plots this restricted data set.  You'd want to modify the `xlabel(1830(5)1860` part of your code so that you only show a narrow window around the data you are plotting.  Add a line showing when the hospital instituted the handwashing policy by inserting the text `xline(1847)` somewhere _after_ the comma in your `twoway` command.  Now you've made a graph of the first ever diff-in-diff.  
-
-// QUESTION 3
-
-// Generate a "post" variable equal to one for years after the handwashing policy 
-//		wash implemented (and zero otherwise).  What is the mean maternal mortality 
-//		rate in the doctors' wing prior to the implementation of the handwashing policy?
-
-// 		Remember that you can always use the "return list" command after a command 
-//		like "summarize" to see what statistics the summarize command stored in 
-// 		Stata's short-term memory as locals.  
-
-gen post = Year>=1847
-sum Rate1 if post==0
-di "r(mean)"
+3. Generate a `post` variable equal to one for years after the handwashing policy wash implemented (and zero otherwise).  What is the mean maternal mortality rate in the doctors' wing prior to the implementation of the handwashing policy?  (Hint:  you can use Stata's `sum` - aka `summarize` - command here.  Remember that you can always use the `return list` command after a command like `summarize` to see what statistics the summarize command stored in Stata's short-term memory as locals.)  
+4. We can calculate the standard error of the mean by hand by taking the standard deviation (reported by the `sum` command) and dividing it by the square root of the number of observartions.  (Hint:  you can do this more or less by hand by looking at the output from the `sum` command, but you can also use the fact that Stata saves the output of the `sum` command as local macros and use the command `display r(sd)/sqrt(r(N))` immediately after `sum` to have Stata calculate the standard error of the mean for you from the standard deviation - saved as the local `r(sd)` - and the number of observations - saved as the local `r(N)`.)  What is the standard error of the mean maternal mortality rate in the doctors' wing prior to Semmelweis' handwashing intervention?
+5. You can also get the standard error of a mean using Stata `ci mean` command (the `ci` command gives you confidence intervals for different summary statistics, and `mean` is only one of the options).  Use the command `ci mean Rate1 if post==0` to confirm that your standard error calculation (above) is correct.  What is the upper bound of the 95 percent confidence interval for the mean of `Rate1` in the years prior to the handwashing intervention?
 
