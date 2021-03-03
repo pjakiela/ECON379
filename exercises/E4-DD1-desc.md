@@ -16,7 +16,7 @@ listed in your directory.
 We'll be making graphs in this exercise.  Before doing this, you should install Stata's `blindschemes` 
 package if you have not already.  Type the command `findit blindschemes` to look for the package on the web. 
 You should see a window that looks like this: 
-![stata-blindschemes](https://pjakiela.github.io/ECON379/exercises/E4-DD1/blindschems.png). 
+![stata-blindschemes](https://pjakiela.github.io/ECON379/exercises/E4-DD1/blindschemes.png). 
 Click the first link (where the error is pointing) and follow the instructions to install the 
 `blindschemes` package. This will allow you to access the colors of the 
 [Okabe-Ito colorblind-friendly palette](https://jfly.uni-koeln.de/color/) to make 
