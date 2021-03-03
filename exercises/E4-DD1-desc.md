@@ -118,4 +118,12 @@ also save your graph as a `pdf`.  Your graph should look like this:
 10. If we assume that the four means are independent random variables, we can calculate the standard error associated with the difference-in-differences estimate of the treatment effect.  What is this standard error?  
 11. We can also calculate the difference-in-differences estimate of the impact of Semmelweis' handwashing intervention by calculating the difference in the mortality rate between the Doctors' Wing and the Midwives' Wing, and testing whether this difference declines after the start of the intervention.  Do this, and estimate the treatment effect using a univariate linear regression.  What is the estimated coefficient on the `post` dummy?
 
-### Group Activity
+<br>
+
+### Group Activity  
+
+Now we're going to look at the data from the main maternity hospitals in Vienna 
+(treatment) and Dublin (control).  We've already examined Ignaz Semmelweis' 
+handwashing intervention.  Now, we will test whether the _introduction_ of the 
+pathological anatomy program in Vienna (which saw medical students practicing with cadavers)
+had an impact on the rate of postpartum mortality in Vienna.  
