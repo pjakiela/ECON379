@@ -101,7 +101,10 @@ If you wish to use these slides for teaching, the underlying beamer files and su
 <br>
 
 ### Empirical Exercise
-Let's open stata.
+
+The empirical exercise is available [here](https://pjakiela.github.io/ECON379/exercises/E4-DD1-desc.html).  In the exercise, we analyze data from Ignaz Semmelweis’ handwashing intervention in the maternity hospital in Vienna. The data come from Semmelweis’ (1861) book (some helpful person put them on Wikipedia).  The empirical exercise involves an [in-class activity](https://pjakiela.github.io/ECON379/exercises/E4-DD1/E4-in-class.do) and a [homework activity](https://pjakiela.github.io/ECON379/exercises/E4-DD1/E4-questions.do).  
+
+If you wish to use this exercise for teaching, the supporting materials are [here](https://github.com/pjakiela/ECON379/tree/gh-pages/exercises/E4-DD1/).  
 
 <br>
 
