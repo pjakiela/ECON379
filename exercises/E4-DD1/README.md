@@ -15,4 +15,4 @@ To do this, use the `findit` command by typing:
 findit blindschemes
 ```
 A window will open that looks like this: 
-![blindshemes-window]()
+![blindshemes-window](blindschemes.png)
