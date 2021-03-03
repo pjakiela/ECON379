@@ -44,11 +44,12 @@ set more off
 set seed 314159
 version 16.1
 
-** change working directory as appropriate to where you want to save
+** change working directory 
 cd "C:\Users\pj\Dropbox\econ379-2021\exercises\E4-DD1"
 
 ** load the data from the course website
-import excel using E4-Semmelweis1861-data.xlsx, sheet("ViennaBothClinics") first
+import excel using E4-Semmelweis1861-data.xlsx, ///
+	sheet("ViennaBothClinics") first
 
 ** label the variables
 label var Births1 "Births in Doctors Wing"
