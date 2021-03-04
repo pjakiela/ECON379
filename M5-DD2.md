@@ -25,17 +25,13 @@ This is the first of three modules on regression approaches to difference-in-dif
 <br>
 
 ### Video Lectures  
-[OK this is Iggy Pop and not a video lecture.](https://www.youtube.com/watch?v=-fWw7FE9tTo)   
+[Lecture 5.1:  2X2 Difference-in-Differences Specifications](https://vimeo.com/519322102)   
 
 <details><summary>Review Questions</summary>
   <br>
   <ol>
-  <li>What are traditional birth attendants?  Why did the government of Malawi decide to ban them? </li>
-  <li>What data set(s) do Professor Godlonton and Dr. Okeke use to estimate the impact of Malawi's ban on traditional birth attendants?</li>
-  <li>What is there identification strategy?  What is the treatment group?  Who or what is the treatment group compared to?</li>
-  <li>What alternatives to traditional birth attendants are available to expectant mothers in Malawi?</li>
-  <li>What are the impacts of Malawi's ban on traditional birth attendants?  Does the ban lead to a decline in the use of TBAs?  An increase in the use of skilled birth attendants? What other impacts do the authors report?</li>
-    <li>Did Malawi's ban on traditional birth attendants reduce neonatal mortality?</li>
+  <li>When you estimate a simple 2X2 difference-in-differences specification in a regression framework, what are the three independent variables?  How do we interpret each of the coefficients?</li>
+  <li>
   </ol>
 </details>
 
