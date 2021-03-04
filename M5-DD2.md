@@ -1,14 +1,14 @@
-# Diff-in-Diff in a Regression Framework
+## Diff-in-Diff in a Regression Framework
 
 <br>
 
 ### Overview  
-This module introduces the **difference-in-differences** identification strategy.  
+This is the first of three modules on regression approaches to difference-in-differences estimation.  In this module, we review the basic two-by-two difference-in-differences regression specification, and discuss extensions that allow for continuous variation in treatent intensity and the inclusion of period-specific fixed effects.  
 
 <br>
 
 ### Readings
-_Impact Evaluation in Practice_: Chapters 1 and 2  
+[Does a ban on informal hhealth providers save lives? Evidence from Malawi](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4677333/) by Susan Godlonton and Edward Okeke.
 
 <details><summary>Review Questions</summary>
   <br>
@@ -25,19 +25,19 @@ _Impact Evaluation in Practice_: Chapters 1 and 2
 <details><summary>Review Questions</summary>
   <br>
   <ol>
-  <li>Insert review questions here. </li>
+  <li>What are traditional birth attendants?  Why did the government of Malawi decide to ban them? </li>
+  <li>What data set(s) do Professor Godlonton and Dr. Okeke use to estimate the impact of Malawi's ban on traditional birth attendants?</li>
+  <li>What is there identification strategy?  What is the treatment group?  Who or what is the treatment group compared to?</li>
+  <li>What alternatives to traditional birth attendants are available to expectant mothers in Malawi?</li>
+  <li>What are the impacts of Malawi's ban on traditional birth attendants?  Does the ban lead to a decline in the use of TBAs?  An increase in the use of skilled birth attendants? What other impacts do the authors report?</li>
+    <li>Did Malawi's ban on traditional birth attendants reduce neonatal mortality?</li>
   </ol>
 </details>
 
 <br>
 
 ### Empirical Exercise
-Let's open stata.
-
-<br>
-
-### Further Reading
-
+_The empirical exercise for this module is not publicly available (as of March 2021). We hope to make the exercise available to the public in the future._
 
 <br>
 
