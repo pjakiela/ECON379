@@ -96,7 +96,7 @@ merge 1:1 Year using DublinData.dta
 
 // QUESTION 8
 
-// What is the mean rate of postpartum mortality in Dublin before the introduction  
+// What is the mean rate of postpartum mortality in Dublin after the introduction  
 //		of the pathological anatomy program?
 
 
