@@ -8,7 +8,7 @@ This is the first of three modules on regression approaches to difference-in-dif
 <br>
 
 ### Readings
-[Does a ban on informal hhealth providers save lives? Evidence from Malawi](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4677333/) by Susan Godlonton and Edward Okeke.
+[Does a ban on informal health providers save lives? Evidence from Malawi](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4677333/) by Susan Godlonton and Edward Okeke.
 
 <details><summary>Review Questions</summary>
   <br>
