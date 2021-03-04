@@ -13,7 +13,12 @@ This is the first of three modules on regression approaches to difference-in-dif
 <details><summary>Review Questions</summary>
   <br>
   <ol>
-  <li>Insert review questions here. </li>
+  <li>What are traditional birth attendants?  Why did the government of Malawi decide to ban them? </li>
+  <li>What data set(s) do Professor Godlonton and Dr. Okeke use to estimate the impact of Malawi's ban on traditional birth attendants?</li>
+  <li>What is there identification strategy?  What is the treatment group?  Who or what is the treatment group compared to?</li>
+  <li>What alternatives to traditional birth attendants are available to expectant mothers in Malawi?</li>
+  <li>What are the impacts of Malawi's ban on traditional birth attendants?  Does the ban lead to a decline in the use of TBAs?  An increase in the use of skilled birth attendants? What other impacts do the authors report?</li>
+    <li>Did Malawi's ban on traditional birth attendants reduce neonatal mortality?</li>
   </ol>
 </details>
 
