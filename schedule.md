@@ -14,7 +14,7 @@ February 17: Introduction
 
 [March 4: Difference-in-Differences (DD I)](M4-DD1.html)
 
-March 9: Diff-in-Diff in a Regression Framework (DD II)
+[March 9: Diff-in-Diff in a Regression Framework (DD II)](M5-DD2.html)
 
 March 11: Diff-in-Diff in Panel Data (DD III)  
 
