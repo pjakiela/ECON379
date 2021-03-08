@@ -105,7 +105,7 @@ If you type
 ```
 gen high_exposure = meantba>=`cutoff' if tba!=.
 ```
-you will end up setting hig_exposure to one for all post-treatment observations.  You 
+you will end up setting `high_exposure` to one for all post-treatment observations.  You 
 don't want to do that! Modify the code so that you only define `high_exposure` for births 
 where the `meantba` variable is non-missing. 
 
