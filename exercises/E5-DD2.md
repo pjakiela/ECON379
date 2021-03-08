@@ -144,7 +144,7 @@ You are using the same data set as Professor Godlonton and Dr. Okeke, so you sho
 be able to replicate their coefficient estimates and standard errors **exactly**.  Have you done 
 it?  If not, look closely at the coefficients that they report and read their table notes carefully.  Try to 
 figure out what you need to change to replicate their exact results.  Once you've done that (Congratulations! You replicated 
-at table in a published paper!), move on to the rest of the empirical exercise.
+a table in a published paper!), move on to the rest of the empirical exercise.
 
 (Hint:  if you want Stata to include fixed effects for, for example, time periods, you add the code `i.time` like it is an additional variable in your regression.)
 
