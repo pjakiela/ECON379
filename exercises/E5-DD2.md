@@ -67,11 +67,11 @@ is to use the `recode` command:  `recode m3g (9=.), gen(tba)`.  This generates a
 observations where `m3g` is equal to 9.  (It is always better to generate a new variable 
 instead of modifying the variables in your raw data set, because you don't want to make 
 mistakes that you cannot undo.)  Confirm that your new variable, `tba`, is a dummy variable.  
-Use the command `tab tba, m` to tabulate the observed values of `tba` (the `, m`) option tells 
-Stata to tabulate the number of missing values in addition to the other values.
+Use the command `tab tba, m` to tabulate the observed values of `tba` (the `, m` option tells 
+Stata to tabulate the number of missing values in addition to the other values).
 
-We want generate a treatment dummy - and indicator for DHS clusters where use of TBAs was at or above 
-the 75th percentil prior to the ban.  How should we do it?  the variable `dhsclust` is an ID number 
+We want generate a treatment dummy - an indicator for DHS clusters where use of TBAs was at or above 
+the 75th percentile prior to the ban.  How should we do it?  the variable `dhsclust` is an ID number 
 for each DHS cluster.  How many clusters are there in the data set?  Remember that we can use the `egen` command 
 to generate a variable equal to the mean of another variable, and we can use `egen` with the `bysort` option 
 to generate a variable equal to the mean within different groups:
@@ -123,5 +123,10 @@ I suggest calling it `postxhighexp`.  Now you are ready to run a regression.
 
 #### Replicating One Coefficient
 
+Now you have the variables you need to run a 2x2 difference-in-differences analysis 
+on the impact of Malawi's ban on TBAs on their use.  Do this.  How does the coefficient of interest 
+(on the interaction between `post` and `high_exposure`) compare to the results reported in 
+Panel A of Table 5 in Godlonton and Okeke (2015), shown below?
 
+![table](https://pjakiela.github.io/ECON379/exercises/E5-DD2/GO-Tab5.png)
 
