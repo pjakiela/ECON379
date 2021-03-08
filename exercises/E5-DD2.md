@@ -111,7 +111,7 @@ where the `meantba` variable is non-missing.
 
 Of course, now we have a small problem:  you've successfully defined a `high_exposure` 
 variable that is an indicator for DHS clusters where the level of TBA use was at or above the 
-75th percentile in the pre-ban period, but your `treatment` variable is missing for all births 
+75th percentile in the pre-ban period, but your treatment variable is missing for all births 
 in the post-ban period.  This issue comes up a lot.  Here are three lines of 
 code that will fix it:
 
@@ -135,8 +135,8 @@ I suggest calling it `highxpost`.  Now you are ready to run a regression.
 Now you have the variables you need to run a 2x2 difference-in-differences analysis 
 on the impact of Malawi's ban on TBAs on their use.  Do this.  How does the coefficient of interest 
 (on the interaction between `post` and `high_exposure`) compare to the results reported in 
-Panel A of Table 5 in Godlonton and Okeke (2015), shown below?  (Apologies if you have to 
-zoom in to see the table - I wanted to keep all the notes.)
+Panel A of Table 5 in Godlonton and Okeke (2015), shown below?  (Right click on the table to open it 
+in a new tab so that you can actually read it.)
 
 ![table](https://pjakiela.github.io/ECON379/exercises/E5-DD2/GO-Tab5.png)
 
