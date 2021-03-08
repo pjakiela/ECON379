@@ -44,7 +44,9 @@ define the treatment group as DHS clusters (ie communities) that were at or abov
 75th percentile in terms of use of TBAs prior to the ban.  Data 
 on use of TBAs comes from responses to the question below:
 
-![dhs]()
+![dhs](https://pjakiela.github.io/ECON379/exercises/E5-DD2/DHS-question.png)
 
 Responses have been converted into a set of different variables representing the different 
-types of attendants who might have been present at the birth.  
+types of attendants who might have been present at the birth.  Tabulate (using the `tab` command) 
+the `m3g` variable, which indicates whether a woman indicated that a TBA was present at a birth.  
+What pattern of responses do you observe?
