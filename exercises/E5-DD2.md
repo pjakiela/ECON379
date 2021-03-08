@@ -100,15 +100,24 @@ stores a local macro equal to the 75th percentile of the variable `meantba`.  No
 indicator for DHS clusters where the level of TBA use prior to the ban exceeded the cutoff we just 
 calculated.  How might you go about doing this?  
 
-At this point, you may be encountering a small problem:  you've successfully defined a `high_exposure` 
+Remember:  `meantba` is only non-missing for births (ie observations) in the pre-treatment period. 
+If you type 
+```
+gen high_exposure = meantba>=`cutoff' if tba!=.
+```
+you will end up setting hig_exposure to one for all post-treatment observations.  You 
+don't want to do that! Modify the code so that you only define `high_exposure` for births 
+where the `meantba` variable is non-missing. 
+
+Of course, now we have a small problem:  you've successfully defined a `high_exposure` 
 variable that is an indicator for DHS clusters where the level of TBA use was at or above the 
 75th percentile in the pre-ban period, but your `treatment` variable is missing for all births 
-in the post-ban period.  Why might this be the case?  This issue comes up a lot.  Here are three lines of 
+in the post-ban period.  This issue comes up a lot.  Here are three lines of 
 code that will fix it:
 
 ``` 
 bys dhsclust:  egen maxtreat = max(high_exposure)
-replace high_exposure = 1 if high_exposure==. & maxtreat==1 & tba!=.
+replace high_exposure = maxtreat if high_exposure==. & post==1 & tba!=.
 drop maxtreat
 ```
 
@@ -116,8 +125,8 @@ Tabulate your `high_exposure` variable to make sure that it is only missing for 
 with the `tba` variable missing.  What is the mean of `high_exposure`?
 
 The last variable we need to conduct difference-in-differences analysis is an interaction between 
-our treatment variable, `high_exposure`, and the post variable.  Generate such a variable.  
-I suggest calling it `postxhighexp`.  Now you are ready to run a regression.
+our treatment variable, `high_exposure`, and the post variable.  Generate such a variable. 
+I suggest calling it `highxpost`.  Now you are ready to run a regression.
 
 <br>
 
