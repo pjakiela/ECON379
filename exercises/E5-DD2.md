@@ -135,7 +135,36 @@ I suggest calling it `highxpost`.  Now you are ready to run a regression.
 Now you have the variables you need to run a 2x2 difference-in-differences analysis 
 on the impact of Malawi's ban on TBAs on their use.  Do this.  How does the coefficient of interest 
 (on the interaction between `post` and `high_exposure`) compare to the results reported in 
-Panel A of Table 5 in Godlonton and Okeke (2015), shown below?
+Panel A of Table 5 in Godlonton and Okeke (2015), shown below?  (Apologies if you have to 
+zoom in to see the table - I wanted to keep all the notes.)
 
 ![table](https://pjakiela.github.io/ECON379/exercises/E5-DD2/GO-Tab5.png)
+
+You are using the same data set as Professor Godlonton and Dr. Okeke, so you should 
+be able to replicate their coefficient estimates and standard errors **exactly**.  Have you done 
+it?  If not, look closely at the coefficients that they report and read their table notes carefully.  Try to 
+figure out what you need to change to replicate their exact results.  Once you've done that (Congratulations! You replicated 
+at table in a published paper!), move on to the rest of the empirical exercise.
+
+(Hint:  if you want Stata to include fixed effects for, for example, time periods, you add the code `i.time` like it is an additional variable in your regression.)
+
+<br>
+
+#### Empirical Exercise
+
+In the remainder of this exercise, we'll be estimating the impact of Malawi's ban on traditional birth attendants 
+on the use of formal sector providers (aka skilled birth attendants or SBAs).  The variable `sba` is an indicator 
+for use of (wait for it) an SBA.  Estimates of the impact of the TBA ban on use of SBAs are reported in Panel B of 
+Table 5 in Godlonton and Okeke (2015).
+
+Extend your do file to answer the following additional questions.  
+
+1. What fraction of women in Malawi give birth in the presence of a skilled birth attendant?  In other words, what is the mean of the `sba` variable?
+2. Test the hypothesis that the proportion of women giving birth in the presence of a skilled birth attendant increased after Malawi introduced the ban on TBAs.  What is the t-statistic associated with this hypothesis test?
+3. Estimate a simple 2x2 difference-in-differences specification to measure the impact of Malawi's TBA ban on the use of SBAs.  What is the estimated coefficient of interest (ie the coefficient on `highxpost`)?  You can, of course, read the results directly from Stata's output.  However, if you want Stata to display a specific regression coefficient after you run your estimation, you can use the command `display _b[varname]` where "varname" is the name of the variable you care about.
+4. What is the coefficient on `high_exposure`?  
+5. Now re-run your diff-in-diff estimation replacing the `post` variable with time fixed effects.  What is the estimated coefficient on `high_exposure` now?
+6. As we saw above, Professor Godlonton and Dr. Okeke also include district fixed effects.  Re-run your diff-in-diff estimation including these as well.  What is the estimated coefficient on `high_exposure` now?
+
+At this point, you (should) have successfully replicated the result from Godlonton and Okeke (2015).  As you saw, the coeffcient on the `highxpost` (the diff-in-diff estimate of the treatment effect) was extremely similar in specifications with and without fixed effects.  
 
