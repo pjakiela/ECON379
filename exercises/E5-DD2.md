@@ -5,6 +5,10 @@ of [Does a ban on informal health providers save lives? Evidence from Malawi](ht
 by Professor Susan Godlonton and Dr. Edward Okeke.  The table summarizes the impact of Malawi's 2007 ban on the use of 
 traditional birth attendants (TBAs) on birth outcomes, including both the use of formal sector providers and neonatal mortality.
 
+<br>
+
+#### Getting Started
+
 The data set E5-GodlontonOkeke-data.dta is available on glow.  It contains information (from the 
 [2010 Malawi Demographic and Health Survey](https://dhsprogram.com/methodology/survey/survey-display-333.cfm)) 
 on 19,680 live births between July 2005 and September 2010.  Each observartion represents a birth.  Download the data, and then create 
@@ -23,6 +27,10 @@ set seed 123456
 cd "C:\Users\pj\Dropbox\econ379-2021\exercises\E5-DD2\fig"
 use "C:\Users\pj\Dropbox\econ379-2021\exercises\E5-DD2\data\E5-GodlontonOkeke-data.dta"
 ```
+
+<br>
+
+#### Generating the Variables Needed for Analysis
 
 To implement difference-in-differences, we need a dummy variable for the post treatment period, 
 a dummy variable for the treatment group, and an interaction between the two. The post variable is 
@@ -88,6 +96,32 @@ local cutoff = r(p75)
 ```
 
 The last line in the code above (when implemented immediately after the `sum meantba, d` command, 
-stores a local macro equal to the 75th percentile of the variable `meantba`.
+stores a local macro equal to the 75th percentile of the variable `meantba`.  Now we need to create a new variable `high_exposure` that is an 
+indicator for DHS clusters where the level of TBA use prior to the ban exceeded the cutoff we just 
+calculated.  How might you go about doing this?  
+
+At this point, you may be encountering a small problem:  you've successfully defined a `high_exposure` 
+variable that is an indicator for DHS clusters where the level of TBA use was at or above the 
+75th percentile in the pre-ban period, but your `treatment` variable is missing for all births 
+in the post-ban period.  Why might this be the case?  This issue comes up a lot.  Here are three lines of 
+code that will fix it:
+
+``` 
+bys dhsclust:  egen maxtreat = max(high_exposure)
+replace high_exposure = 1 if high_exposure==. & maxtreat==1 & tba!=.
+drop maxtreat
+```
+
+Tabulate your `high_exposure` variable to make sure that it is only missing for observations 
+with the `tba` variable missing.  What is the mean of `high_exposure`?
+
+The last variable we need to conduct difference-in-differences analysis is an interaction between 
+our treatment variable, `high_exposure`, and the post variable.  Generate such a variable.  
+I suggest calling it `postxhighexp`.  Now you are ready to run a regression.
+
+<br>
+
+#### Replicating One Coefficient
+
 
 
