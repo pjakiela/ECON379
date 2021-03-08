@@ -32,7 +32,7 @@ _This module contains 38 minutes of video lecture.  There are currently no readi
   <li>What is the event study approach, and how can it be used to evaluate the impacts of a program?</li>
   <li>When might it make sense to use an event study approach rather than a simple 2X2 differences-in-differences estimation strategy?</li>
   <li>How would you implement the event study approach?</li>
-  <li>How can you use the event study approach to test the common trends assumption?<li>
+  <li>How can you use the event study approach to test the common trends assumption?</li>
   <li>What other hypothesis tests might you run after an event study?  How might they be implemented?</li>
 </details>
 
