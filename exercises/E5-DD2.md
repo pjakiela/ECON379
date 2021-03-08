@@ -74,6 +74,20 @@ bysort dhsclust:  egen meantba = mean(tba)
 
 However, this tells us the mean use of TBAs within a DHS cluster over the entire sample period, 
 but we only want a measure of the mean in  the pre-ban period.  How could you modify the code above 
-to calculate the level of TBA use prior to the ban?
+to calculate the level of TBA use prior to the ban?  
+
+Now summarize your `meantba` variable using the `, detail` or `, d` option after the `sum` command 
+so that you can calculate the 75th percentil of TBA use in the pre-ban period.  As we've seen in earlier 
+exercises, you can use the `return list` command after summarize to see which locals are saved when 
+you run the `summarize` command in Stata:
+
+``` 
+sum meantba, d
+return list
+local cutoff = r(p75)
+```
+
+The last line in the code above (when implemented immediately after the `sum meantba, d` command, 
+stores a local macro equal to the 75th percentile of the variable `meantba`.
 
 
