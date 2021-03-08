@@ -29,6 +29,6 @@ already present in the data set.  What is the mean of the post variable?
 The `time` variable indicates the month and year in which a birth took place. If you type the command 
 `desc time` you'll see the following output:
 
-
+![desc-time](https://pjakiela.github.io/ECON379/exercises/E5-DD2/stata-time-desc.png)  
 
 Use the command `tab time post` to 
