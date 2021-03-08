@@ -31,4 +31,8 @@ The `time` variable indicates the month and year in which a birth took place. If
 
 ![desc-time](https://pjakiela.github.io/ECON379/exercises/E5-DD2/stata-time-desc.png)  
 
-Use the command `tab time post` to 
+Notice that the `time` variable is formatted in Stata's date format:  it is stored as a number, 
+but appears as a month and year when you describe or tabulate it.  
+
+Use the command `tab time post` to see how Professor Godlonton and Dr. Okeke define the 
+post-treatment time period in their analysis.  What is the first treated month?
