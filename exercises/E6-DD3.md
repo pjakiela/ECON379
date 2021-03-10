@@ -89,10 +89,25 @@ Aug05|2
 Oct05|3
 Oct05|3
 
+Notice that `egen` is just counting off the groups:  there are no observations 
+from September of 2005, so October 2005 is the third group (ie the `egen` command 
+is **not** telling us how many months have passed since the start of the data set). In this case, 
+you can tab `time` and see that there aren't any missing months, so the `trend` variable 
+_does_ also tell us how many months an observation is from the earliest observations in 
+the data set - but that is because of the particular structure of this data set.  (Also, 
+remember that you have to sort your data before using the `egen` command with the group 
+option.)
+
 Once you've generated the `trend` variable, you need to interact it with `high_exposure` 
 (the treatment dummy).  Then you can regress an outcome like `tba` on the `high_exposure` 
-variable, the `trend` variable, and the interaction between them.  
+variable, the `trend` variable, and the interaction between them.  The table notes 
+above also indicate that Professor Godlonton and Dr. Okeke include district fixed effects; 
+you can add these by adding `i.district` to your regression command.
 
+Do you get the same results as the authors?  Specifically, do the coefficient and 
+standard error on the variable `highxtrend` match up?
+
+<br>
 
 #### Implementing an Event Study
 
