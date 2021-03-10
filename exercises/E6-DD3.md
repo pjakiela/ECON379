@@ -66,7 +66,7 @@ prior to the program.
 
 To replicate these results, we need to generate a time trend variable.  The data set 
 contains the variable `time`; it indicates the the month and year in which a birth 
-took place. However, `time` is formatted in Stata's date-time format, which event 
+took place. However, `time` is formatted in Stata's date-time format, which even 
 economics professors can never remember how to use.  Fortunately, we can use 
 the `egen` command to create a trend variable after we sort the data by date:
 
@@ -75,6 +75,23 @@ sort time
 egen trend = group(time) if post==0
 ```
 
+The `egen` option `group` creates a variable indicating the different groups (or values) 
+of the `time` variable.  So, in this data set, the `egen` command will generate a group variable as 
+follows:
+
+time|trend
+----|----
+Jul05|1
+Jul05|1
+Jul05|1
+Aug05|2
+Aug05|2
+Oct05|3
+Oct05|3
+
+Once you've generated the `trend` variable, you need to interact it with `high_exposure` 
+(the treatment dummy).  Then you can regress an outcome like `tba` on the `high_exposure` 
+variable, the `trend` variable, and the interaction between them.  
 
 
 #### Implementing an Event Study
