@@ -29,7 +29,7 @@ cd "C:\myfolder"
 use "C:\mydatapath\E5-GodlontonOkeke-data.dta"
 ```
 
-Next we need to generate our treatment dummy, as we did in the last exercise (an 
+Next we need to generate our treatment dummy, as we did in [the last exercise](https://pjakiela.github.io/ECON379/exercises/E5-DD2) (an 
 indicator for DHS clusters that are above the 75th percentile of pre-ban TBA use) and 
 an interaction between our treatment dummy and the `post` variable that is already present in 
 the data set.  We can do this using the following code:
@@ -51,3 +51,7 @@ treatment group.
 
 <br>
 
+#### Testing Common Trends  
+
+Professor Godlonton and Dr. Okeke test common trends directly by generating a 
+time trend variable that they interact with treatment.  
