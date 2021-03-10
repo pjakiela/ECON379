@@ -59,3 +59,33 @@ presented in Table 2 in their paper, which appears below:
 
 ![GO Table 2](https://pjakiela.github.io/ECON379/exercises/E6-DD3/GO-Tab2.png)
 
+We are primarily interested in the interaction between our treatment variable, 
+`high_exposure`, and the time trend:  if this variable is statistically significant, 
+it indicates that the treatment and comparison groups were on different trajectories 
+prior to the program.  
+
+To replicate these results, we need to generate a time trend variable.  The data set 
+contains the variable `time`; it indicates the the month and year in which a birth 
+took place. However, `time` is formatted in Stata's date-time format, which event 
+economics professors can never remember how to use.  Fortunately, we can use 
+the `egen` command to create a trend variable after we sort the data by date:
+
+```
+sort time
+egen trend = group(time) if post==0
+```
+
+
+
+#### Implementing an Event Study
+
+Adding the following code 
+to your do file will use the `time` variable to generate a variable indicating how 
+many years before or after Malawi's ban on TBAs a birth took place.  
+
+```
+tostring time, gen(test)
+destring test, replace
+gen monthdiff = (test - 546)-29 // months after ban
+gen yeardiff = ceil(diff/12)
+```
