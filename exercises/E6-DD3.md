@@ -15,7 +15,8 @@ on 19,680 live births between July 2005 and September 2010.  Each observartion r
 a do file that opens the data set in Stata.  Our standard code for starting a do file will look something like:
 
 ``` 
-/* Do file to replicate Table 5 from Godlonton & Okeke (2015) */
+/* Do file to replicate Table 5 
+ from Godlonton & Okeke (2015) */
 
 // PRELIMINARIES
 
@@ -24,8 +25,8 @@ set more off
 set scheme s1mono
 set seed 123456
 
-cd "C:\Users\pj\Dropbox\econ379-2021\exercises\E5-DD2\fig"
-use "C:\Users\pj\Dropbox\econ379-2021\exercises\E5-DD2\data\E5-GodlontonOkeke-data.dta"
+cd "C:\myfolder"
+use "C:\mydatapath\E5-GodlontonOkeke-data.dta"
 ```
 
 Next we need to generate our treatment dummy, as we did in the last exercise (an 
