@@ -54,4 +54,8 @@ treatment group.
 #### Testing Common Trends  
 
 Professor Godlonton and Dr. Okeke test common trends directly by generating a 
-time trend variable that they interact with treatment.  
+time trend variable that they interact with treatment.  Their results are 
+presented in Table 2 in their paper, which appears below:
+
+![GO Table 2](https://pjakiela.github.io/ECON379/exercises/E6-DD3/GO-Tab2.png)
+
