@@ -121,3 +121,36 @@ destring test, replace
 gen monthdiff = (test - 546)-29 // months after ban
 gen yeardiff = ceil(diff/12)
 ```
+
+Tabulate the `yeardiff` variable.  What do you see?  How many years before/after the ban 
+on TBAs appear in the data set?
+
+To implement an event study, you'll need to do two things.  First, create dummies for 
+births that occurred two years before the ban, one years before the ban, in the year 
+after the ban, in the second year after the ban, or in the third year after the ban. 
+I suggest calling these variables `minus2`, `minus1`, `plus1`, `plus2`, and `plus3`. 
+Second, you need to interact these dummies with the treatment variable, `high_exposure`. 
+So, you need to create a new set of varaibels `hxminus2`, `hxminus1`, `hxplus1`, `hxplus2`, 
+and `hxplus3.`
+
+Now you are ready to implement an event study!
+
+#### Empirical Exercise
+
+To implement our event study design, we need to replace or treatment-post interaction 
+variable `highxpost` with our time-period specific interactions, `hxminus2`, `hxminus1`, 
+`hxplus1`, etc.  
+
+Extend your do file to answer the following questions.
+
+1. What fraction of the births in the data set occur in the year after treatment?  In othe words, what is the mean of the variable `plus1`?
+2. What is the mean of the variable `hxminus1`?
+3. Now implement your event study design to estimate the impact of Malawi's TBA ban on the use of TBAs.  Don't forget to include fixed effects for the birth month and district!  So you want to tun the regression:  `reg tba i.district i.time high_exp hxminus2 hxminus1 hxplus1 hxplus2 hxplus3, cluster(district)`.  What is the estimated coefficient on hxplus1?
+4. Consider the three different coefficients estimating the treatment effect of the ban:  `hxplus1`, `hxplus2`, `hxplus3`.  How many of those coefficients are statistically significant in the sense of having p-values<0.05?
+5. How large was the impact of Malawi's ban on TBAs after three years?  (In other words, what is the estimated coefficient on `hxplus3`?)
+6. Now test the hypothesis that the imapct of the ban was the same in the first year after treatment and the third year after treatment using the test command.  Does the impact of the ban change over time?  What is the resulting p-value?
+7. How would you test common trends in this setting (using the regression above)?  Implement such a test.  What is the resulting p-value reported after the test command?
+8. Now think about how you would implement a placebo test, looking for a treatment effect on a variable (in the data set) that should not be impacted by treatment (hint:  look at Table 4 in the paper).  What variable in the data set would you use ot implement such a test?
+9. Implement a placebo test by using your event study specification to look at the "treatment effect" on a variable that should not be impacted by treatment (the variable you stated above).  Then test the (joint) hypothesis that the coefficients on `hxplus1`, `hxplus2`, and `hxplus3` are equal to zero.  What is the p-value associated with this hypothesis test?
+
+
