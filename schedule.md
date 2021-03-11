@@ -16,39 +16,37 @@ February 17: Introduction
 
 [March 9: Diff-in-Diff in a Regression Framework (DD II)](M5-DD2.html)
 
-March 11: Diff-in-Diff in Panel Data (DD III)  
+[March 11: Diff-in-Diff in Panel Data (DD III)](M6-DD3.html)  
 
-March 16: Two-Way Fixed Effects (DD IV)  
-
-March 18: Treatment-on-the-Treated (IV I)  
+[March 16, 18: Two-Way Fixed Effects (DD IV)](M7-TWFE.html)  
 
 March 23: reading period (no class)  
 
-March 25: Regression Discontinuity (RD I)  
+March 25: Treatment-on-the-Treated (IV I)  
 
-March 30: RD as IV (RD II)  
+March 30: Exam Review
 
 April 1: Exam 1  
 
 ### Program Evaluation in Practice
 
-April 6: Power Calculations
+March 6: Regression Discontinuity (RD I)  
 
-April 8: Random Assignment in Practice 
+March 8: RD as IV (IV II, RD II)  
 
-April 13: Compliance and Attrition 
+April 13: Power Calculations
 
-April 15: Survey Design
+April 15: Random Assignment in Practice 
 
-April 20: Adventures in Data Collection
+April 20: Compliance and Attrition 
 
 April 22: health days (no class)
 
+April 27: Survey Design
+
 ### Galaxy Brain
 
-April 27: Pre-Analysis Plans
-
-April 29: The Replication Crisis
+April 29: Pre-Analysis Plans & the Replication Crisis
 
 May 4: Criticisms of RCTs
 
