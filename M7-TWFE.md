@@ -27,6 +27,8 @@ _This module contains 34 minutes of video lecture, one short reading, and two em
   </ol>
 </details>
 
+<br>
+
 ### Video Lectures  
 [Lecture 7.1:  Two-Way Fixed Effects](https://vimeo.com/520567600) (34:30)  
 
