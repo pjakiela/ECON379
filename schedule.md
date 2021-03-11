@@ -16,7 +16,7 @@ February 17: Introduction
 
 [March 9: Diff-in-Diff in a Regression Framework (DD II)](M5-DD2.html)
 
-[March 11: Diff-in-Diff in Panel Data (DD III)](M6-DD3.html)  
+[March 11: Diff-in-Diff in Panel Data (DD III)](M6-DD3-panel.html)  
 
 [March 16, 18: Two-Way Fixed Effects (DD IV)](M7-TWFE.html)  
 
