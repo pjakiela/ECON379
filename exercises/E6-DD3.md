@@ -119,7 +119,7 @@ many years before or after Malawi's ban on TBAs a birth took place.
 tostring time, gen(test)
 destring test, replace
 gen monthdiff = (test - 546)-29 // months after ban
-gen yeardiff = ceil(diff/12)
+gen yeardiff = ceil(monthdiff/12)
 ```
 
 Tabulate the `yeardiff` variable.  What do you see?  How many years before/after the ban 
