@@ -1,0 +1,13 @@
+## Empirical Exercise 7, Part 2  
+
+In this exercise, we'll be using a data set on school enrollment in 15 African countries that eliminated primary 
+school fees between 1990 and 2015.  Data on enrollment comes from the World Bank's 
+[World Development Indicators Database](https://databank.worldbank.org/source/world-development-indicators). We'll be using 
+these data to estimate the two-way fixed effects estimator of the impact of eliminating school fees on enrollment.  Since 
+this policy was phased in by different countries at different time, it is a useful setting for exploring the potential pitfalls 
+of two-way fixed effects.
+
+<br>
+
+#### Getting Started
+
