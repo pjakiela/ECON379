@@ -48,14 +48,24 @@ ID|Country|Implementation of Free Primary Education
 4|Burkina Faso|2007
 32|Namibia|2013
 
+The data set contains 15 countries, but only 13 distinct "timing groups" - since Kenya and Rwanda both 
+eliminated primary school fees in 2003, while Benin and Lesotho both eliminated fees in 2006.  
 
-
-contains the the variables `gross_enrollment` and `net_enrollment` which 
+The data set also contains the the variables `gross_enrollment` and `net_enrollment` which 
 provide two closely related measures of school participation.  The **gross primary enrollment ratio** 
 is 100 times the number of students enrolled in primary school divided by the number of primary-school aged 
 children.  This number can be greater than 100 when over-age children are enrolled in primary school - which 
 often happens when school fees are eliminated.  The **net primary enrollment ratio** is 100 times 
 the number of _primary-school aged_ children enrolled in primary school divided (again) by the total number of 
 primary-school aged children.  The net primary enrollment ratio should not be greater than 100.
+
+Start by familiarizing yourself with the data set.  What are the first and last years included in the sample?  Which 
+countries eliminated school fees in the 1990s?  How many countries eliminated primary school fees after 2010?
+
+<br>
+
+#### The Mechanics of Two-Way Fixed Effects
+
+Estimate the impact of primary school fees in 
 
 
