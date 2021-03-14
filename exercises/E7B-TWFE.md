@@ -62,6 +62,9 @@ primary-school aged children.  The net primary enrollment ratio should not be gr
 Start by familiarizing yourself with the data set.  What are the first and last years included in the sample?  Which 
 countries eliminated school fees in the 1990s?  How many countries eliminated primary school fees after 2010?
 
+We are going to be looking at the outcome variable `gross_enroll`, but this variable is missing for some 
+country-years.  How many?  Go ahead and drop those observations to make your life easier.
+
 <br>
 
 #### The Mechanics of Two-Way Fixed Effects
@@ -97,6 +100,16 @@ predict tresid, resid
 ```
 
 In the command above, `tresid` is the name of my new variable, a variable that is the residual 
-from a regression of `treatment` on country and year fixed effects.
+from a regression of `treatment` on country and year fixed effects.  Regress `gross_enrollment` 
+on `tresid` without any additional controls.  You should see that the estimated coefficient is 
+identical to the coefficient of interest in your original two-way fixed effects regression.  
 
+We can also calculate the difference-in-differences estimator "by hand" from the observed values 
+of the `gross_enroll` and `tresid` variables.  We know that when we run a univariate regression 
+in a data set containing a totla of _n_ observations, the OLS coefficient can be written as:
+
+
+In this case, our right-hand side variable (_X_ in the equation above) has a mean of zero - so we 
+don't need to worry about the "X-bar" terms.  This means that we can calculate the two-way fixed 
+effects difference-in-differences estimator using the following code:
 
