@@ -230,3 +230,18 @@ placed on a country-year observation where `treatment==1`?
 <br>
 
 #### Empirical Exercise
+
+In the remainder of this exercise, we are going to focus on the outcome variable `net_enroll` 
+(a measure of net enrollment in primary school).  Net enrollment may be more representative of the 
+impact of free primary since it does not consider over-age children who return to school later in life.  However, 
+data on net primary enrollment is less widely available than data on gross enrollment, so our country-year 
+panel is more unbalanced (ie it has more missing country-years).  
+
+Save a copy of your do file so that you can edit it to focus on the outcome variable `net_enroll`.  Instead of 
+dropping observations where `gross_enroll` is missing, drop the observations where `net_enroll` is missing. Make 
+sure that you are **not** dropping any years at this point (ie include every year from 1981 through 2015).
+
+Modify your do file so that you can answer the following questions:
+
+1. Question.
+2. Another question.
