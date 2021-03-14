@@ -108,8 +108,76 @@ We can also calculate the difference-in-differences estimator "by hand" from the
 of the `gross_enroll` and `tresid` variables.  We know that when we run a univariate regression 
 in a data set containing a totla of _n_ observations, the OLS coefficient can be written as:
 
+![ols-coeff](https://pjakiela.github.io/ECON379/exercises/E7-TWFE/OLS-coefficient.png)
 
 In this case, our right-hand side variable (_X_ in the equation above) has a mean of zero - so we 
 don't need to worry about the "X-bar" terms.  This means that we can calculate the two-way fixed 
 effects difference-in-differences estimator using the following code:
+
+```
+gen yxtresid = gross_enroll*tresid
+egen sumyxtresid = sum(yxtresid)
+gen tresid2 = tresid^2
+egen sumtresid2 = sum(tresid2)
+gen twfecoef = sumyxtresid/sumtresid2
+sum twfecoef
+display r(mean)
+```
+
+If you have done this correctly, you will see that our original two-way fixed effects coefficient, 
+the coefficient from our regression of `gross_enroll` on `tresid`, and the mean of our new variable 
+`twfecoef` are all identical (though the associated standard errors are different).  Thus, we've shown that 
+the two-way fixed effects coefficient is a weighted sum of the values of the outcome variable (as is always 
+the case in a univariate OLS regression).
+
+<br>
+
+#### Is the Two-Way Fixed Effects Coefficient Biased?
+
+In lecture, we saw that the two-way fixed effects difference-in-differences estimator does not always 
+provide an unbiased estimate of the treatment effect that we are interested in.  We can now see why.  We 
+started with a treatment dummy:  `treatment` in country-years where primary education was free, and zero 
+in country-years when primary school fees had not yet been eliminated.  So, our treatment group comprises 
+country-years with free primary education.  
+
+However, when we include country and year fixed effects, we convert our treatment dummy into a continuous 
+measure of treatment intensity - specifically a measure of treatment intensity that is not explained/predicted 
+by the country year fixed effects.  
+
+There is an important difference between regression on a dummy variable 
+and regression on a continuous measure of treatment intensity (as we saw in earlier modules):  when we regress 
+on (only) a treatment dummy, the estimated treated effect is a weighted average of the treatment effect on 
+treated units (assuming there is no selection bias to worry about); but when we regress on a continous measure 
+of treatment intensity, we are imposing a linear dose-response relationship and placing greater weight on outcomes 
+further from the mean treatment intensity.  Importantly, all observations with below mean treatment intensity 
+are implicitly part of the control group.  
+
+In practical terms, we've seen that the two-way fixed effects coefficient put negative weight on obesrvations 
+where the residualized value of treatment (`tresid`) is negative.  So, the practical question is:  how often does 
+this happen among obersvations with `treatment` equal to one?  Test this by summarizing the `tresid` variable 
+in the treatment group.  What is the lowest value of `tresid` that you observe in the treatment group?  How many 
+treated observations are there, and how many of them have values of `tresid` that are less than zero?
+
+You can use the following code to compare the distributions of the the `tresid` variable in the treatment and comparison groups:
+
+```
+tw ///
+	(histogram tresid if treatment==0, frac bcolor(vermillion%40)) ///
+	(histogram tresid if treatment==1, frac bcolor(sea%60)), ///
+	xtitle(" " "Residualized Treatment") ///
+	legend(label(1 "Comparison") label(2 "Treatment") col(1) ring(0) pos(11)) ///
+	plotregion(margin(vsmall))
+ ```
+ 
+ We can see that the residualized value of treatment is negative for quite a few country-years in the treatment group 
+ (where primary education was free).  We know from lecture that this occurs because the value of treatment predicted 
+ from our regression of `treatment` on country and year fixed effects is greater than one.  Hence, country-year 
+ observations receiving negative weight in our two-way fixed effects regression are those in countries where the 
+ mean level of treatment is high (early adopters of free primary education) in years when the average level of 
+ treatment is high (later years, after most countries implemented free primary education).  
+ 
+ To confirm that this is the case, generate a variable `negweight` equal to one if a country-year has `treatment==1` and `tresid<0`.  
+ Tabulate the `country` variable among observations where this `negweight` variable is equal to one.  Which country has the 
+ highest number of treated years receiving negative weight in our two-way fixed effects estimation?  When did that country 
+ implement free primary education?  
 
