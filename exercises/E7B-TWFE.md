@@ -23,7 +23,34 @@ webuse set https://pjakiela.github.io/ECON379/exercises/E7-TWFE/
 webuse E7-TWFE-data.dta
 ```
 
-The data set contains the the variables `gross_enrollment` and `net_enrollment` which 
+The data set only contains six variables:  `country`, `year`, `id`, `gross_enrollment`, `net_enrollment`, 
+and `fpe_year`.  The variables `country` and `year` are self-explanatory.  `id` is a unique 
+numeric identifier for each of the 15 individual countries in the data set.  The variable `fpe_year` 
+indicates the year in which a given country made primary schooling free to all eligible children.  Malawi 
+was the first country in the data set that eliminated primary school fees (in 1994), while Namibia was the 
+last (in 2013).  The countries in the data set and the timing of school fee elination is summarized in the table below.
+
+ID|Country|Implementation of Free Primary Education
+--|-------|----------------------------------------
+27|Malawi|1994
+17|Ethiopia|1995
+20|Ghana|1996
+46|Uganda|1997
+7|Cameroon|2000
+44|Tanzania|2001
+47|Zambia|2002
+35|Rwanda|2003
+23|Kenya|2003
+5|Burundi|2005
+31|Mozambique|2005
+24|Lesotho|2006
+2|Benin|2006
+4|Burkina Faso|2007
+32|Namibia|2013
+
+
+
+contains the the variables `gross_enrollment` and `net_enrollment` which 
 provide two closely related measures of school participation.  The **gross primary enrollment ratio** 
 is 100 times the number of students enrolled in primary school divided by the number of primary-school aged 
 children.  This number can be greater than 100 when over-age children are enrolled in primary school - which 
