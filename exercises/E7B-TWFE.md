@@ -66,9 +66,37 @@ countries eliminated school fees in the 1990s?  How many countries eliminated pr
 
 #### The Mechanics of Two-Way Fixed Effects
 
-Now we are ready to estimate the impact of eliminating primary school fees on enrollment using two-way 
+Now we are ready to estimate the impact of eliminating primary school fees on gross enrollment using two-way 
 fixed effects.  We want to implement the regression equation:
 
 ![twfe-eq](https://pjakiela.github.io/ECON379/exercises/E7-TWFE/DD-equation.png)
 
-where Y<sub>it</sub> is the outcome variable of interest and _D<sub>it</sub>_ is... testing &gamma;<sub>t</sub>
+where Y<sub>it</sub> is the outcome variable of interest (gross enrollment); 
+&lambda;<sub>i</sub> and &gamma;<sub>t</sub> are country and time fixed effects, respectively; 
+and _D<sub>it</sub>_ is the treatment dummy, and indicator equal to one in country-years 
+after the elimination of school fees (inluding the year during which school fees were eliminated). 
+
+Extend your do file to generate the variable _D<sub>it</sub>_ (you may wish to call it `treatment`) 
+and then run the two-way fixed effects regression of gross enrollment on your dummy for free primary 
+education.  What is the estimated coefficient on `treatment`?  Is it statistically significant?
+
+_Note:  you cannot include the code `i.country` to generate fixed effects for individual countries 
+because Stata will not generate fixed effects for the different values of a string variable.  What 
+is a string variable?  A variable with values that are combinations of letters and numbers, as opposed 
+to variables that only take on numeric values.  Use the country ID variable `id` when you want to 
+include country fixed effects._
+
+The coefficient from a two-way fixed effects regression is equal to the coefficient from a regression 
+of your outcome on the residuals from a regression of `treatment` on your two-way fixed effects.  To 
+see this, regress `treatment` on country and year fixed effects, and the use the post-estimation 
+`predict` command to generate a value equal to the residual from this regression:
+
+```
+reg treatment i.year i.id treatment
+predict tresid, resid
+```
+
+In the command above, `tresid` is the name of my new variable, a variable that is the residual 
+from a regression of `treatment` on country and year fixed effects.
+
+
