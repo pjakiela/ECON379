@@ -179,5 +179,54 @@ tw ///
  To confirm that this is the case, generate a variable `negweight` equal to one if a country-year has `treatment==1` and `tresid<0`.  
  Tabulate the `country` variable among observations where this `negweight` variable is equal to one.  Which country has the 
  highest number of treated years receiving negative weight in our two-way fixed effects estimation?  When did that country 
- implement free primary education?  
+ implement free primary education? 
+ 
+ Of course, negative weights aren't necessarily a problem.  The question is whether the assumption of a linear relationship 
+ between the residualized outcome variable and the residualized treatment variable is reasonable.  One way to explore the issue 
+ is by plotting these residuals, for example by using the code:
+ 
+ ```
+reg gross_enroll i.year i.id
+predict yresid, resid
+tw ///
+	(scatter yresid tresid if treatment==0, msymbol(o) color(vermillion%20)) ///
+	(scatter yresid tresid if treatment==1, msymbol(o) color(sea%20)) ///	
+	(lpoly yresid tresid if treatment==0, lcolor(vermillion) lpattern(longdash) deg(1) bwidth(0.2)) ///
+	(lfit yresid tresid if treatment==0, lcolor(vermillion) lpattern(solid)) ///	
+	(lpoly yresid tresid if treatment==1, lcolor(sea) lpattern(longdash) deg(1) bwidth(0.2)) ///
+	(lfit yresid tresid if treatment==1, lcolor(sea) lpattern(solid)), ///	
+	legend(off)
+```
 
+In this case, we see that the assumption of a linear relationship between the residualized outcome variable and 
+the residualized treatment variable does not seem unreasonable.  In particular, we see that the _slope_ of 
+the linear fit is similar in the treatment and comparison groups.  We can test this formally by regressing 
+`yresid` on `tresid`, `treatment`, and an interaction between `treatment` and `tresid`.  Are the coefficients 
+on the `treatment` variable or interaction term statistically significant?
+
+<br>
+
+#### Truncating the Data Set to Eliminate Negative Weights
+
+Negative weights arise because the predicted value of treatment is greater than one 
+for some treated observations.  This occurs for country-years where both the country-level-mean
+and the year-level-mean of the treatment variable are high - ie in early-adopter countries observed in 
+later years of the panel (by which time most countries are treated).  One way to eliminate 
+negative weights, so that we only place positive weight on treated units, is to truncate the 
+data set before late-adopted countries are treated.  If treatment effects are homogenous, 
+this should not change your estimated treatment effect too much (though your data set will be smaller, 
+so your standard errors will probably be larger).  
+
+To see that this is the case, re-run your code (or add code to your do file that clear the data set and reloads 
+the raw data) so that you drop observations after 2005.  Re-run the two-way fixed effects estimation.  What is 
+the estimated coefficient on treatment?  How different is it from your initial estimate (at the very beginning 
+of this exercise)?  
+
+Now regress `treatment` on your country and year fixed effects, and then predict the residuals.  These are the 
+weights used in your two-way fixed effects estimation of the impact of treatment on school enrollment.  Summarize the 
+regression weights for observations in the treatment group.  How many are negative?  What is the lowest weight 
+placed on a country-year observation where `treatment==1`?
+
+<br>
+
+#### Empirical Exercise
