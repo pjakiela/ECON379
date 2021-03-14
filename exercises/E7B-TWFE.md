@@ -66,6 +66,9 @@ countries eliminated school fees in the 1990s?  How many countries eliminated pr
 
 #### The Mechanics of Two-Way Fixed Effects
 
-Estimate the impact of primary school fees in 
+Now we are ready to estimate the impact of eliminating primary school fees on enrollment using two-way 
+fixed effects.  We want to implement the regression equation:
+
+![twfe-eq]()
 
 
