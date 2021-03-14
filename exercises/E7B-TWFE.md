@@ -69,6 +69,6 @@ countries eliminated school fees in the 1990s?  How many countries eliminated pr
 Now we are ready to estimate the impact of eliminating primary school fees on enrollment using two-way 
 fixed effects.  We want to implement the regression equation:
 
-![twfe-eq]()
+![twfe-eq](https://pjakiela.github.io/ECON379/exercises/E7-TWFE/DD-equation.png)
 
 
