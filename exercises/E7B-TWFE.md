@@ -71,4 +71,4 @@ fixed effects.  We want to implement the regression equation:
 
 ![twfe-eq](https://pjakiela.github.io/ECON379/exercises/E7-TWFE/DD-equation.png)
 
-
+where Y<sub>it</sub> is the outcome variable of interest and _D<sub>it</sub>_ is...
