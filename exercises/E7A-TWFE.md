@@ -35,5 +35,12 @@ Unit|Period|Treatment
 2|3|0
 2|4|1
 
-Open up Excel or google sheets and create a spreadsheet that looks like this, with 8 rows containing information 
-on the treatment status of two units over four time periods.
+Open Excel or google sheets (or your favorite equivalent) and create a spreadsheet that looks like this, with 8 rows containing information 
+on the treatment status of two units over four time periods.  Now, add a column for your _Y_ (ie dependent) variable, but 
+leave it blank for now.  
+
+Now add three more columns that you call `D Mean`, `D Mean t`, and `D Mean i`.  In the first of these columns, 
+have Excel calculate the mean of D (aka Treatment).  To do this, start by selecting cell E2 (in the row 
+for Unit 1 and the `D Mean` column):
+
+
