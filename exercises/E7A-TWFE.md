@@ -1,6 +1,6 @@
 ## Empirical Exercise 7, Part 1  
 
-This is the first of two exercises on difference-in-differences estimation using two-way fixed effects (TWFE).  In this exercise, 
+This is the first of two exercises on **difference-in-differences** estimation using **two-way fixed effects** (TWFE).  In this exercise, 
 we'll deepen our understanding of the mechanics of TWFE through a simple simulation exercise.  We'll create a small data 
 set containing two units that are observed over four periods, and we'll calculate the TWFE estimator of a treatment effect 
 of interest using both Excel and Stata.
@@ -76,6 +76,10 @@ of the values in the `Y x Weight` column) is the same as your "treatment effect"
 variable in the treatment group, since the mean value of the outcome in the comparison group is 0).  Now 
 try increasing all the vlaues of `Y` by 5.  What happens to the estimated regression coefficient?
 
+We know that two-way fixed effects can be biased when treatment effects change over time within treated units, 
+particularly when the impacts of treatment grow or shrink substantially over time.  To see this happen, increase 
+the value of `Y` for Unit _i_ in Period 4.  Increase it to a very large number.  Note that, in essense, this means 
+that the average impact of treatment is even larger.  What happens to your estimated regression coefficient?
 
-
+#### Two-Way Fixed Effects in Stata
 
