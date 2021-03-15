@@ -122,4 +122,16 @@ that compare to the estimated treatment effect in the two-way fixed effects regr
 
 <br>
 
+#### Empirical Exercise
+
+Extend your do file to answer the following questions:
+
+1. What is the t-statistic on the variable `d` in the two-way fixed effects regression of `y` on `d`?
+2. Now modify your code so that `y = y+20` for Unit 1 in Period 4.  What is the (new) mean of `y` in the treatment group?  This is the true value of the average treatment effect.
+3. Now run the two-way fixed effects regression of `y` on `d` controlling for unit and time period fixed effects.  What is the estimated coefficient on `d`?
+4. Reduce the value of `y` by 20 if `id==1 & time==4` (so that it is back to its original value), and then increase the value of `y` by 20 for Unit 2 in Period 4.  Confirm that the average value of `y` in the treatment group (ie the average treatment effect) is unchanged.  Run your two-way fixed effects regression again.  What is the estimated coefficient on `d`?
+5. Now regress `d`, the treatment dummy, on unit and time fixed effects.  After running your regression, use the post-estimation command `predict d_resid, resid` to save the residuals from this regression in a new variable.  What is the mean of `d_resid`?
+6. What is the value of `d_resid` if `id==1 & time==4`?
+7. What is the value of `d_resid` in the other treated observations?
+8. What is the minimum value of `d_resid` in the comparison group (ie when `d==0`)?
 
