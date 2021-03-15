@@ -89,7 +89,7 @@ Now let's confirm that our results line up with two-way fixed effects in Stata. 
 following code:
 
 ```
-** generate a min data set
+** generate a mini data set
 clear
 set seed 54321
 set obs 8 
