@@ -81,5 +81,45 @@ particularly when the impacts of treatment grow or shrink substantially over tim
 the value of `Y` for Unit _i_ in Period 4.  Increase it to a very large number.  Note that, in essense, this means 
 that the average impact of treatment is even larger.  What happens to your estimated regression coefficient?
 
+<br>
+
 #### Two-Way Fixed Effects in Stata
+
+Now let's confirm that our results line up with two-way fixed effects in Stata.  Create a do file containing the 
+following code:
+
+```
+** generate a min data set
+clear
+set seed 54321
+set obs 8 
+gen id = 1 in 1/4
+replace id = 2 in 5/8
+gen time = mod(_n,4) + 1
+sort id time
+
+** create a treatment variable
+gen d = 0 
+replace d = 1 if id==1 & t!=1
+replace d = 1 if id==2 & t==4
+
+** create an outcome variable
+gen y = 4*d // homogeneous treatment effect
+*replace y = 100 if id==1 & t==4 // effects increase
+
+** add a bit of noise
+replace y = y+0.01*rnormal()
+
+** two-way fixed effects
+reg y i.id i.time d
+```
+
+The code simulates a (tiny) data set similar to our Excel spreadsheet - the only difference 
+is that we've added a bit of noise (ie a random error term) to the outcome variable.  Read over 
+the do file and make sure that you understand every line (looking up the help files for any 
+unfamilair commands).  What is the average treatment effect in this simulated data set?  How does 
+that compare to the estimated treatment effect in the two-way fixed effects regression?
+
+<br>
+
 
