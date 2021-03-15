@@ -7,7 +7,7 @@ of interest using both Excel and Stata.
 
 <br>
 
-#### TWFE in Excel
+#### Two-Way Fixed Effects in Excel
 
 We are going to create a data set that has the following structure:
 
