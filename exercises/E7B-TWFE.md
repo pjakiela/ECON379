@@ -76,12 +76,12 @@ fixed effects.  We want to implement the regression equation:
 
 where Y<sub>it</sub> is the outcome variable of interest (gross enrollment); 
 &lambda;<sub>i</sub> and &gamma;<sub>t</sub> are country and time fixed effects, respectively; 
-and _D<sub>it</sub>_ is the treatment dummy, and indicator equal to one in country-years 
-after the elimination of school fees (inluding the year during which school fees were eliminated). 
+and _D<sub>it</sub>_ is the treatment dummy, an indicator equal to one in country-years 
+after the elimination of school fees (inluding the year during which school fees were eliminated).  
 
 Extend your do file to generate the variable _D<sub>it</sub>_ (you may wish to call it `treatment`) 
 and then run the two-way fixed effects regression of gross enrollment on your dummy for free primary 
-education.  What is the estimated coefficient on `treatment`?  Is it statistically significant?
+education.  What is the estimated coefficient on `treatment`?  Is it statistically significant?  
 
 _Note:  you cannot include the code `i.country` to generate fixed effects for individual countries 
 because Stata will not generate fixed effects for the different values of a string variable.  What 
@@ -110,7 +110,8 @@ in a data set containing a totla of _n_ observations, the OLS coefficient can be
 
 ![ols-coeff](https://pjakiela.github.io/ECON379/exercises/E7-TWFE/OLS-coefficient.png)
 
-In this case, our right-hand side variable (_X_ in the equation above) has a mean of zero - so we 
+In this case, our right-hand side variable (_X_ in the equation above) is the residualized treatment 
+variable `tresid`.  It has a mean of zero (the residuals from a regression are mean-zero by construction) - so we 
 don't need to worry about the "X-bar" terms.  This means that we can calculate the two-way fixed 
 effects difference-in-differences estimator using the following code:
 
@@ -124,11 +125,18 @@ sum twfecoef
 display r(mean)
 ```
 
+In the first line, we calculate a variable that is the value of the outcome variable 
+multiplied by the associated residual from a regression of `treatment` on country and year fixed effects. 
+We then use the `egen` command to sum these terms across all observations.  In the next two lines, 
+we sum up the observation-level values of the square of our residualized treatment variable. 
+The last three lines use these two sums - which appear in the algebra above - to caluculate 
+the TWFE estimator of the treatment effect by hand (in some sense).  
+
 If you have done this correctly, you will see that our original two-way fixed effects coefficient, 
 the coefficient from our regression of `gross_enroll` on `tresid`, and the mean of our new variable 
 `twfecoef` are all identical (though the associated standard errors are different).  Thus, we've shown that 
-the two-way fixed effects coefficient is a weighted sum of the values of the outcome variable (as is always 
-the case in a univariate OLS regression).
+the two-way fixed effects coefficient is a weighted sum of the values of the outcome variable (like 
+any coefficient from a univariate OLS regression).
 
 <br>
 
@@ -137,7 +145,7 @@ the case in a univariate OLS regression).
 In lecture, we saw that the two-way fixed effects difference-in-differences estimator does not always 
 provide an unbiased estimate of the treatment effect that we are interested in.  We can now see why.  We 
 started with a treatment dummy:  `treatment` in country-years where primary education was free, and zero 
-in country-years when primary school fees had not yet been eliminated.  So, our treatment group comprises 
+in country-years when primary school fees had not yet been eliminated.  So, our treatment group is the  
 country-years with free primary education.  
 
 However, when we include country and year fixed effects, we convert our treatment dummy into a continuous 
@@ -212,7 +220,7 @@ Negative weights arise because the predicted value of treatment is greater than 
 for some treated observations.  This occurs for country-years where both the country-level-mean
 and the year-level-mean of the treatment variable are high - ie in early-adopter countries observed in 
 later years of the panel (by which time most countries are treated).  One way to eliminate 
-negative weights, so that we only place positive weight on treated units, is to truncate the 
+negative weights, so that we only place positive weight on treated country-years, is to truncate the 
 data set before late-adopted countries are treated.  If treatment effects are homogenous, 
 this should not change your estimated treatment effect too much (though your data set will be smaller, 
 so your standard errors will probably be larger).  
@@ -231,17 +239,11 @@ placed on a country-year observation where `treatment==1`?
 
 #### Empirical Exercise
 
-In the remainder of this exercise, we are going to focus on the outcome variable `net_enroll` 
-(a measure of net enrollment in primary school).  Net enrollment may be more representative of the 
-impact of free primary since it does not consider over-age children who return to school later in life.  However, 
-data on net primary enrollment is less widely available than data on gross enrollment, so our country-year 
-panel is more unbalanced (ie it has more missing country-years).  
+Now use your do file so that you can answer the following questions:
 
-Save a copy of your do file so that you can edit it to focus on the outcome variable `net_enroll`.  Instead of 
-dropping observations where `gross_enroll` is missing, drop the observations where `net_enroll` is missing. Make 
-sure that you are **not** dropping any years at this point (ie include every year from 1981 through 2015).
-
-Modify your do file so that you can answer the following questions:
-
-1. Question.
-2. Another question.
+1. What is the two-way fixed effects estimate of the impact of eliminated primary school fees on `gross_enrollment`?
+2. How many observations in the treatment group (with `treatment` equal to one) receive negative weight in the two-way fixed effects estimation of the impact of free primary on `gross_enrollment`?
+3. Regress the `yresid` variable generated above on `tresid`, `treatment`, and an interaction between `tresid` and `treatment`.  What is the estimated OLS coefficient on the interaction term?
+4. Is that interaction statistically significant?  What is the associated p-value from the regression above?
+5. What is the two-way fixed effects estimate of the impact of eliminated primary school fees on `gross_enrollment` _if you only include data from 1981 through 2005_?
+6. When you only include data from 1981 through 2005, How many observations in the treatment group (with `treatment` equal to one) receive negative weight in the two-way fixed effects estimation of the impact of free primary on `gross_enrollment`?
