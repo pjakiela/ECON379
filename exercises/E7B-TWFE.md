@@ -239,7 +239,7 @@ placed on a country-year observation where `treatment==1`?
 
 #### Empirical Exercise
 
-Now use your do file so that you can answer the following questions:
+Now use your do file to answer the following questions:
 
 1. What is the two-way fixed effects estimate of the impact of eliminated primary school fees on `gross_enrollment`?
 2. How many observations in the treatment group (with `treatment` equal to one) receive negative weight in the two-way fixed effects estimation of the impact of free primary on `gross_enrollment`?
