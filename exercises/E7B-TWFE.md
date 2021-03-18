@@ -95,7 +95,7 @@ see this, regress `treatment` on country and year fixed effects, and the use the
 `predict` command to generate a value equal to the residual from this regression:
 
 ```
-reg treatment i.year i.id treatment
+reg treatment i.year i.id
 predict tresid, resid
 ```
 
