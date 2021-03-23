@@ -22,7 +22,7 @@ February 17: Introduction
 
 March 23: reading period (no class)  
 
-March 25: Treatment-on-the-Treated (IV I)  
+[March 25: Treatment-on-the-Treated (IV I)](M8-TOT.html)  
 
 March 30: Exam Review
 
