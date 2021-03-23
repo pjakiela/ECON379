@@ -81,3 +81,9 @@ To make your life easier, drop all the observations for whom `any_old_biz==0`.  
 
 1. Estimate the impact of treatment on the likelihood of taking a loan from Spandana (the variable `spandana_1`) in this restricted sample.  What is the estimated coefficient on `treatment`?  Be sure to cluster by `areaid`, as you did in your earlier regressions.
 2. Is the impact of treatment on taking out a Spandana loan larger or smaller for those with an existing business, relative to those who did not already have a microenterprise?
+3. In the restricted sample of households with a pre-existing microenterprise (ie those with `any_old_biz==1`), what is the estimated impact of treatment on microenterprise profits (the variable `bizprofit_1`)?
+4. What is the p-value associated with this coefficient?
+5. Using only this information, what is the estimated impact of treatment on the treated (if we assume that access to a Spandana branch only impacts those who take out loans)?
+6. Now use intstrumental variables to calculate the estimated impact of treatment on the treated.  What is the estimated TOT effect?
+7. Is the estimated TOT effect statistically significant?  What is the p-value?
+8. In 1-2 sentences, explain why this estimated impact of TOT should be treated with caution?  Which IV assumptions may not hold in this context?
