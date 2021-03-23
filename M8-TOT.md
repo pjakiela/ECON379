@@ -5,6 +5,8 @@
 ### Overview  
 In this module, we learn how we can use two-stage least squares (2SLS) to estimate the local average treatment effect of a program under imperfect compliance.  
 
+_This module contains one reading, a set of slides for in-class discussion, and an empirical exercise._
+
 <br>
 
 ### Readings
@@ -24,10 +26,10 @@ _Impact Evaluation in Practice_:  Chapter 5
 
 <br>
 
-### Video Lectures  
-_Coming soon._
+
 
 ### Empirical Exercise
-_Coming soon._
+[Empirical Exercise 8](https://pjakiela.github.io/ECON379/exercises/E8-TOT.html)  
+In this exercise, we’ll be using data from the paper [The Miracle of Microfinance? Evidence from a Randomized Evaluation](https://www.jstor.org/stable/43189512?seq=1) by Abhijit Banerjee, Esther Duflo, Rachel Glennerster, and Cynthia Kinnan. The paper reports the results of one of the first randomized evaluations of a microcredit intervention. We’ll be using a small slice of the data from their paper to explore the use of instrumental variables techniques to estimate impacts of treatment on the treated - and to think about when such methods are appropriate.
 
 <br>
