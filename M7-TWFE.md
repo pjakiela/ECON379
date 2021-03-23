@@ -46,6 +46,13 @@ _This module contains 34 minutes of video lecture, one short reading, and two em
 <br>
 
 ### Empirical Exercise
-_Coming soon._
+
+[Empirical Exercise 7A](https://pjakiela.github.io/ECON379/exercises/E7A-TWFE.html)  
+
+In this exercise, we’ll deepen our understanding of the mechanics of TWFE through a simple simulation. We’ll create a small data set containing two units that are observed over four periods, and we’ll calculate the TWFE estimator of a treatment effect of interest using both Excel and Stata.  
+
+[Empirical Exercise 7B](https://pjakiela.github.io/ECON379/exercises/E7B-TWFE.html) 
+
+In this exercise, we’ll be using a data set on school enrollment in 15 African countries that eliminated primary school fees between 1990 and 2015. Data on enrollment comes from the World Bank’s World Development Indicators Database. We’ll be using these data to estimate the two-way fixed effects estimator of the impact of eliminating school fees on enrollment. Since this policy was phased in by different countries at different time, it is a useful setting for exploring the potential pitfalls of two-way fixed effects.
 
 <br>
