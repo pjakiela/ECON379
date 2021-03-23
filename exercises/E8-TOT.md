@@ -28,6 +28,10 @@ as a local or global macro that is included in each specification, writing a `fo
 different outcome variables, using regression weights, and saving the regression results in a text file using the `estout` command.  You don't need 
 to understand every line, but these techniques will help you write clearer do files faster.  
 
+<br>
+
+#### The Impacts of Treatment on the Treated
+
 We're going to focus on a simpler specification in this exercise.  The last line of the do file runs the regression 
 ```
 reg spandana_1 treatment, cluster(areaid)
@@ -55,4 +59,20 @@ ivregress 2sls bizprofit_1 (spandana_1 = treatment), ///
   cluster(areaid) 
 ```
 
-Did you get the coefficient that you expected?  
+Did you get the coefficient that you expected?  How large is the confidence interval?  
+
+When we use instrumental variables to estimated the impact of treatment on the treated, 
+we are assuming that treatment has no impacts whatsoever on those who do not take up treatment.  Does 
+that make sense in the context of microfinance?  Why or why not?  
+
+<br>
+
+#### Empirical Exercise
+
+In the remainder of this exercise, we're going to focus our analysis on individuals and households 
+that were already operating a microenterprise before Spandana started expanding its operations in 
+Hyderabad.  Banerjee, Duflo, Glennerster, and Kinnan find that these households seem to have benefited the most 
+from access to microcredit.
+
+To make your life easier, drop all the observations for whom `any_old_biz==0`.  This should leave you with 
+1,612 observations in your data set.  Now, use your data to answer the following questions.
