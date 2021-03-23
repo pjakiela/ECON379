@@ -18,14 +18,16 @@ were randomly sampled form the local population, so not all of them will have ch
 
 The do file 
 starts with Banerjee et al's replication code to recreate Table 2.  After you run this code, you will have a file called 
-`Table2.txt` saved in your local folder.  `Table2.txt` will contain the same results reported in Panel A of the paper (you may 
-need to open it in a new window if you actually want to read it):
+`Table2.txt` saved in your local folder.  `Table2.txt` will contain the same results reported in Panel A of the paper.  We're 
+going to focus on the first column, which reports the estimated impact of treatment (having a Spandana branch open in your 
+neighborhood) on the likelihood of taking out a Spandana micrloan:
 
 ![PanelATable2](https://pjakiela.github.io/ECON379/exercises/E8-TOT/MOM-Tab2-color.png)
 
 The replication code shows you some of the many tricks economists use when writing do files:  storing a set of controls 
 as a local or global macro that is included in each specification, writing a `foreach` loop to run the same regression for a number of 
-different outcome variables, using regression weights, and saving the regression results in a text file using the `estout` command.  You don't need 
+different outcome variables, using regression weights so that a sample is representative of a population of interest, 
+and saving the regression results in a text file using the `estout` command.  You don't need 
 to understand every line, but these techniques will help you write clearer do files faster.  
 
 <br>
@@ -76,3 +78,6 @@ from access to microcredit.
 
 To make your life easier, drop all the observations for whom `any_old_biz==0`.  This should leave you with 
 1,612 observations in your data set.  Now, use your data to answer the following questions.
+
+1. Estimate the impact of treatment on the likelihood of taking a loan from Spandana (the variable `spandana_1`) in this restricted sample.  What is the estimated coefficient on `treatment`?  Be sure to cluster by `areaid`, as you did in your earlier regressions.
+2. Is the impact of treatment on taking out a Spandana loan larger or smaller for those with an existing business, relative to those who did not already have a microenterprise?
