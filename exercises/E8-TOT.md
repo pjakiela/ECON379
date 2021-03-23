@@ -29,7 +29,11 @@ different outcome variables, using regression weights, and saving the regression
 to understand every line, but these techniques will help you write clearer do files faster.  
 
 We're going to focus on a simpler specification in this exercise.  The last line of the do file runs the regression 
-`reg spandana_1 treatment, cluster(areaid)`.  Your results should be fairly close to Column 1 of Table 2, but not identical 
+```
+reg spandana_1 treatment, cluster(areaid)
+```
+
+Your results should be fairly close to Column 1 of Table 2, but not identical 
 (because we're not including controls, or reweighting observations).  The results indicate that assignment to treatment 
 leads to a statistically significant increase in the likelihood of taking out a microloan from Spandana.  How large is this estimated 
 treatment effect?  What does this coefficient tell us about take-up of the intervention in this evaluation?
@@ -47,7 +51,8 @@ treatment on the treated?  What is the estimated TOT effect?
 Now calculate the estimated TOT effect using instrumental variables:
 
 ```
-ivregress 2sls bizprofit_1 (spandana_1 = treatment), cluster(areaid) 
+ivregress 2sls bizprofit_1 (spandana_1 = treatment), ///
+  cluster(areaid) 
 ```
 
 Did you get the coefficient that you expected?  
