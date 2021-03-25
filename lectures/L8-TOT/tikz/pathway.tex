@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage{tikz}
+%%%<
+\usepackage{verbatim}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{10pt}%
+
+\usetikzlibrary{positioning,shapes}
+
+\renewcommand*{\familydefault}{\sfdefault}
+\newcommand{\cbox}[1]{\parbox[t]{2cm}{\centering #1}}
+
+\begin{document}
+\begin{tikzpicture}
+
+% content boxes
+%\begin{scope}[line width=2pt,draw=gray,rounded corners=8pt,text width=2cm]
+%\foreach \x in {0,3,6,9}
+%\draw(\x,0) rectangle +(2.2,3.2);
+%\end{scope}
+
+\draw(0,0) [line width=2pt,draw=gray,fill=gray!20,rounded corners=8pt,text width=2cm,text badly centered] rectangle node {evaluation \\ sample \\ ${\ }$ \\ N = 200} +(2.2,3.2) ;
+
+\draw(3,0) [line width=2pt,draw=gray,fill=gray!20,rounded corners=8pt,text width=2cm,text badly centered] rectangle node {assigned to \\ treatment \\ ${\ }$ \\ $\mathsf{N}_\mathsf{T}$ = 100} +(2.2,3.2) ;
+
+\draw(6,0) [line width=2pt,draw=gray,fill=gray!20,rounded corners=8pt,text width=2cm,text badly centered] rectangle node {program \\ take-up \\ ${\ }$ \\ 50 percent} +(2.2,3.2) ;
+
+\draw(9,0) [line width=2pt,draw=gray,fill=gray!20,rounded corners=8pt,text width=2cm,text badly centered] rectangle node {outcomes \\ ${\ }$ \\ $\bar{\mathsf{Y}}_\mathsf{T}$ = 5 \\ $\bar{\mathsf{Y}}_\mathsf{C}$ = 0 } +(2.2,3.2) ;
+
+\begin{scope}[every node/.style={single arrow, draw=none,fill=red!50,anchor=center,align=center}]
+\node [text width=0.75cm] at (2.5,1.6) {};
+\node [text width=0.75cm] at (5.5,1.6) {};
+\node [text width=0.75cm] at (8.5,1.6) {};
+\end{scope}
+	
+\end{tikzpicture}
+\end{document}
