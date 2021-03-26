@@ -10,7 +10,7 @@ _These are the assigned readings for Professor Pamela Jakiela's undergraduate co
 
 #### Module 1:  Why Evaluate?  
 
-_There is no video lecture for Module 1.  I use the slides below for class discussion._  
+_There is no video lecture for Module 1.  I used the slides below for class discussion._  
   
 [pdf](https://pjakiela.github.io/ECON379/lectures/L1-why-evaluate/ECON379-L1-Why-Evaluate-PUBLIC.pdf) &nbsp; 
 [tex](https://pjakiela.github.io/ECON379/lectures/L1-why-evaluate/ECON379-L1-Why-Evaluate-PUBLIC.tex) &nbsp; 
@@ -74,6 +74,8 @@ _There is no video lecture for Module 1.  I use the slides below for class discu
 [materials](https://github.com/pjakiela/ECON379/tree/gh-pages/lectures/L7-TWFE/)  
 
 #### Module 8: Treatment-on-the-Treated
+
+_There is no video lecture for Module 8.  I used the slides below for class discussion._  
 
 [pdf](https://pjakiela.github.io/ECON379/lectures/L8-TOT/ECON379-L8-TOT-PUBLIC.pdf) &nbsp; 
 [tex](https://pjakiela.github.io/ECON379/lectures/L8-TOT/ECON379-L8-TOT-PUBLIC.tex) &nbsp; 
