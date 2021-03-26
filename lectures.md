@@ -62,10 +62,22 @@ _There is no video lecture for Module 1.  I use the slides below for class discu
 [Video Lecture 6.1 Common Trends](https://vimeo.com/520477838) (16:46)  
 [Video Lecture 6.2 Event Studies](https://vimeo.com/520481698) (20:53)  
 
+[pdf](https://pjakiela.github.io/ECON379/lectures/L6-DD3/ECON379-L6-DD3-PUBLIC.pdf) &nbsp; 
+[tex](https://pjakiela.github.io/ECON379/lectures/L6-DD3/ECON379-L6-DD3-PUBLIC.tex) &nbsp; 
+[materials](https://github.com/pjakiela/ECON379/tree/gh-pages/lectures/L6-DD3/)  
+
 #### Module 7: Two-Way Fixed Effects (DD IV)  
 [Video Lecture 7.1 Two-Way Fixed Effects](https://vimeo.com/520567600) (34:40)  
 
-Module 8: Treatment-on-the-Treated
+[pdf](https://pjakiela.github.io/ECON379/lectures/L7-TWFE/ECON379-L7-TWFE-PUBLIC.pdf) &nbsp; 
+[tex](https://pjakiela.github.io/ECON379/lectures/L7-TWFE/ECON379-L7-TWFE-PUBLIC.tex) &nbsp; 
+[materials](https://github.com/pjakiela/ECON379/tree/gh-pages/lectures/L7-TWFE/)  
+
+#### Module 8: Treatment-on-the-Treated
+
+[pdf](https://pjakiela.github.io/ECON379/lectures/L8-TOT/ECON379-L8-TOT-PUBLIC.pdf) &nbsp; 
+[tex](https://pjakiela.github.io/ECON379/lectures/L8-TOT/ECON379-L8-TOT-PUBLIC.tex) &nbsp; 
+[materials](https://github.com/pjakiela/ECON379/tree/gh-pages/lectures/L8-TOT/)  
 
 Module 9: Regression Discontinuity (RD I)  
 
