@@ -10,7 +10,8 @@ set more off
 set scheme s1mono
 set seed 314159
 
-cd "C:\Users\pj\Dropbox\econ379-2021\exam1"
+// YOUR FOLDER HERE
+cd "C:\Users\MYFOLDER\exam1"
 
 webuse set https://pjakiela.github.io/ECON379/exercises/exam1/
 
@@ -28,24 +29,19 @@ webuse ECON379-exam1-data-YOURIDHERE
 //		different in the treatment and comparison groups defined by the 
 //		variable q27_treatment.  What is the resulting p-value?
 
-// Question 28A 
+// Question 28
 
 //	Use a regression to test the hypothesis that the mean of the variable q28_y 
 //		is different in the treatment and comparison groups defined by the 
 //		variable q28_treatment.  What is the estimated coefficient on the variable 
 //		q28_treatment?
 
-// Question 28B 
-
-//	What is the standard error associated with the variable q28_treatment in the 
-//		regression above?
-
 // Question 29 
 
 //	Use the variables q29_evertreated and q29_post to construct a 
 //		difference-in-differences estimate of the impact of treatment on the 
 //		outcome q29_y.  The units receiving treatment are those with 
-//		q29_evertreated==1, and they post treatment period is defined by the 
+//		q29_evertreated==1, and the post treatment period is defined by the 
 //		q29_post variable.  What is the difference-in-difference estimate of  
 //		the treatment effect?
 
