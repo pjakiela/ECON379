@@ -2,6 +2,6 @@
 
 This module provides an overview of **regression discontinuity designs**.
 
-#### Readings
+### Readings
 
-#### Empirical Exercises
+### Empirical Exercises
