@@ -28,25 +28,19 @@ March 30: Exam Review
 
 April 1: Exam 1  
 
+April 6, 8: Regression Discontinuity  
+
 ### Program Evaluation in Practice
 
-March 6: Regression Discontinuity (RD I)  
+April 13, 15: Random Assignment in Practice 
 
-March 8: RD as IV (IV II, RD II)  
-
-April 13: Power Calculations
-
-April 15: Random Assignment in Practice 
-
-April 20: Compliance and Attrition 
+April 20: Power Calculations
 
 April 22: health days (no class)
 
-April 27: Survey Design
+April 27, 29: Pre-Analysis Plans & the Replication Crisis
 
 ### Galaxy Brain
-
-April 29: Pre-Analysis Plans & the Replication Crisis
 
 May 4: Criticisms of RCTs
 
