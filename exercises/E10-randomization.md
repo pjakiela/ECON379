@@ -55,4 +55,73 @@ it.  Which ID numbers get assigned to treatment group 1 (of 3)?
 
 Here is another simple program that randomly assigns treatment, but in this case
 we also generate a single covariate, `x`.  The goal of randomization is to 
-create treatment and comparison groups that are similar in terms of there 
+create treatment and comparison groups that are similar in terms of their 
+observable characteristics.  Create a do file that runs the code below, 
+and then check whether the treatment and comparison groups have similar 
+values of `x` using the `ttest` command.
+
+```
+clear all
+version 16.1
+set seed 12345
+
+local myobs = 100
+set obs 100
+gen id = _n 
+
+gen x = rnormal()
+gen randnum = runiform()
+sort randnum
+egen treatment = seq(), from(0) to(1)
+```
+
+What is the estimated difference in `x` between the treatment and the comparison 
+group?  What is the p-value associated with the test of the hypothesis that 
+the treatment and comparison groups have the same mean?
+
+Now insert this line of code immediately afer the line where you generate `x`:
+
+```
+replace x = x+100 in 1/4
+```
+
+We've created a situation where our sample contains four outliers with very large 
+values of `x`.  Test whether the mean of `x` is the same in the treatment and 
+comparison groups.  What do you find?  Tabulate the `x` variable using the command `tab x treatment` 
+so that you can see how many of the observations with large values of `x` happen to be 
+in the treatment group.
+
+To address this issue, we want to create a dummy variable indicating which observations 
+have very large values of `x`, and then **stratify** our treatment assignments.    We 
+can generate a dummy variable `largex` as follows:
+
+```
+gen largex = x>99
+```
+
+Now you want to stratify your treatment assignments.  To do this, we'll sort 
+our data by `largex` and `randnum` before we assign treatment.  Run a t-test 
+to confirm that this procedure generates treatment and comparison groups 
+that are comparable in terms of `x`.
+
+<br>
+
+#### Empirical Exercise
+
+Create a new do file that contains the same code that we used above:
+
+```
+```
+clear all
+version 16.1
+set seed 12345
+
+local myobs = 100
+set obs 100
+gen id = _n 
+
+gen x = rnormal()
+gen randnum = runiform()
+sort randnum
+egen treatment = seq(), from(0) to(1)
+```
