@@ -173,3 +173,6 @@ two lines of code would you use to sort the data and assign treatments?
 
 ###### Question 4
 
+How many covariates are imbalanced now, after stratifying on the three that were initially imbalanced?
+
+
