@@ -65,7 +65,6 @@ clear all
 version 16.1
 set seed 12345
 
-local myobs = 100
 set obs 100
 gen id = _n 
 
@@ -115,7 +114,6 @@ clear all
 version 16.1
 set seed 12345
 
-local myobs = 100
 set obs 100
 gen id = _n 
 
@@ -148,4 +146,30 @@ ttest x1, by(treatment)
 replace pvalue = r(p) in 1
 ```
 
-How many of your 20 covariates are imbalanced?
+How many of your 20 covariates are imbalanced (at the 5% level of statistical significance)?
+
+###### Question 2
+
+Now increase your sample size to 100,000 and re-run your code.  How many of the covariates are imbalanced now?
+
+###### Question 3
+
+Reduce the sample size to 10,000 observations and re-run your code.  Which covariates are imbalanced?  (One way 
+to see this quickly is to use the command `list pvalue if pvalue!=.` - this will show you the p-values and 
+the line numbers where they appear.)  Confirm that you've identified the imbalanced covariates using the 
+t-test command.  
+
+For each of the three imbalanced p-values, generate a dummy variable for observations with above the median 
+value of that variable.  So, for example, if `x1` were imbalanced, you could generate a variable equal 
+to one for observations with above-median values of `x1` using the following commands:
+
+```
+sum x1, detail
+gen highx1 = (x1>=r(p50))
+```
+
+Now, modify your code so that you stratify your randomization by your three `highx*` variables.  What 
+two lines of code would you use to sort the data and assign treatments?
+
+###### Question 4
+
