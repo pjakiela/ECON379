@@ -108,9 +108,8 @@ that are comparable in terms of `x`.
 
 #### Empirical Exercise
 
-Create a new do file that contains the same code that we used above:
+Create a new do file similar to the one we used above:
 
-```
 ```
 clear all
 version 16.1
@@ -120,8 +119,33 @@ local myobs = 100
 set obs 100
 gen id = _n 
 
-gen x = rnormal()
+forvalues i = 1/20 {
+	gen x`i' = rnormal()
+}
+
 gen randnum = runiform()
 sort randnum
 egen treatment = seq(), from(0) to(1)
 ```
+
+The only difference between this code and the code we used earlier is that 
+here we generate 20 different covariates using a loop.  The line `forvalues  i = 1/20` 
+tells Stata to loop through the numbers 1 through 20.  For each value of `i` between 1 and 20, 
+Stata generates a variable xi (ie variables `x1` through `x20`).  Each of these variables is a 
+normally-distributed random variable.  
+
+###### Question 1
+
+Add an additional loop to the code that tests whether each variables (`x1` through `x20`) is 
+balanced (ie you cannot reject the hypothesis that the treatment and comparison groups are 
+drawn from populations with the same means).  First, generate a variable `pvalue` that is missing 
+for all observations using the command `gen pvalue = .`  Then write a loop that first tests whether 
+each covariate differs across the treatment and comparison groups.  You can save your p-values 
+as the values of the p-value variable using the following code (I'm showing you the example for the variable `x1`):
+
+```
+ttest x1, by(treatment)
+replace pvalue = r(p) in 1
+```
+
+How many of your 20 covariates are imbalanced?
