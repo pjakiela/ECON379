@@ -132,12 +132,12 @@ tells Stata to loop through the numbers 1 through 20.  For each value of `i` bet
 Stata generates a variable xi (ie variables `x1` through `x20`).  Each of these variables is a 
 normally-distributed random variable.  
 
-###### Question 1
+##### Question 1
 
 Add an additional loop to the code that tests whether each of these variables (`x1` through `x20`) is 
 balanced (ie you cannot reject the hypothesis that the treatment and comparison groups are 
 drawn from populations with the same means).  First, generate a variable `pvalue` that is missing 
-for all observations using the command `gen pvalue = .`  Then write a loop that first tests whether 
+for all observations using the command `gen pvalue = .`  Then write a loop that tests whether 
 each covariate differs across the treatment and comparison groups.  You can save your p-values 
 as the values of the p-value variable using the following code (I'm showing you the example for the variable `x1`):
 
@@ -148,18 +148,18 @@ replace pvalue = r(p) in 1
 
 How many of your 20 covariates are imbalanced (at the 5% level of statistical significance)?
 
-###### Question 2
+##### Question 2
 
 Now increase your sample size to 100,000 and re-run your code.  How many of the covariates are imbalanced now?
 
-###### Question 3
+##### Question 3
 
 Reduce the sample size to 10,000 observations and re-run your code.  Which covariates are imbalanced?  (One way 
 to see this quickly is to use the command `list pvalue if pvalue!=.` - this will show you the p-values and 
 the line numbers where they appear.)  Confirm that you've identified the imbalanced covariates using the 
 t-test command.  
 
-###### Question 4
+##### Question 4
 
 For each of the three imbalanced p-values, generate a dummy variable for observations with above the median 
 value of that variable.  So, for example, if `x1` were imbalanced, you could generate a variable equal 
@@ -173,7 +173,7 @@ gen highx1 = (x1>=r(p50))
 Now, modify your code so that you stratify your randomization by your three `highx*` variables.  What 
 two lines of code would you use to sort the data and assign treatments?
 
-###### Question 5
+##### Question 5
 
 How many covariates are imbalanced now, after stratifying on the three that were initially imbalanced?
 
