@@ -154,7 +154,7 @@ Now increase your sample size to 100,000 and re-run your code.  How many of the 
 
 ##### Question 3
 
-Reduce the sample size to 10,000 observations and re-run your code.  Which covariates are imbalanced?  (One way 
+Reduce the sample size to 1,000 observations and re-run your code.  Which covariates are imbalanced?  (One way 
 to see this quickly is to use the command `list pvalue if pvalue!=.` - this will show you the p-values and 
 the line numbers where they appear.)  Confirm that you've identified the imbalanced covariates using the 
 t-test command.  
