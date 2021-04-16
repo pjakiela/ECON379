@@ -135,7 +135,9 @@ the null hypothesis now?  At this point, you should be feeling pretty good about
 the size of your test.  (This is also a good time to google "statistics joke hunting.")
 
 ##### Question 12 
-From the reading, we know that the formula for the minimum detectable effect is given by:
+If our statistic is a difference in means or a regression coefficient, we know that 
+it is apprxomately normally distributed.  From the reading, we know that the formula 
+for the minimum detectable effect is then given by:
 
 ![mde](https://pjakiela.github.io/ECON379/exercises/E11-power/MDE-eq1.png)  
 
@@ -143,5 +145,9 @@ When we fix the size of the test at 0.05 and the power of the test at 0.8,
 the t<sub>1 - &kappa;</sub> + t<sub>&alpha;/2</sub> term is approximately 
 equal to 2.8 (more on that in the next exercise).  We also know that half of 
 our sample is assigned to treatment, so P=0.5.  Finally, we know that our outcome 
-of interested is drawn from a standard normal distribution, so &sigma;<sup>2</sup>=1.
+of interested is drawn from a standard normal distribution, so &sigma;<sup>2</sup>=1.  Given 
+this, what is the minimum detectable effect when we use a sample of size 100?  When you 
+plug that MDE into the program as the value of the `effect` variable, you should see 
+that you (correctly) reject the null hypothesis **approximately** 80 percent of the time.
+
 
