@@ -137,4 +137,7 @@ the size of your test.  (This is also a good time to google "statistics joke hun
 ##### Question 12 
 From the reading, we know that the formula for the minimum detectable effect is given by:
 
+![mde](https://pjakiela.github.io/ECON379/exercises/E11-power/MDE-eq1.png)  
+
+
 
