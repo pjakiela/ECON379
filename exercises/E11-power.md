@@ -100,7 +100,7 @@ You can change the value of the local macro `sample` to increase (or decrease)
 the sample size in the simulations.  Increase the sample size until you 
 have a test of size 0.05.  How big did you need to make the sample?
 
-#### Question 5
+##### Question 5
 Now that you have a test of size 0.05, it is time to consider the power.  Add a line 
 **before** the loop that generate a variable `effect` equal to 0.5 (which is 
 equal to hald a standard deviation of the outcome variable).  Then add a line 
@@ -116,3 +116,21 @@ Given your answer to Question 5, what is the power of your test?
 Now increase the size of the effect until you achieve a power of 0.8, 
 the minimum that is consdered acceptable.  How large does the effect 
 need to be to achieve the desired level of statistical power?
+
+##### Question 8
+Now set the effect to zero, so that the null hypothesis is (one again) correct.  Change 
+the test you are using to a standard t-test (that the mean of `y` is equal in the 
+treatment and control groups).  How many times to you reject the null hypothesis?  
+
+##### Question 9 
+What should the answer to Question 8 be, in expectation?  
+
+##### Question 10 
+Set the seed to 31415926 and run the program again.  How many times do you reject 
+the null hypothesis now?
+
+##### Question 11 
+Set the seed to 3141592 and run the program again.  How many times do you reject 
+the null hypothesis now?  At this point, you should be feeling pretty good about 
+the size of your test.  (This is also a good time to google "statistics joke hunting.")
+
