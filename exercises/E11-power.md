@@ -108,3 +108,11 @@ to the loop that replaces `y` with `y+effect*treatment`.  So, now we are in a
 world where the null hypothesis is false:  there is a treatment effect.  
 When you run the code and simulate the data-generating process and hypothesis 
 test 100 times, how many times do you reject the (false) null?
+
+##### Question 6
+Given your answer to Question 5, what is the power of your test?
+
+##### Question 7
+Now increase the size of the effect until you achieve a power of 0.8, 
+the minimum that is consdered acceptable.  How large does the effect 
+need to be to achieve the desired level of statistical power?
