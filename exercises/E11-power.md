@@ -35,3 +35,76 @@ We refer to the probability of a Type I error as the **size** of a test.  The co
 to Ronald Fisher) is to use a test of size 0.05.  This means that we reject the null hypothesis 
 whenever our statistic has a p-value of 0.05 or less (meaning that a statistic at least that large would occur less 
 that five percent of the time under the null).  
+
+In the coin flip example above, the only rule that guarantees that probability of a Type I error is below 0.05 
+is the rule _don't ever reject the null hypothesis_ (which is not very helpful in terms of statistical 
+practice).  If, for example, we reject the null when we oberve either two heads or two tails, we would reject 
+the null with probability 0.5 **even when the null hypothesis was correct**.  In other words, we would have a 
+test of size 0.5 instead of 0.05.  
+
+<br>
+
+#### Empirical Exercise, Part 1
+
+The Stata code below can be used to simulate our second example.  It generates a sample of size 
+4 comprising two treated observations (economics majors) and two untreated observations (English 
+majors).  The outcome variable `y` is a student's normalized score on a test of Stata proficiency; 
+the test is scaled so that the mean score is zero and the scores have a standard deviation of one.  
+In our simulation, we assume scores are drawn from a standard normal distribution.  
+
+
+The loop does the following:  first, it randomly generates draws from a standard normal 
+to simulate test scores in a sample of N=4 under the null hypothesis of no treatment 
+effect (of being an economics major); then it tests whether Stata proficiency is 
+higher among the economics majors (treatment) than the English majors (control).  It 
+does this 100 times.  
+
+```
+clear all
+set seed 314159
+set obs 100
+gen id= _n
+
+local sample = 4
+gen treatment = 0 if id<=`sample'
+replace treatment = 1 if id<=`sample'/2
+
+gen reject = 0
+
+forvalues i = 1/100 {
+   gen y = rnormal() if treatment!=.
+   sum y if treatment==1
+   local t_min = r(min)
+   sum y if treatment==0
+   local c_max = r(max)
+   replace reject = 1 in `i' if `t_min'>`c_max'
+   drop y
+}
+```
+
+###### Question 1
+Look carefully at the code:  what is the hypothesis test?  In other words, 
+what rule is being used to determine whether to reject the null 
+hypothesis?  
+
+##### Question 2
+Run the code.  In the 100 simulations, how many times do you reject 
+the null hypothesis?  (You can tab the `reject` variable after running 
+the code to figure this out.)
+
+##### Question 3
+Based on your answer to Question 2, what is the size of the test?
+
+##### Question 4 
+You can change the value of the local macro `sample` to increase (or decrease) 
+the sample size in the simulations.  Increase the sample size until you 
+have a test of size 0.05.  How big did you need to make the sample?
+
+#### Question 5
+Now that you have a test of size 0.05, it is time to consider the power.  Add a line 
+**before** the loop that generate a variable `effect` equal to 0.5 (which is 
+equal to hald a standard deviation of the outcome variable).  Then add a line 
+to the loop that replaces `y` with `y+effect*treatment`.  So, now we are in a 
+world where the null hypothesis is false:  there is a treatment effect.  
+When you run the code and simulate the data-generating process and hypothesis 
+test 100 times, how many times do you reject the (false) null?
