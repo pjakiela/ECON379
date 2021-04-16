@@ -1,4 +1,4 @@
-## Empirical Exercie 11
+## Empirical Exercise 11
 
 This is the first of two exercises on power calculations.  In this exercise, we'll review the concepts 
 of **size** and **power** in hypothesis testing, and learn how to calculate the **minimum detectable effect** 
@@ -39,7 +39,7 @@ that five percent of the time under the null).
 In the coin flip example above, the only rule that guarantees that probability of a Type I error is below 0.05 
 is the rule _don't ever reject the null hypothesis_ (which is not very helpful in terms of statistical 
 practice).  If, for example, we reject the null when we oberve either two heads or two tails, we would reject 
-the null with probability 0.5 **even when the null hypothesis was correct**.  In other words, we would have a 
+the null with probability 0.5 **even if the null hypothesis was correct**.  In other words, we would have a 
 test of size 0.5 instead of 0.05.  
 
 <br>
@@ -133,4 +133,8 @@ the null hypothesis now?
 Set the seed to 3141592 and run the program again.  How many times do you reject 
 the null hypothesis now?  At this point, you should be feeling pretty good about 
 the size of your test.  (This is also a good time to google "statistics joke hunting.")
+
+##### Question 12 
+From the reading, we know that the formula for the minimum detectable effect is given by:
+
 
