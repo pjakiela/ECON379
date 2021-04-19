@@ -65,7 +65,18 @@ and the probability of detecting a treatment effect is quite large.
 
 ![t3c](https://pjakiela.github.io/ECON379/exercises/E11-power/f-testsize3c.png)
 
-We usually look for a power of at least 0.8.
+We usually look for a power of at least 0.8, by which we mean that we want to probability 
+of detecting an effect (if there is one) to be at least 0.8.  In practice that means that 
+we want 80 percent of the area under the red curve to be to the right of the critical value 
+(of 1.96) of the distribution of t-statistics under the null.  You can see an example of this 
+in the figure below.  
 
 ![tPC](https://pjakiela.github.io/ECON379/exercises/E11-power/f-testsizePC.png)
+
+In practice, we can frame the question of power in two ways:
+
+- Given a sample size, how large of an impact can I detect (if I require a power of at least 0.8)?
+- Given an effect size (expressed in terms of standard errors), how large of a sample do I need to ensure that I have a power of at least 0.8?
+
+
 
