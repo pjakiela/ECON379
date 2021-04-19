@@ -21,14 +21,14 @@ might use to tell us when to reject the null hypothesis?
 **Example 2.**  We want to test the hypothesis that economics majors know more about Stata than English majors.  We have data 
 measuring performance on a Stata proficiency test for four students:  two English majors and two econ majors.  How 
 can we use the data to decide whether to reject the null hypothesis that econ majors and English majors 
-are equally proficienct with Stata.  
+are equally proficienct with Stata?  
 
 Whenever we specify a rule about when to reject the null hypothesis, we have to worry about the possibility of getting 
 it wrong.  One possibility is that the null hypothesis is correct, but (based on our rule) we reject it.  This is 
 called a **Type I error** or a **false positive**.  We also have to worry about the possibility that the null 
 hypothesis is wrong, but (based on our rule) we fail to reject it.  This is called a **Type II error** or, less 
 commonly, a **false zero**.  It is not usually possible to reduce the probabilities of both Type I and Type II errors 
-to zero; on the contrary, reducing the probability of a Type I error usually involves increasing the probability of 
+to zero; reducing the probability of a Type I error usually involves increasing the probability of 
 a Type II error.  
 
 We refer to the probability of a Type I error as the **size** of a test.  The convention (dating back 
@@ -47,16 +47,16 @@ test of size 0.5 instead of 0.05.
 #### Empirical Exercise, Part 1
 
 The Stata code below can be used to simulate our second example.  It generates a sample of size 
-4 comprising two treated observations (economics majors) and two untreated observations (English 
+N=4 comprising two treated observations (economics majors) and two untreated observations (English 
 majors).  The outcome variable `y` is a student's normalized score on a test of Stata proficiency; 
-the test is scaled so that the mean score is zero and the scores have a standard deviation of one.  
-In our simulation, we assume scores are drawn from a standard normal distribution.  
-
+the test is scaled so that the mean score is zero and the scores have a standard deviation of 
+one.  In our simulation, we assume scores are drawn from a standard normal distribution.  
 
 The loop does the following:  first, it randomly generates draws from a standard normal 
 to simulate test scores in a sample of N=4 under the null hypothesis of no treatment 
 effect (of being an economics major); then it tests whether Stata proficiency is 
-higher among the economics majors (treatment) than the English majors (control).  It 
+higher among the economics majors (treatment) than the English majors (control) using 
+a particular rule for determining whether to reject the null hypothesis.  It 
 does this 100 times.  
 
 ```
@@ -82,7 +82,7 @@ forvalues i = 1/100 {
 }
 ```
 
-###### Question 1
+##### Question 1
 Look carefully at the code:  what is the hypothesis test?  In other words, 
 what rule is being used to determine whether to reject the null 
 hypothesis?  
@@ -118,9 +118,9 @@ the minimum that is consdered acceptable.  How large does the effect
 need to be to achieve the desired level of statistical power?
 
 ##### Question 8
-Now set the effect to zero, so that the null hypothesis is (one again) correct.  Change 
+Now set the effect to zero, so that the null hypothesis is (once again) correct.  Change 
 the test you are using to a standard t-test (that the mean of `y` is equal in the 
-treatment and control groups).  How many times to you reject the null hypothesis?  
+treatment and control groups).  How many times do you reject the null hypothesis?  
 
 ##### Question 9 
 What should the answer to Question 8 be, in expectation?  
