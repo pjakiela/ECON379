@@ -7,3 +7,23 @@ in hypothesis testing, and learn how to calculate the **minimum detectable effec
 ![wahlberg](https://pjakiela.github.io/ECON379/exercises/E11-power/wahlberg-SM.jpg)
 
 <br>
+
+#### What Is Power?
+
+Every time we test a hypothesis, we make a decision about whether or not to reject a 
+**null hypothesis** in favor of an alternative.  In impact evaluation, the null hypothesis is 
+usually "This intervention has no impact."  When we reject that null hypothesis, we are saying 
+"We think this intervention has an impact" - but we could always be wrong.  It could be that 
+the stars (or, more precisely, the error terms in our model) align to make it look like 
+outcomes are different in the treatment and the comparison group, even when an intervention 
+actually did nothing.  It is also possible for the stars to align the other way, making it 
+look like a treatment has no (statistically significant) effect when that is not correct. 
+
+In the last exercise, we learned that the **size** of a hypothesis test 
+is the probability of a Type I error (rejecting a null hypothesis that is actually true - i.e. "finding" 
+an effect that isn't actually there).  Ever since Fisher, it has been standard to use a test size of 
+0.05, which means that we expect to reject a **true** null hypothesis about 5 percent of the time.  
+
+The **power** of a test is the probability of rejecting a false null hypothesis, i.e. the chance 
+of "finding" an effect that is actually there.  The power of a test is one minus the probability 
+of a Type II error (failing to reject a false null hypothesis).  
