@@ -65,3 +65,7 @@ and the probability of detecting a treatment effect is quite large.
 
 ![t3c](https://pjakiela.github.io/ECON379/exercises/E11-power/f-testsize3c.png)
 
+We usually look for a power of at least 0.8.
+
+![tPC](https://pjakiela.github.io/ECON379/exercises/E11-power/f-testsizePC.png)
+
