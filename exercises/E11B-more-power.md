@@ -37,11 +37,15 @@ of "finding" an effect that is actually there.  The power of a test is one minus
 of a Type II error (failing to reject a false null hypothesis).  When we do a **power calculation**, 
 we are trying to figure out the likelihood that we will be able to detect an effect of a given size 
 with the sample we have.  In other words, we're asking "If the true effect is _this_ big, what is the 
-probability that we end up with an estimated t-statistic larger (in magnitude) than 1.96?"  
+probability that we end up with an estimated t-statistic larger (in magnitude) than 1.96?"  In this context, 
+when we talk about an effect "of a given size" we are measuring the size of the treatment effect in 
+units equivalent to the standard error of the test statistic under the null (because we want to know 
+the probability that we'll get a t-statistic of at least 1.96 in absolute value).
 
-Suppose we thought that our treatment wre going to increase the mean of the outcome variable by one 
+Suppose we thought that our treatment were going to increase the mean of the outcome variable by 
 an amount equivalent to one standard error of the estimated treatment effect.  If that were the case, 
-then our test statistic would have the distribution depicted in red in the figure below.  As you can see, 
+then our test statistic would have the distribution depicted in red in the figure below.  (The blue 
+curve represents the distribution of the statistic under the null.)  As you can see, 
 the two distributions are actually pretty similar:  a treatment effect equivalent to one standard error 
 means that range of t-statistics we'd expect is not very different from what we'd expect under the null.
 
@@ -49,6 +53,15 @@ means that range of t-statistics we'd expect is not very different from what we'
 
 If a program increases outcomes by one standard error, the probability that we get a test-statistic 
 large enough to reject the null (the power of our test) is actually pretty low, as you can see in 
-the figure below.  
+the figure below.  The power is the shaded pink area:  the proportion of the red pdf of the test statistic 
+(under the alternative hypothesis) that falls to the right of the critical value of the distribution 
+of the test statistic under the null.
 
 ![t1c](https://pjakiela.github.io/ECON379/exercises/E11-power/f-testsize1c.png)
+
+If we instead consider a case where the treatment effect is **three times** as large as the 
+standard error the test statistic under the null, we can see that the red and blue pdfs are now quite different - 
+and the probability of detecting a treatment effect is quite large.
+
+![t3c](https://pjakiela.github.io/ECON379/exercises/E11-power/f-testsize3c.png)
+
