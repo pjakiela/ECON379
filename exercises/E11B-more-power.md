@@ -47,4 +47,8 @@ means that range of t-statistics we'd expect is not very different from what we'
 
 ![t1a](https://pjakiela.github.io/ECON379/exercises/E11-power/f-testsize1a.png)
 
+If a program increases outcomes by one standard error, the probability that we get a test-statistic 
+large enough to reject the null (the power of our test) is actually pretty low, as you can see in 
+the figure below.  
+
 ![t1c](https://pjakiela.github.io/ECON379/exercises/E11-power/f-testsize1c.png)
