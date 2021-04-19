@@ -22,7 +22,15 @@ look like a treatment has no (statistically significant) effect when that is not
 In the last exercise, we learned that the **size** of a hypothesis test 
 is the probability of a Type I error (rejecting a null hypothesis that is actually true - i.e. "finding" 
 an effect that isn't actually there).  Ever since Fisher, it has been standard to use a test size of 
-0.05, which means that we expect to reject a **true** null hypothesis about 5 percent of the time.  
+0.05, which means that we expect to reject a **true** null hypothesis about 5 percent of the time. When 
+we estimate a difference in means, we're usually thinking about a test statistic that has a normal (or t) 
+distribution.  
+
+![t1](https://pjakiela.github.io/ECON379/exercises/E11-power/wahlberg-SM.jpg)
+
+Under the null hypothesis of no treatment effect, the estimated impact will be distributed 
+around a mean of zero.  When expressed in terms of a t-statistic, we know that the absoluted value will be 
+greater than 1.96 about 5 percent of the time.  
 
 The **power** of a test is the probability of rejecting a false null hypothesis, i.e. the chance 
 of "finding" an effect that is actually there.  The power of a test is one minus the probability 
