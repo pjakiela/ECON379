@@ -26,7 +26,7 @@ an effect that isn't actually there).  Ever since Fisher, it has been standard t
 we estimate a difference in means, we're usually thinking about a test statistic that has a normal (or t) 
 distribution.  
 
-![t1](https://pjakiela.github.io/ECON379/exercises/E11-power/wahlberg-SM.jpg)
+![t1](https://pjakiela.github.io/ECON379/exercises/E11-power/f-testsize0.png)
 
 Under the null hypothesis of no treatment effect, the estimated impact will be distributed 
 around a mean of zero.  When expressed in terms of a t-statistic, we know that the absoluted value will be 
