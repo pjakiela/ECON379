@@ -79,4 +79,61 @@ In practice, we can frame the question of power in two ways:
 - Given an effect size (expressed in terms of standard errors), how large of a sample do I need to ensure that I have a power of at least 0.8?
 
 
+#### Empirical Exercise
+
+In this exercise, we'll be using data from two experiments that we've already studied.  The first of these is 
+impact evaluation of malaria treatment that we studied in the first week of class.  Create a do file that 
+uses the following code to download the data.
+
+```
+clear all 
+set scheme s1mono 
+set more off
+set seed 12345
+version 16.1
+
+cd "C:\Users\pj\Dropbox\econ379-2021\exercises\E11-power"
+
+** load data 
+webuse set https://pjakiela.github.io/ECON379/exercises/E1-intro/
+webuse E1-CohenEtAl-data.dta
+```
+
+##### Question 1
+
+Your are designing an intervention intended to increase knowledge about malaria transmission.  Your 
+main outcome variable of interest is `b_knowledge_correct`.  Summarize this variable using 
+the `sum` command with the `detail` option.  What is the estimated **standard deviation** of 
+`b_knowledge_correct`?
+
+##### Question 2
+
+What is the estimated **variance** of `b_knowledge_correct`?
+
+##### Question 3
+
+Using the formula for the minimum detectable effect, calculate the MDE given your sample size 
+if you assume equally-sized treatment and comparison groups (so P in the formulat = 0.5).  What 
+is the MDE?
+
+##### Question 4 
+
+Now use the `sampsi` command to calculate the sample size you would need to detect an MDE equal 
+to your answer to Question 3, given the standard deviation of the outcome variable.  What sample 
+size does `sampsi` indicate that you need?
+
+##### Question 5
+
+The treatment dummy in the original study is `act_any`.  Based on this variable, what is the ratio 
+of treated obesrvations to control observations?  
+
+##### Question 6
+
+Use the formula to calculate the MDE in the study (if you used the same outcome variable as above, 
+`b_knowledge_correct`) given the actual ratio of treatment to control observations.  What is the MDE?
+
+##### Question 7
+
+
+
 
