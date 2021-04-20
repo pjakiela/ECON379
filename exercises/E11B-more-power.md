@@ -28,7 +28,10 @@ an effect that isn't actually there).  Ever since Fisher, it has been standard t
 
 When we estimate a difference in means, we're usually thinking about a test statistic that has a normal (or t) 
 distribution.  Under the null hypothesis of no treatment effect, the estimated impact will be distributed 
-around a mean of zero.  When expressed in terms of a t-statistic, we know that the absoluted value will be 
+around a mean of zero.  (In other words, if we did our experiment thousands of time, we'd expect the 
+estimated impact to be zero _on average_, but it would sometimes be positive and sometimes be negative. The 
+estimated impact would _usually_ be small, but sometimes it would be large relative to the standard error.)  When 
+expressed in terms of a t-statistic, we know that the absoluted value will be 
 greater than 1.96 about 5 percent of the time (this is why, when we see a t-statistic larger than 1.96 in absolute 
 value, we say that the effect is statistically significant at the 95 percent confidence level).  
 
