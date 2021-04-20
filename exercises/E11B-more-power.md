@@ -82,10 +82,15 @@ In practice, we can frame the question of power in two ways:
 - Given a sample size, how large of an impact can I detect (if I require a power of at least 0.8)?
 - Given an effect size (expressed in terms of standard errors), how large of a sample do I need to ensure that I have a power of at least 0.8?
 
+Which approach makes sense will depend on the context:  if our sample size is fixed (for example, if you are doing an intervention 
+in with a pre-existing sample of survey respondents), it makes sense to ask how large of an impact you can detect (and whether 
+an impact of that magnitude is plausible given the nature of your outcome variable); if you are starting from scratch, it might make 
+more sense to ask what size of an impact you should expect (based on, for example, evidence from other studies) and calculate 
+the sample size you need as a result.
 
 #### Empirical Exercise
 
-In this exercise, we'll be using data from two experiments that we've already studied.  The first of these is 
+In this exercise, we'll be using data from two experiments that we've already studied.  The first of these is the 
 impact evaluation of malaria treatment that we studied in the first week of class.  Create a do file that 
 uses the following code to download the data.
 
