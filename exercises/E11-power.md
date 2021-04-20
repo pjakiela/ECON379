@@ -148,6 +148,19 @@ our sample is assigned to treatment, so P=0.5.  Finally, we know that our outcom
 of interested is drawn from a standard normal distribution, so &sigma;<sup>2</sup>=1.  Given 
 this, what is the minimum detectable effect when we use a sample of size 100?  When you 
 plug that MDE into the program as the value of the `effect` variable, you should see 
-that you (correctly) reject the null hypothesis **approximately** 80 percent of the time.
+that you (correctly) reject the null hypothesis **approximately** 80 percent of the time.  (Don't 
+forget to increase the sample size to 100!)
 
+##### Question 13
+
+Check that this is approximately correct by running the command 
+
+```
+sampsi 0 0.56, power(0.8) sd(1)
+```
+
+which calculates the sample size required to have power 0.8 to test the 
+hypothesis that treatment increases the mean from 0 to 0.56 when the SD 
+of the outcome variable is 1.  What is the **total** sample size required 
+to conduct this hypothesis test (`n1+n2`)? 
 
