@@ -197,6 +197,30 @@ Express the MDE as a perecentage of the outcome variable of interest:  how large
 
 ##### Question 12
 
-Now we will consider a completely different data set, the data on access to microfinance that we used in Empirical Exercise 8.  
+Now we will consider a completely different data set: the data on access to microfinance that we used in Empirical Exercise 8.  The data comes from the paper [The Miracle of Microfinance?  Evidence from a Randomized Evaluation](https://www.jstor.org/stable/43189512?seq=1) by 
+Abhijit Banerjee, Esther Duflo, Rachel Glennerster, and Cynthia Kinnan.  The paper reports the results of one of the first randomized evaluations of a microcredit intervention.  The authors worked with an Indian MFI (microfinance institution) called Spandana that was expanding into the city of Hyderabad.  Spandana identified 104 neighborhoods where it would be willing to open branches.  They couldn't open branches in all the neighborhoods simultaneously, so they worked with the researchers to assign half of them to a treatment group where branches would be opened immediately.  Spandana held off on opening branches in the control neighborhoods until after the study. 
+
+Use the code below to read the data into Stata:
+
+```
+clear
+webuse set https://pjakiela.github.io/ECON379/exercises/E8-TOT/
+webuse E8-BanerjeeEtAl-data.dta
+```
+
+Look at a histogram of the `bizprofit_1` variable.  What do you notice about its distribution?  Now use the `sum` command with the `detail` option.  What 
+is the mean of `bizprofit_1`?
+
+##### Question 13
+
+What is the standard deviation of `bizprofit_1`?
+
+##### Question 14
+
+Given the size of this data set and the standard deviation of `bizprofit_1`, what is the MDE if you wanted to have power of 0.8?  
+
+##### Question 15
+
+How does this MDE compare to the mean of the outcome variable?  How large of a percent change in the outcome would you need to anticipate if you wanted to have power of at least 0.8?  
 
 
