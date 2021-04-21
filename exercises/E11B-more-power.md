@@ -217,7 +217,7 @@ What is the standard deviation of `bizprofit_1`?
 
 ##### Question 14
 
-Given the size of this data set and the standard deviation of `bizprofit_1`, what is the MDE if you wanted to have power of 0.8?  
+Given the size of this data set and the standard deviation of `bizprofit_1`, what is the MDE if you wanted to have power of 0.8 (assuming treatment and comparison groups of equal size)?  
 
 ##### Question 15
 
