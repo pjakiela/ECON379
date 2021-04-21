@@ -179,7 +179,7 @@ One way to increase power is to include controls that explain the observed varia
 controls, the standard deviation used in the MDE calculuation is the standard deviation of the the **residuals** after regressing 
 the outcome on the controls.  Replace the missing values of the variables `b_acres` with zeroes.  Then, 
 regress `b_knowledge_correct` on `b_h_edu`, `b_hh_size`, `b_acres`, and `b_dist_km`.  Use the post-estimation command 
-`predict` to predict the residuals, generating the new variable `yresid`.  The summarize `yresid`.  What is the standard 
+`predict` to predict the residuals, generating the new variable `yresid`.  Then summarize `yresid`.  What is the standard 
 deviation of the outcome variable **after regressing on the controls**?
 
 ##### Question 9 
@@ -189,6 +189,14 @@ the ratio of treatment and control observations that you used in Question 6).  W
 
 ##### Question 10
 
-How much higher would the MDE be if you used equally sized treatment and comparison groups?  
+What is the mean of the outcome variable, `b_knowledge_correct`?
+
+##### Question 11
+
+Express the MDE as a perecentage of the outcome variable of interest:  how large of a (percent) change in `b_knowledge_correct` would we need to anticipate if we wanted to have power of 0.8 to detect it?
+
+##### Question 12
+
+Now we will consider a completely different data set, the data on access to microfinance that we used in Empirical Exercise 8.  
 
 
