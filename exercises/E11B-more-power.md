@@ -36,6 +36,25 @@ expressed in terms of a t-statistic, we know that the absoluted value will be
 greater than 1.96 about 5 percent of the time (this is why, when we see a t-statistic larger than 1.96 in absolute 
 value, we say that the effect is statistically significant at the 95 percent confidence level).  
 
+Consider a concrete example.  Suppose that you randomly assign treatment in a sample of 1,000 people so that 
+500 are in the treatment group and 500 are in the control group.  There are **a lot** of different 
+possible random assignments (i.e. a lot of different sets of 500 out 1,000 people that you could choose 
+to include in the treatment group).  You regress some outcome variable - let's say adult height -  
+on your treatment dummy in each of these samples - without actually implementing an intervention of any kind.  So, 
+the null hypothesis is true:  the treatment effect is zero **because we didn't actually implement any treatment**.  Nevertheless, 
+adult height will sometimes be significantly higher in the treatment group, just by chance.  When we say 
+that a result is statistically significant at the 95 percent level, we are choose a threshold for 
+significance such that adult height will be statistically significant in 5 percent of all the regressions 
+we run when the null hypothesis (that there is no treatment effect) is correct.  
+
+Why don't we use a smaller test, so that we have a lower probability of a Type I error?  The problem 
+is that when we reduce the size of the test, we also reduce the power (the probability of rejecting a 
+false null hypothesis, ie the chance that we notice an impact that is actually there).  Using a smaller 
+test size means that we need to see a bigger difference in means between the treatment and comparison 
+groups before we deem an impact "statistically significant."  When we do this, it makes it less likely 
+that we will reject a true null hypothesis by mistake, but it also raises the bar on how large a 
+treatment effect needs to be (in expectation) before we declare it significant.  
+
 The **power** of a test is the probability of rejecting a false null hypothesis, i.e. the chance 
 of "finding" an effect that is actually there.  The power of a test is one minus the probability 
 of a Type II error (failing to reject a false null hypothesis).  When we do a **power calculation**, 
