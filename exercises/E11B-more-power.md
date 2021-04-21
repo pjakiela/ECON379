@@ -39,11 +39,11 @@ value, we say that the effect is statistically significant at the 95 percent con
 Consider a concrete example.  Suppose that you randomly assign treatment in a sample of 1,000 people so that 
 500 are in the treatment group and 500 are in the control group.  There are **a lot** of different 
 possible random assignments (i.e. a lot of different sets of 500 out 1,000 people that you could choose 
-to include in the treatment group).  You regress some outcome variable - let's say adult height -  
-on your treatment dummy in each of these samples - without actually implementing an intervention of any kind.  So, 
+to include in the treatment group).  You regress some outcome variable - let's say adult height - on your 
+treatment dummy in each of these samples - without actually implementing an intervention of any kind.  So, 
 the null hypothesis is true:  the treatment effect is zero **because we didn't actually implement any treatment**.  Nevertheless, 
 adult height will sometimes be significantly higher in the treatment group, just by chance.  When we say 
-that a result is statistically significant at the 95 percent level, we are choose a threshold for 
+that a result is statistically significant at the 95 percent level, we are choosing a threshold for 
 significance such that adult height will be statistically significant in 5 percent of all the regressions 
 we run when the null hypothesis (that there is no treatment effect) is correct.  
 
@@ -91,7 +91,7 @@ and the probability of detecting a treatment effect is quite large.
 We usually look for a power of at least 0.8, by which we mean that we want to probability 
 of detecting an effect (if there is one) to be at least 0.8.  In practice that means that 
 we want 80 percent of the area under the red curve to be to the right of the critical value 
-(of 1.96) of the distribution of t-statistics under the null.  You can see an example of this 
+(of 1.96) of the distribution of t-statistics under the null (the blue curve).  You can see an example of this 
 in the figure below.  
 
 ![tPC](https://pjakiela.github.io/ECON379/exercises/E11-power/f-testsizePC.png)
