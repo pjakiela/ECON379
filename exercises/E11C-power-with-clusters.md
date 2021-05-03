@@ -67,7 +67,7 @@ We use the `matrix` command again inside the loop.  The command `mat V = r(table
 saves the results of a regression in the matrix `V`.  For example, suppose you ran the command 
 `reg y x1 x2` and saw the Stata output below.
 
-
+![reg-output](https://pjakiela.github.io/ECON379/exercises/E11-power/reg-output.png)
 
 
 
