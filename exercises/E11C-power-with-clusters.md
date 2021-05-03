@@ -128,7 +128,27 @@ The square root terms (together) are the expected value of the standard error
 of the estimated treatment effect.  The _P_ in the equation is the proportion of the sample that is treated, 
 which in this case is... the answer to Question 1; and the sample size is the number of clusters times 
 the number of observations per cluster.  To calculate the expected standard error, you still need 
-the estimated variance of the outcome variable, &sigma;<sup>2</sup>.
+the estimated variance of the outcome variable, &sigma;<sup>2</sup>.  
+
+Notice that `y` is the sum of a cluster-specific error term, which is normally distributed with mean 
+zero and variance one (because the `rnormal()` command takes draws from a standard normal random variable), 
+and an observation specific error term, which is also a standard normal - plus a treatment effect which 
+is zero at present, but is in any case not stochastic.  So, `y` is a random variable that is the sum of 
+two independent standard normals.  We know that the variance of two independent random variables is the 
+sum of their variances.  Given this, what is the variance of `y`?  (I am asking for the expected or population 
+variance, not the sample variance that you would get by running the code.)
+
+##### Question 7
+
+Now use the MDE formula to calculate the expected standard error in the regression of `y` on `treatment`.  What is it?
+
+##### Question 8
+
+Now modify the program so that you also save the standard error from the regression of `y` on `treatment`.  (You will 
+need to create a new blank matrix to store the estimated standard errors in.)  What is 
+the average standard error across your 1,000 simulations?
+
+
 
 
 
