@@ -151,12 +151,41 @@ the average standard error across your 1,000 simulations?
 _By the way, if you are frustrated that your code is taking too long to run, you can insert the word `quietly` before 
 your `reg`, `gen`, and `set obs` commands to speed things up._
 
-#### Question 9
+##### Question 9
 
 Now you can multiply the expected standard error by 2.8 to calculate the minimum detectable effect given a test size 
 of 0.05 and a power of 0.8.  This tells us that the MDE is approximately 0.25.  Change the local macro `effect` to 
 0.25 and run your code again.  In how many of your 1,000 simulations do you reject the null hypothesis?
 
+##### Question 10
+
+Check your answer by using the `sampsi` command to calculate the number of observations that you'd need to detect 
+a difference in means between a mean of 0 in one group and a mean of 0.25 in another group given a power of 0.8 
+and a standard deviation of 1.4142136.  What would be the required sample size (n1+n2)?
+
+##### Question 11
+
+Now consider a case where treatment is assigned at the cluster level, and there are multiple observations per 
+cluster.  Change the local macro `numclusters` and the local macro `obspercluster` to 20.  Then, insert the command 
+```
+quietly expand `obspercluster'
+```
+between the `gen clusteffect...` and `gen y=...` commands.   The `expand` command will make `obspercluster` identical copies 
+of all of your observations (within your data set), so that you will have 1000 observations in total.  Now, set `effect` 
+to 0 again, so that the null hypothesis (that treatment has no effect) is correct.  Run your code.  How many times 
+(out of 1,000) do you reject the null?
+
+##### Question 12
+
+When treatment is assigned at the cluster level and outcomes are correlated within clusters, hypotheses are incorrectly 
+sized unless we use the `cluster` option at the end of our regression.  Run your code again, but add `, cluster(clustid)` 
+to the end of your regression.  How many times to you reject the null hypothesis now?
+
+##### Question 13
+
+As we've seen, when treatment is assigned at the cluster elvel, our hypothesis tests are only correctly sized when we 
+cluster our standard errors.  How do we account for this in calculating statistical power or required sample size?  For 
+cluster-randomized trials, we use a slightly different equation for the MDE:
 
 
 
