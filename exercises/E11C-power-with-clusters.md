@@ -146,7 +146,16 @@ Now use the MDE formula to calculate the expected standard error in the regressi
 
 Now modify the program so that you also save the standard error from the regression of `y` on `treatment`.  (You will 
 need to create a new blank matrix to store the estimated standard errors in.)  What is 
-the average standard error across your 1,000 simulations?
+the average standard error across your 1,000 simulations?  
+
+_By the way, if you are frustrated that your code is taking too long to run, you can insert the word `quietly` before 
+your `reg`, `gen`, and `set obs` commands to speed things up._
+
+#### Question 9
+
+Now you can multiply the expected standard error by 2.8 to calculate the minimum detectable effect given a test size 
+of 0.05 and a power of 0.8.  This tells us that the MDE is approximately 0.25.  Change the local macro `effect` to 
+0.25 and run your code again.  In how many of your 1,000 simulations do you reject the null hypothesis?
 
 
 
