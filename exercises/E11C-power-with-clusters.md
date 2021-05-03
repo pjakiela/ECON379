@@ -16,7 +16,9 @@ are grouped into clusters, and outcomes (even in the absence of treatment) are c
 within each cluster.  So, for example, this could be a data set of student test scores where 
 the individual unit of observation is the student and the cluster is the classroom; students 
 within a classroom are in the same grade and the same school, have the same teacher, and talk to each other - so 
-we might expect their scores to be correlated.  The local macro `numclusters` indicates the number of 
+we might expect their scores to be correlated.  
+
+The local macro `numclusters` indicates the number of 
 clusters in the similuated data set, and the local macro `obspercluster` indicates the number 
 of observations per cluster.  As you can see, the current values of those macros create a data set 
 with only one observation per cluster (so this is a clustered data set in name only at this point - though 
