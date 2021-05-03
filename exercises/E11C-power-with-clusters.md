@@ -3,7 +3,9 @@
 In this exercise, we'll learn how to determine the appropriate sample size for cluster-randomized 
 trials.  As discussed in _Running Randomized Evaluations_, researchers often assign treatment 
 at the cluster level (e.g. at the school, community, or market level) when we are worried about 
-potential spillovers across individuals within a cluster.
+potential spillovers across individuals within a cluster.  However, if outcomes within a cluster 
+are correlated (as they usually are), we need to modify our approach to calculating statistical power 
+and sample size.
 
 <br>
 
