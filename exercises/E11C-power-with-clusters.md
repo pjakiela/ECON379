@@ -27,6 +27,7 @@ local obspercluster = 1
 local effect = 0
 
 // create an empty matrix to save results
+
 local loopmax=1000
 matrix pval=J(`loopmax',1,.)
 
@@ -51,9 +52,39 @@ gen significant = pval<0.05
 tab significant
 ```
 
-The 
+The line 
+```
+matrix pval=J(`loopmax',1,.)
+```
+is new.  The `matrix` command allows you to create (unsuprisingly) a matrix 
+where you can store results.  Using the `matrix` command with the function `J` 
+defines a repeating matrix:  for example `matrix X = J(10,8,1)` would define a 
+matrix one ones with 10 rows and 8 columns.  Here we define an empty matrix with 
+`loopmax` rows and one column (so, really, it is a vector).  We can use this to 
+record the p-values that we calculate in our simulations.  
+
+We use the `matrix` command again inside the loop.  The command `mat V = r(table)` 
+saves the results of a regression in the matrix `V`.  For example, suppose you ran the command 
+`reg y x1 x2` and saw the Stata output below.
+
+
+
+
+
+followed by the commands `mat V = r(table)` and then `mat list V`, this is what 
+you'd see:
 
 ##### Question 1
 
 Look carefully at the program.  When you run it and tabulate the `significant` variable at the end, 
 what is the **expected** number of times that you will reject the null hypothesis?  
+
+##### Question 2
+
+What is the mean of the `treatment` variable (in each iteration of the loop)?  You should be able 
+to figure this out without running the code.
+
+##### Question 3
+
+
+
