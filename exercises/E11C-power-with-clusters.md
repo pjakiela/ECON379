@@ -187,7 +187,44 @@ As we've seen, when treatment is assigned at the cluster elvel, our hypothesis t
 cluster our standard errors.  How do we account for this in calculating statistical power or required sample size?  For 
 cluster-randomized trials, we use a slightly different equation for the MDE:
 
+![mde-cluster](https://pjakiela.github.io/ECON379/exercises/E11-power/MDE-cluster.png)
 
+The term in red did not appear in our earlier equation.  That term is referred to as the Moulton factor.  It is 
+always greater than one, indicating that cluster-randomized trials have less power than individually-randomized 
+trials.  The Moulton factor depends on two terms:  n<sub>g</sub> is the average number of observations per group 
+and &rho; is the **intra-class correlation**, a measure of how correlated outcomes are within clusters.  In 
+development, we typically think about levels of intra-class correlation between 0 and perhaps 0.2 and 0.3.  Student 
+test scores among students with the same teacher tend to be very highly correlated; other outcomes (for example, the 
+incomes of people in the same village) might be less highly correlated.  
 
+We can use the stata command `loneway` to estimate the degree of intraclass correlation, &rho;.  Modify your code 
+so that you create an empty matrix `rho` (just like the empty matrix `pval`) where you can store your estimates 
+of the intraclass correlation, and then add this code to your loop immediately before the `drop` command:
+```
+loneway y clustid
+matrix rho[`i',1]=r(rho)
+```
+Then add an `svmat rho` command near the end of your do file.  What is the mean level of intra-class correlation 
+across your 1,000 simulations?
+
+##### Question 14 
+
+Given this, what is the MDE?
+
+##### Question 15
+
+Change the value of the local macro `effect` to be equal to the MDE that you calculated in Question 
+14, and then run your code.  How many times (out of 1,000) do you reject the null hypothesis?
+
+<br>
+
+#### Congratulations!
+
+You finished all the empirical exercises in ECON 379!  Hurray!  And now you know how to calculate 
+the required sample size for an individually-randomized or a cluster-randomized study.  The level 
+of intra-class correlation in our simulations was extremely high - much higher than we'd typically 
+observe in an outcome variable of interest.  However, as you saw above, cluster-randomized trials 
+often require substantially larger samples than individually-randomized studies (or, equivalently, 
+they are only able to detect substantially larger treatment effects).  
 
 
