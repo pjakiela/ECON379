@@ -128,11 +128,11 @@ Recall the formula for the **minimum detectable effect** from last week:
 
 ![mde](https://pjakiela.github.io/ECON379/exercises/E11-power/MDE-eq1.png) 
 
-The square root terms (together) are the expected value of the standard error 
-of the estimated treatment effect.  The _P_ in the equation is the proportion of the sample that is treated, 
+The square root terms (together) are the expected value of the **standard error 
+of the estimated treatment effect**.  The _P_ in the equation is the proportion of the sample that is treated, 
 which in this case is... the answer to Question 1; and the sample size is the number of clusters times 
 the number of observations per cluster.  To calculate the expected standard error, you still need 
-the estimated variance of the outcome variable, &sigma;<sup>2</sup>.  
+the variance of the outcome variable, &sigma;<sup>2</sup>.  
 
 Notice that `y` is the sum of a cluster-specific error term, which is normally distributed with mean 
 zero and variance one (because the `rnormal()` command takes draws from a standard normal random variable), 
