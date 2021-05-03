@@ -28,7 +28,7 @@ local effect = 0
 
 // create an empty matrix to save results
 
-local loopmax=1000
+local loopmax=100
 matrix pval=J(`loopmax',1,.)
 
 // create data sets w/ clusters
@@ -82,19 +82,36 @@ standard error, etc.
 
 In our loop, we save our regression results in the matrix `V` and then immediately 
 save the p-value associated with the `treatment` variable (the only independent variable 
-in our regression) as one term in the `pval` vector that we defined prior to running the loop.  
+in our regression) as one term in the `pval` vector that we defined prior to running the loop.  This 
+means that, once our loop has run through all 100 iterations, we'll have a vector containing 
+all 100 resulting p-values, which we can then save as a variable using the `svmat` command.  
 
 ##### Question 1
 
-Look carefully at the program.  When you run it and tabulate the `significant` variable at the end, 
-what is the **expected** number of times that you will reject the null hypothesis?  
+Look carefully at the program.  Make sure you understand what is happening in every line 
+(and if you do not, come ask me to explain anything that is confusing!).  What is the 
+mean of the `treatment` variable (in each iteration of the loop)?  You should be able 
+to figure this out without running the code.
 
 ##### Question 2
 
-What is the mean of the `treatment` variable (in each iteration of the loop)?  You should be able 
-to figure this out without running the code.
+Looking at the current values of the local macros, would you say that the null hypothesis is 
+true or false?
 
 ##### Question 3
+
+When you run the code and it tabulates the `significant` variable at the end, 
+what is the **expected** number of times that you will reject the null hypothesis?  
+
+##### Question 4
+
+Now run the code.  How many times do you actually reject the null hypothesis?
+
+##### Question 5
+
+Change the number of iterations (the number of times the loop runs) to 1,000, 
+and then run the code again.  How many times do you reject the null hypothesis now?
+
 
 
 
