@@ -5,13 +5,26 @@ trials.  As discussed in _Running Randomized Evaluations_, researchers often ass
 at the cluster level (e.g. at the school, community, or market level) when we are worried about 
 potential spillovers across individuals within a cluster.
 
+#### Getting Started
+
+The `do` file below generates (i.e. simulates) a data set that is **clustered**:  observations 
+are grouped into clusters, and outcomes (even in the absence of treatment) are correlated 
+within each cluster.  So, for example, this could be a data set of student test scores where 
+the individual unit of observation is the student and the cluster is the classroom; students 
+within a classroom are in the same grade and the same school, have the same teacher, and talk to each other - so 
+we might expect their scores to be correlated.  The local macro `numclusters` indicates the number of 
+clusters in the similuated data set, and the local macro `obspercluster` indicates the number 
+of observations per cluster.  As you can see, the current values of those macros create a data set 
+with only one observation per cluster (so this is a clustered data set in name only at this point - though 
+you will fix that shortly).  
+
 ```
 clear all
 set seed 24601
 
 local numclusters = 1000
 local obspercluster = 1
-local effect = 0.25
+local effect = 0
 
 // create an empty matrix to save results
 local loopmax=1000
@@ -37,3 +50,10 @@ summarize
 gen significant = pval<0.05
 tab significant
 ```
+
+The 
+
+##### Question 1
+
+Look carefully at the program.  When you run it and tabulate the `significant` variable at the end, 
+what is the **expected** number of times that you will reject the null hypothesis?  
