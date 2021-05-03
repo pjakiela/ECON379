@@ -5,6 +5,8 @@ trials.  As discussed in _Running Randomized Evaluations_, researchers often ass
 at the cluster level (e.g. at the school, community, or market level) when we are worried about 
 potential spillovers across individuals within a cluster.
 
+<br>
+
 #### Getting Started
 
 The `do` file below generates (i.e. simulates) a data set that is **clustered**:  observations 
@@ -86,6 +88,10 @@ in our regression) as one term in the `pval` vector that we defined prior to run
 means that, once our loop has run through all 100 iterations, we'll have a vector containing 
 all 100 resulting p-values, which we can then save as a variable using the `svmat` command.  
 
+<br>
+
+#### Empirical Exercise
+
 ##### Question 1
 
 Look carefully at the program.  Make sure you understand what is happening in every line 
@@ -122,7 +128,7 @@ The square root terms (together) are the expected value of the standard error
 of the estimated treatment effect.  The _P_ in the equation is the proportion of the sample that is treated, 
 which in this case is... the answer to Question 1; and the sample size is the number of clusters times 
 the number of observations per cluster.  To calculate the expected standard error, you still need 
-the estimated variance of the outcome variable, {&sigma}.
+the estimated variance of the outcome variable, &sigma;<sup>2</sup>.
 
 
 
