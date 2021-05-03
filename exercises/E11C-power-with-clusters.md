@@ -181,7 +181,7 @@ to 0 again, so that the null hypothesis (that treatment has no effect) is correc
 
 ##### Question 12
 
-When treatment is assigned at the cluster level and outcomes are correlated within clusters, hypotheses are incorrectly 
+When treatment is assigned at the cluster level and outcomes are correlated within clusters, hypothesis tests are incorrectly 
 sized unless we use the `cluster` option at the end of our regression.  Run your code again, but add `, cluster(clustid)` 
 to the end of your regression.  How many times to you reject the null hypothesis now?
 
@@ -191,7 +191,7 @@ As we've seen, when treatment is assigned at the cluster elvel, our hypothesis t
 cluster our standard errors.  How do we account for this in calculating statistical power or required sample size?  For 
 cluster-randomized trials, we use a slightly different equation for the MDE:
 
-![mde-cluster](https://pjakiela.github.io/ECON379/exercises/E11-power/MDE-cluster.png)
+![MDE-cluster](https://pjakiela.github.io/ECON379/exercises/E11-power/MDE-cluster.png)
 
 The term in red did not appear in our earlier equation.  That term is referred to as the Moulton factor.  It is 
 always greater than one, indicating that cluster-randomized trials have less power than individually-randomized 
