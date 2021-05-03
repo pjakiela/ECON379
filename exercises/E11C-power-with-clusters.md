@@ -69,10 +69,10 @@ saves the results of a regression in the matrix `V`.  For example, suppose you r
 
 ![reg-output](https://pjakiela.github.io/ECON379/exercises/E11-power/reg-output.png)
 
+If you ran the command `mat V = r(table)` and then used the command `mat list V` 
+to display the matrix, you'd see this:  
 
 
-followed by the commands `mat V = r(table)` and then `mat list V`, this is what 
-you'd see:
 
 ##### Question 1
 
