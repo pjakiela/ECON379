@@ -82,7 +82,7 @@ standard error, etc.
 
 In our loop, we save our regression results in the matrix `V` and then immediately 
 save the p-value associated with the `treatment` variable (the only independent variable 
-in our regression) as one term in the `pval` vector that we defined prior to running the loop.
+in our regression) as one term in the `pval` vector that we defined prior to running the loop.  
 
 ##### Question 1
 
