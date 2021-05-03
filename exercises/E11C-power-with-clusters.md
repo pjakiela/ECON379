@@ -65,14 +65,24 @@ record the p-values that we calculate in our simulations.
 
 We use the `matrix` command again inside the loop.  The command `mat V = r(table)` 
 saves the results of a regression in the matrix `V`.  For example, suppose you ran the command 
-`reg y x1 x2` and saw the Stata output below.
+`reg y x1 x2` and saw the Stata output below.  
 
 ![reg-output](https://pjakiela.github.io/ECON379/exercises/E11-power/reg-output.png)
 
 If you ran the command `mat V = r(table)` and then used the command `mat list V` 
 to display the matrix, you'd see this:  
 
+![mat-list](https://pjakiela.github.io/ECON379/exercises/E11-power/mat-list.png)
 
+You can see that Stata has now created a 9x3 matrix that contains all the estimated 
+coefficients, standard errors, t-statistics, p-values, etc. from the regression.  The 
+columns of the matrix represent the independent variables in the regression, in the 
+order that you entered them.  The last column reports the estimated constant term, its 
+standard error, etc.  
+
+In our loop, we save our regression results in the matrix `V` and then immediately 
+save the p-value associated with the `treatment` variable (the only independent variable 
+in our regression) as one term in the `pval` vector that we defined prior to running the loop.
 
 ##### Question 1
 
