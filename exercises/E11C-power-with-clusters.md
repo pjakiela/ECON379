@@ -112,6 +112,18 @@ Now run the code.  How many times do you actually reject the null hypothesis?
 Change the number of iterations (the number of times the loop runs) to 1,000, 
 and then run the code again.  How many times do you reject the null hypothesis now?
 
+##### Question 6
+
+Recall the formula for the **minimum detectable effect** from last week:
+
+![mde](https://pjakiela.github.io/ECON379/exercises/E11-power/MDE-eq1.png) 
+
+The square root terms (together) are the expected value of the standard error 
+of the estimated treatment effect.  The _P_ in the equation is the proportion of the sample that is treated, 
+which in this case is... the answer to Question 1; and the sample size is the number of clusters times 
+the number of observations per cluster.  To calculate the expected standard error, you still need 
+the estimated variance of the outcome variable, {&sigma}.
+
 
 
 
