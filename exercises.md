@@ -70,10 +70,10 @@ Exercise 11A &nbsp;
 
 Exercise 11B &nbsp; 
 [web](https://pjakiela.github.io/ECON379/exercises/E11B-more-power.html) &nbsp; 
-[all](https://github.com/pjakiela/ECON379/tree/gh-pages/exercises/E11B-more-power/)   
+[all](https://github.com/pjakiela/ECON379/tree/gh-pages/exercises/E11-power/)   
 
 Exercise 11C &nbsp; 
 [web](https://pjakiela.github.io/ECON379/exercises/E11C-power-with-clusters.html) &nbsp; 
-[all](https://github.com/pjakiela/ECON379/tree/gh-pages/exercises/E11C-power-with-clusters/)  
+[all](https://github.com/pjakiela/ECON379/tree/gh-pages/exercises/E11-power/)  
 
 
