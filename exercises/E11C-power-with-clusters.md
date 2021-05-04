@@ -191,7 +191,7 @@ As we've seen, when treatment is assigned at the cluster elvel, our hypothesis t
 cluster our standard errors.  How do we account for this in calculating statistical power or required sample size?  For 
 cluster-randomized trials, we use a slightly different equation for the MDE:
 
-![MDE-clusters](https://pjakiela.github.io/ECON379/exercises/E11-power/MDE-cluster.png)
+![MDE-clusters](https://pjakiela.github.io/ECON379/exercises/E11-power/MDE-clusters.png)
 
 The term in red did not appear in our earlier equation.  That term is referred to as the Moulton factor.  It is 
 always greater than one, indicating that cluster-randomized trials have less power than individually-randomized 
