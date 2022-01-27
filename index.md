@@ -1,6 +1,6 @@
 # Program Evaluation for International Development  
 
-_These course materials are from 2021.  Current course materials are available [here](https://pjakiela.github.io/ECON523/)_
+_These course materials are from 2021.  Current course materials are available [here](https://pjakiela.github.io/ECON523/)._
 
 <br>
 
