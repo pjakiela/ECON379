@@ -1,6 +1,6 @@
 # Program Evaluation for International Development  
 
-_This is the website for Professor Pamela Jakiela's ECON 379/523 at Williams College, Program Evaluation for International Development.  The course is intended for advanced undergraduates majoring in economics and masters students at the [Center for Development Economics](https://cde.williams.edu/).  All of the teaching materials for this course can be accessed via the underlying github page._
+_These course materials are from 2021.  Current course materials are available [here](https://pjakiela.github.io/ECON523/)_
 
 <br>
 
